@@ -6899,107 +6899,108 @@
         ]
     },
     {
-        "id": "259d6583820ea22d",
+        "id": "b66e9f778ea39a07",
         "type": "inject",
         "z": "eb8c2552976747ac",
         "name": "Solicitar datos",
-        "props": [],
-        "repeat": "1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "20",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 260,
+        "payload": "",
+        "payloadType": "str",
+        "x": 420,
         "y": 140,
         "wires": [
             [
-                "6b7fcd0504dcf67c"
+                "18b1f9c1f377ecd1"
             ]
         ]
     },
     {
-        "id": "6b7fcd0504dcf67c",
+        "id": "18b1f9c1f377ecd1",
         "type": "http request",
         "z": "eb8c2552976747ac",
         "name": "Obtener datos de OpenWeather",
         "method": "GET",
         "ret": "obj",
-        "paytoqs": "ignore",
         "url": "https://api.openweathermap.org/data/2.5/weather?q=Madrid&appid=e2cb20d879df95fd1f65af5238f52f1e&units=metric",
         "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 370,
-        "y": 340,
-        "wires": [
-            [
-                "8c83933ddd243866"
-            ]
-        ]
-    },
-    {
-        "id": "8c83933ddd243866",
-        "type": "json",
-        "z": "eb8c2552976747ac",
-        "name": "Convertir a JSON",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 630,
+        "x": 550,
         "y": 380,
         "wires": [
             [
-                "de574861f3b94333",
-                "6e2b2e1c759bfa7c"
+                "4107f87242264c41",
+                "cc8c2bd6b2f69a06",
+                "f25ab89173257d20"
             ]
         ]
     },
     {
-        "id": "de574861f3b94333",
+        "id": "4107f87242264c41",
+        "type": "debug",
+        "z": "eb8c2552976747ac",
+        "name": "Revisar JSON",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 900,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "cc8c2bd6b2f69a06",
         "type": "function",
         "z": "eb8c2552976747ac",
         "name": "Extraer humedad",
-        "func": "msg.payload = msg.payload.main.humidity;\nreturn msg;",
+        "func": "if (msg.payload.main && msg.payload.main.humidity !== undefined) {\n    msg.payload = msg.payload.main.humidity;\n} else {\n    msg.payload = \"Error: Datos no disponibles\";\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
-        "y": 220,
+        "x": 830,
+        "y": 140,
         "wires": [
             [
-                "de982f53956dfd5f"
+                "7e4b0799571b9fa6"
             ]
         ]
     },
     {
-        "id": "6e2b2e1c759bfa7c",
+        "id": "f25ab89173257d20",
         "type": "function",
         "z": "eb8c2552976747ac",
         "name": "Extraer temperatura",
-        "func": "msg.payload = msg.payload.main.temp;\nreturn msg;",
+        "func": "if (msg.payload.main && msg.payload.main.temp !== undefined) {\n    msg.payload = msg.payload.main.temp;\n} else {\n    msg.payload = \"Error: Datos no disponibles\";\n}\nreturn msg;",
         "outputs": 1,
-        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 460,
+        "x": 900,
+        "y": 540,
         "wires": [
             [
-                "ac8910227c70eacd"
+                "85cc010d12862123"
             ]
         ]
     },
     {
-        "id": "de982f53956dfd5f",
+        "id": "7e4b0799571b9fa6",
         "type": "ui_gauge",
         "z": "eb8c2552976747ac",
         "name": "Humedad en tiempo real",
@@ -7022,12 +7023,12 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 1150,
-        "y": 140,
+        "x": 1170,
+        "y": 180,
         "wires": []
     },
     {
-        "id": "ac8910227c70eacd",
+        "id": "85cc010d12862123",
         "type": "ui_chart",
         "z": "eb8c2552976747ac",
         "name": "Temperatura histórica",
@@ -7064,8 +7065,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1280,
-        "y": 400,
+        "x": 1300,
+        "y": 300,
         "wires": [
             []
         ]

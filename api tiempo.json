@@ -1,0 +1,203 @@
+[
+    {
+        "id": "eb8c2552976747ac",
+        "type": "tab",
+        "label": "api tiempo",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b66e9f778ea39a07",
+        "type": "inject",
+        "z": "eb8c2552976747ac",
+        "name": "Solicitar datos",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 420,
+        "y": 140,
+        "wires": [
+            [
+                "18b1f9c1f377ecd1"
+            ]
+        ]
+    },
+    {
+        "id": "18b1f9c1f377ecd1",
+        "type": "http request",
+        "z": "eb8c2552976747ac",
+        "name": "Obtener datos de OpenWeather",
+        "method": "GET",
+        "ret": "obj",
+        "url": "https://api.openweathermap.org/data/2.5/weather?q=Madrid&appid=e2cb20d879df95fd1f65af5238f52f1e&units=metric",
+        "tls": "",
+        "x": 550,
+        "y": 380,
+        "wires": [
+            [
+                "4107f87242264c41",
+                "cc8c2bd6b2f69a06",
+                "f25ab89173257d20"
+            ]
+        ]
+    },
+    {
+        "id": "4107f87242264c41",
+        "type": "debug",
+        "z": "eb8c2552976747ac",
+        "name": "Revisar JSON",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 900,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "cc8c2bd6b2f69a06",
+        "type": "function",
+        "z": "eb8c2552976747ac",
+        "name": "Extraer humedad",
+        "func": "if (msg.payload.main && msg.payload.main.humidity !== undefined) {\n    msg.payload = msg.payload.main.humidity;\n} else {\n    msg.payload = \"Error: Datos no disponibles\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 140,
+        "wires": [
+            [
+                "7e4b0799571b9fa6"
+            ]
+        ]
+    },
+    {
+        "id": "f25ab89173257d20",
+        "type": "function",
+        "z": "eb8c2552976747ac",
+        "name": "Extraer temperatura",
+        "func": "if (msg.payload.main && msg.payload.main.temp !== undefined) {\n    msg.payload = msg.payload.main.temp;\n} else {\n    msg.payload = \"Error: Datos no disponibles\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 540,
+        "wires": [
+            [
+                "85cc010d12862123"
+            ]
+        ]
+    },
+    {
+        "id": "7e4b0799571b9fa6",
+        "type": "ui_gauge",
+        "z": "eb8c2552976747ac",
+        "name": "Humedad en tiempo real",
+        "group": "9ae464d77928a9a0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "",
+        "format": "",
+        "min": 0,
+        "max": 100,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1170,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "85cc010d12862123",
+        "type": "ui_chart",
+        "z": "eb8c2552976747ac",
+        "name": "Temperatura histórica",
+        "group": "9ae464d77928a9a0",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Temperatura",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-10",
+        "ymax": "40",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff6600",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1300,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ae464d77928a9a0",
+        "type": "ui_group",
+        "name": "ejercicio tiempo",
+        "tab": "9871c4fc3caac5f7",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9871c4fc3caac5f7",
+        "type": "ui_tab",
+        "name": "tiempo",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
