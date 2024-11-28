@@ -1,0 +1,28 @@
+<script type="text/javascript">
+    RED.nodes.registerType('uppercase', {
+        category: 'Posidonia23',
+        color: '#E2D96E',
+        defaults: {
+            name: { value: "" }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "font-awesome/arrow-up.svg",
+        label: function() {
+            return this.name || "Uppercase";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="uppercase">
+    <div class="form-row">
+        <label for="node-input-name">
+            <i class="fa fa-tag"></i> Nombre
+        </label>
+        <input type="text" id="node-input-name" placeholder="Nombre del nodo">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="uppercase">
+    <p>Este nodo convierte el contenido de <code>msg.payload</code> a mayúsculas.</p>
+</script>

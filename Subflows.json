@@ -1,0 +1,614 @@
+[
+    {
+        "id": "58baabe08cf06c58",
+        "type": "subflow",
+        "name": "Split, Change & Switch",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 160,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "2df3c478576027ce"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 900,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "12f0d5c367dbb676",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 900,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "12f0d5c367dbb676",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 900,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "12f0d5c367dbb676",
+                        "port": 2
+                    }
+                ]
+            },
+            {
+                "x": 900,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "12f0d5c367dbb676",
+                        "port": 3
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "2df3c478576027ce",
+        "type": "split",
+        "z": "58baabe08cf06c58",
+        "name": "",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 370,
+        "y": 140,
+        "wires": [
+            [
+                "be676cf3ca89981a"
+            ]
+        ]
+    },
+    {
+        "id": "be676cf3ca89981a",
+        "type": "change",
+        "z": "58baabe08cf06c58",
+        "name": "to number",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(msg.payload)\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 140,
+        "wires": [
+            [
+                "12f0d5c367dbb676"
+            ]
+        ]
+    },
+    {
+        "id": "12f0d5c367dbb676",
+        "type": "switch",
+        "z": "58baabe08cf06c58",
+        "name": "route",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 710,
+        "y": 140,
+        "wires": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8365c182dfcd11f5",
+        "type": "tab",
+        "label": "SUB-FLOWS",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "2a4373f40819dea0",
+        "type": "group",
+        "z": "8365c182dfcd11f5",
+        "name": "SUB-FLOW",
+        "style": {
+            "stroke": "#0070c0",
+            "fill": "#7fb7df",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "be3235e94cdd6597",
+            "d898d7bf6fc1ba41",
+            "95b54f20ddb5132d",
+            "8be2844cf411a32e",
+            "6d3f3de53462b7af",
+            "337cf8361ff7399f"
+        ],
+        "x": 24,
+        "y": 379,
+        "w": 972,
+        "h": 262
+    },
+    {
+        "id": "e2ee9d964f9d02ee",
+        "type": "group",
+        "z": "8365c182dfcd11f5",
+        "name": "split, change & switch",
+        "style": {
+            "stroke": "#0070c0",
+            "fill": "#7fb7df",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "2b8d5c1c87ba043b",
+            "463d7697b50528cb",
+            "d03e8d72ad87010e",
+            "bcfa01de2fc20ce4",
+            "6e659cb658fd34ac",
+            "965f64f0fe652c01",
+            "4488aa9cab732b66",
+            "6e694e547f8db0cf",
+            "2bc6f29d13302c86",
+            "8363d3f095581ee8",
+            "f97edc4490875c11",
+            "1152f9c45806da58",
+            "27246946b5cd7ed8",
+            "ddbb9e39874c158d"
+        ],
+        "x": 54,
+        "y": 59,
+        "w": 932,
+        "h": 282
+    },
+    {
+        "id": "2b8d5c1c87ba043b",
+        "type": "split",
+        "z": "8365c182dfcd11f5",
+        "g": "e2ee9d964f9d02ee",
+        "name": "",
+        "splt": ",",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 370,
+        "y": 160,
+        "wires": [
+            [
+                "27246946b5cd7ed8",
+                "bcfa01de2fc20ce4"
+            ]
+        ]
+    },
+    {
+        "id": "463d7697b50528cb",
+        "type": "inject",
+        "z": "8365c182dfcd11f5",
+        "g": "e2ee9d964f9d02ee",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "15.4,50,23.8,79",
+        "payloadType": "str",
+        "x": 180,
+        "y": 160,
+        "wires": [
+            [
+                "1152f9c45806da58",
+                "2b8d5c1c87ba043b"
+            ]
+        ]
+    },
+    {
+        "id": "d03e8d72ad87010e",
+        "type": "debug",
+        "z": "8365c182dfcd11f5",
+        "g": "e2ee9d964f9d02ee",
+        "name": "out 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "bcfa01de2fc20ce4",
+        "type": "change",
+        "z": "8365c182dfcd11f5",
+        "g": "e2ee9d964f9d02ee",
+        "name": "to number",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(msg.payload)\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 160,
+        "wires": [
+            [
+                "6e659cb658fd34ac",
+                "ddbb9e39874c158d"
+            ]
+        ]
+    },
+    {
+        "id": "6e659cb658fd34ac",
+        "type": "switch",
+        "z": "8365c182dfcd11f5",
+        "g": "e2ee9d964f9d02ee",
+        "name": "route",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 710,
+        "y": 160,
+        "wires": [
+            [
+                "d03e8d72ad87010e"
+            ],
+            [
+                "965f64f0fe652c01"
+            ],
+            [
+                "4488aa9cab732b66"
+            ],
+            [
+                "6e694e547f8db0cf"
+            ]
+        ]
+    },
+    {
+        "id": "965f64f0fe652c01",
+        "type": "debug",
+        "z": "8365c182dfcd11f5",
+        "g": "e2ee9d964f9d02ee",
+        "name": "out 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 890,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "4488aa9cab732b66",
+        "type": "debug",
+        "z": "8365c182dfcd11f5",
+        "g": "e2ee9d964f9d02ee",
+        "name": "out 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 890,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6e694e547f8db0cf",
+        "type": "debug",
+        "z": "8365c182dfcd11f5",
+        "g": "e2ee9d964f9d02ee",
+        "name": "out 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 890,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "2bc6f29d13302c86",
+        "type": "comment",
+        "z": "8365c182dfcd11f5",
+        "g": "e2ee9d964f9d02ee",
+        "name": "split",
+        "info": "Split comma separated string into separated messages.\nValue placed to msg.payload\nValue type will be still string.\n\nThere will be 4 messages out of this split node\n\nFor each msg also given a property \"parts\". \nIt will be used later on.",
+        "x": 370,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "8363d3f095581ee8",
+        "type": "comment",
+        "z": "8365c182dfcd11f5",
+        "g": "e2ee9d964f9d02ee",
+        "name": "convert",
+        "info": "Convert the value of msg.payload to the number using JSONata expression.\n",
+        "x": 550,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f97edc4490875c11",
+        "type": "comment",
+        "z": "8365c182dfcd11f5",
+        "g": "e2ee9d964f9d02ee",
+        "name": "route",
+        "info": "Route every message to differet output by using switch node.\nAs property \"parts\" has been given to each message, we can use its \n\"index\" property to find out proper output\n\n",
+        "x": 710,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "1152f9c45806da58",
+        "type": "debug",
+        "z": "8365c182dfcd11f5",
+        "g": "e2ee9d964f9d02ee",
+        "name": "source data",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 350,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "27246946b5cd7ed8",
+        "type": "debug",
+        "z": "8365c182dfcd11f5",
+        "g": "e2ee9d964f9d02ee",
+        "name": "spltted",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 450,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "ddbb9e39874c158d",
+        "type": "debug",
+        "z": "8365c182dfcd11f5",
+        "g": "e2ee9d964f9d02ee",
+        "name": "converted",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "be3235e94cdd6597",
+        "type": "subflow:58baabe08cf06c58",
+        "z": "8365c182dfcd11f5",
+        "g": "2a4373f40819dea0",
+        "name": "",
+        "env": [],
+        "x": 520,
+        "y": 520,
+        "wires": [
+            [
+                "95b54f20ddb5132d"
+            ],
+            [
+                "8be2844cf411a32e"
+            ],
+            [
+                "6d3f3de53462b7af"
+            ],
+            [
+                "337cf8361ff7399f"
+            ]
+        ]
+    },
+    {
+        "id": "d898d7bf6fc1ba41",
+        "type": "inject",
+        "z": "8365c182dfcd11f5",
+        "g": "2a4373f40819dea0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "15.4,50,23.8,79",
+        "payloadType": "str",
+        "x": 150,
+        "y": 520,
+        "wires": [
+            [
+                "be3235e94cdd6597"
+            ]
+        ]
+    },
+    {
+        "id": "95b54f20ddb5132d",
+        "type": "debug",
+        "z": "8365c182dfcd11f5",
+        "g": "2a4373f40819dea0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "8be2844cf411a32e",
+        "type": "debug",
+        "z": "8365c182dfcd11f5",
+        "g": "2a4373f40819dea0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "6d3f3de53462b7af",
+        "type": "debug",
+        "z": "8365c182dfcd11f5",
+        "g": "2a4373f40819dea0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "337cf8361ff7399f",
+        "type": "debug",
+        "z": "8365c182dfcd11f5",
+        "g": "2a4373f40819dea0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 600,
+        "wires": []
+    }
+]

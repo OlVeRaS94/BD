@@ -1,0 +1,22 @@
+version: '3'
+services:
+  node-red:
+    build: .
+    container_name: node-red
+    volumes:
+      - ./node-red:/data
+      - node_modules:/data/node_modules
+    ports:
+      - "1880:1880"
+    working_dir: /data
+    user: "1000:0"
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: "100m"
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["npm install && node-red --userDir /data"]
+      
+volumes:
+  node_modules:

@@ -1,0 +1,179 @@
+[
+    {
+        "id": "df4bf4239b6a2e77",
+        "type": "tab",
+        "label": "Update table UI",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "4a861da0.4af1e4",
+        "type": "inject",
+        "z": "df4bf4239b6a2e77",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 220,
+        "wires": [
+            [
+                "74a7dfd2.11eca8"
+            ]
+        ]
+    },
+    {
+        "id": "74a7dfd2.11eca8",
+        "type": "function",
+        "z": "df4bf4239b6a2e77",
+        "name": "",
+        "func": "var data = [\n            {\n                \"name\":\"Dave\",\n                \"age\":35,\n                \"favourite colour\":\"red\",\n                \"star rating\": 3,\n                \"progress\": \"75\",\n                \"traffic\": 32\n            },\n            {\n                \"name\":\"Fred\",\n                \"age\":45,\n                \"favourite colour\":\"orange\",\n                \"star rating\": 5,\n                \"progress\": \"50\",\n                \"traffic\": 65\n            },\n            {\n                \"name\":\"Jane\",\n                \"age\":32,\n                \"favourite colour\":\"yellow\",\n                \"star rating\": 4,\n                \"progress\": \"98\",\n                \"traffic\": 84\n            }\n            ];\nmsg.payload = data;\n            \n            \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 160,
+        "wires": [
+            [
+                "7c73928f.f46d94"
+            ]
+        ]
+    },
+    {
+        "id": "7c73928f.f46d94",
+        "type": "ui_table",
+        "z": "df4bf4239b6a2e77",
+        "group": "d1e1d0fe.3493f8",
+        "name": "",
+        "order": 1,
+        "width": "12",
+        "height": "6",
+        "columns": [
+            {
+                "field": "name",
+                "title": "Name",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "age",
+                "title": "Age",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "favourite colour",
+                "title": "Favourite Colour",
+                "width": "",
+                "align": "left",
+                "formatter": "color",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "star rating",
+                "title": "Rating",
+                "width": "",
+                "align": "left",
+                "formatter": "star",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "progress",
+                "title": "Progress",
+                "width": "",
+                "align": "left",
+                "formatter": "progress",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "traffic",
+                "title": "Traffic Light",
+                "width": "",
+                "align": "center",
+                "formatter": "traffic",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 670,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a1de758b.9ffcf",
+        "type": "ui_button",
+        "z": "df4bf4239b6a2e77",
+        "name": "",
+        "group": "d1e1d0fe.3493f8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Update table",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "74a7dfd2.11eca8"
+            ]
+        ]
+    },
+    {
+        "id": "d1e1d0fe.3493f8",
+        "type": "ui_group",
+        "name": "Table Example",
+        "tab": "f64eb6be.3adcd8",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "f64eb6be.3adcd8",
+        "type": "ui_tab",
+        "name": "Table Example",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

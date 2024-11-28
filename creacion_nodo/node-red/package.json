@@ -1,0 +1,15 @@
+{
+  "name": "node-red-project",
+  "version": "1.0.0",
+  "description": "A Node-RED Project",
+  "private": true,
+  "dependencies": {
+    "node-red-contrib-uppercase": "file:nodes/node-red-contrib-uppercase"
+  },
+  "node-red": {
+    "nodes": {
+      "uppercase": "./nodes/node-red-contrib-uppercase/node.js"
+    }
+  },
+  "author": "José A. Clemente"
+}

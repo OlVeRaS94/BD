@@ -1,0 +1,386 @@
+[
+    {
+        "id": "3f889bfad65f8b2f",
+        "type": "tab",
+        "label": "Flujo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "11eb490e9c4a8c33",
+        "type": "group",
+        "z": "3f889bfad65f8b2f",
+        "name": "Nodo Catch",
+        "style": {
+            "label": true,
+            "label-position": "n"
+        },
+        "nodes": [
+            "e95efc34cc3e1",
+            "functionNode",
+            "catchNode",
+            "debugNode"
+        ],
+        "x": 214,
+        "y": 59,
+        "w": 402,
+        "h": 182
+    },
+    {
+        "id": "285ddd4df351fa37",
+        "type": "group",
+        "z": "3f889bfad65f8b2f",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "5697fe0d6b96c8bf",
+            "b04865783ea27d06",
+            "d60d9ecbd4a3952b",
+            "28217ff9ad0ca692",
+            "382cf1ddace1566d",
+            "8fdd51f2f793bce6"
+        ],
+        "x": 94,
+        "y": 279,
+        "w": 642,
+        "h": 242
+    },
+    {
+        "id": "b79702c8db340af6",
+        "type": "group",
+        "z": "3f889bfad65f8b2f",
+        "name": "Envio TCP",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#b797cf",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "db80360405c497bf",
+            "1e78797c64ea7c93",
+            "645dfa9575dd1f25",
+            "3ae7e3a26252e20f",
+            "6118272bb3725262"
+        ],
+        "x": 94,
+        "y": 579,
+        "w": 672,
+        "h": 222
+    },
+    {
+        "id": "e95efc34cc3e1",
+        "type": "inject",
+        "z": "3f889bfad65f8b2f",
+        "g": "11eb490e9c4a8c33",
+        "name": "Iniciar flujo",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 100,
+        "wires": [
+            [
+                "functionNode"
+            ]
+        ]
+    },
+    {
+        "id": "functionNode",
+        "type": "function",
+        "z": "3f889bfad65f8b2f",
+        "g": "11eb490e9c4a8c33",
+        "name": "Generar error",
+        "func": "node.error('Error simulado', msg);",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "catchNode",
+        "type": "catch",
+        "z": "3f889bfad65f8b2f",
+        "g": "11eb490e9c4a8c33",
+        "name": "Captura errores",
+        "scope": null,
+        "uncaught": false,
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "debugNode"
+            ]
+        ]
+    },
+    {
+        "id": "debugNode",
+        "type": "debug",
+        "z": "3f889bfad65f8b2f",
+        "g": "11eb490e9c4a8c33",
+        "name": "Ver error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "complete": "true",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "5697fe0d6b96c8bf",
+        "type": "inject",
+        "z": "3f889bfad65f8b2f",
+        "g": "285ddd4df351fa37",
+        "name": "Iniciar proceso",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 380,
+        "wires": [
+            [
+                "b04865783ea27d06"
+            ]
+        ]
+    },
+    {
+        "id": "b04865783ea27d06",
+        "type": "delay",
+        "z": "3f889bfad65f8b2f",
+        "g": "285ddd4df351fa37",
+        "name": "Retraso de 5 seg",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "outputs": 1,
+        "x": 410,
+        "y": 380,
+        "wires": [
+            [
+                "28217ff9ad0ca692"
+            ]
+        ]
+    },
+    {
+        "id": "d60d9ecbd4a3952b",
+        "type": "complete",
+        "z": "3f889bfad65f8b2f",
+        "g": "285ddd4df351fa37",
+        "name": "Detecta completado",
+        "scope": [
+            "b04865783ea27d06"
+        ],
+        "x": 220,
+        "y": 480,
+        "wires": [
+            [
+                "382cf1ddace1566d"
+            ]
+        ]
+    },
+    {
+        "id": "28217ff9ad0ca692",
+        "type": "debug",
+        "z": "3f889bfad65f8b2f",
+        "g": "285ddd4df351fa37",
+        "name": "Salida retrasada",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "complete": "true",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "382cf1ddace1566d",
+        "type": "debug",
+        "z": "3f889bfad65f8b2f",
+        "g": "285ddd4df351fa37",
+        "name": "Nodo completo",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "complete": "true",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "8fdd51f2f793bce6",
+        "type": "comment",
+        "z": "3f889bfad65f8b2f",
+        "g": "285ddd4df351fa37",
+        "name": "",
+        "info": "El nodo Complete detecta cuando otros nodos\n han terminado de procesar un mensaje. \n Es útil para ejecutar acciones después de\n  que un nodo haya completado su trabajo.",
+        "x": 420,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "db80360405c497bf",
+        "type": "inject",
+        "z": "3f889bfad65f8b2f",
+        "g": "b79702c8db340af6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hola prueba envio via TCP",
+        "payloadType": "str",
+        "x": 190,
+        "y": 680,
+        "wires": [
+            [
+                "1e78797c64ea7c93"
+            ]
+        ]
+    },
+    {
+        "id": "1e78797c64ea7c93",
+        "type": "tcp out",
+        "z": "3f889bfad65f8b2f",
+        "g": "b79702c8db340af6",
+        "name": "",
+        "host": "localhost",
+        "port": "1045",
+        "beserver": "client",
+        "base64": false,
+        "end": false,
+        "tls": "",
+        "x": 510,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "645dfa9575dd1f25",
+        "type": "tcp in",
+        "z": "3f889bfad65f8b2f",
+        "g": "b79702c8db340af6",
+        "name": "monitorización",
+        "server": "server",
+        "host": "",
+        "port": "1045",
+        "datamode": "stream",
+        "datatype": "utf8",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 190,
+        "y": 760,
+        "wires": [
+            [
+                "3ae7e3a26252e20f"
+            ]
+        ]
+    },
+    {
+        "id": "3ae7e3a26252e20f",
+        "type": "debug",
+        "z": "3f889bfad65f8b2f",
+        "g": "b79702c8db340af6",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "6118272bb3725262",
+        "type": "comment",
+        "z": "3f889bfad65f8b2f",
+        "g": "b79702c8db340af6",
+        "name": "Descripción",
+        "info": "Envio y recepción de mensajes\n a través de conexiones TCP",
+        "x": 370,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "3e4f0e5d71371534",
+        "type": "status",
+        "z": "3f889bfad65f8b2f",
+        "name": "Monitor de estado",
+        "scope": [
+            "1e78797c64ea7c93"
+        ],
+        "x": 270,
+        "y": 860,
+        "wires": [
+            [
+                "e73c096fab0de9aa"
+            ]
+        ]
+    },
+    {
+        "id": "e73c096fab0de9aa",
+        "type": "debug",
+        "z": "3f889bfad65f8b2f",
+        "name": "Estado envio",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 860,
+        "wires": []
+    }
+]

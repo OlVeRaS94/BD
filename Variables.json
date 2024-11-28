@@ -1,0 +1,416 @@
+[
+    {
+        "id": "9c6fce89c089e687",
+        "type": "tab",
+        "label": "Variables",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "5d280072641a12fe",
+        "type": "group",
+        "z": "9c6fce89c089e687",
+        "name": "Context object",
+        "style": {
+            "stroke": "#92d04f",
+            "fill": "#addb7b",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "47f08f227be32506",
+            "09a5832957654029",
+            "d006503a14888b07",
+            "fb520da92585f8ab",
+            "af3c29e3984860d6",
+            "20f09c25dcd87e46"
+        ],
+        "x": 144,
+        "y": 39,
+        "w": 742,
+        "h": 162
+    },
+    {
+        "id": "c761c772521ae1d6",
+        "type": "group",
+        "z": "9c6fce89c089e687",
+        "name": "Global Object",
+        "style": {
+            "stroke": "#92d04f",
+            "fill": "#addb7b",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "d8edbf0fd809e5eb",
+            "14ee72647c8497f9",
+            "3ed13299ebde4cc8"
+        ],
+        "x": 134,
+        "y": 439,
+        "w": 752,
+        "h": 82
+    },
+    {
+        "id": "f02fde849db755a3",
+        "type": "group",
+        "z": "9c6fce89c089e687",
+        "name": "Flow Object",
+        "style": {
+            "stroke": "#92d04f",
+            "fill": "#addb7b",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "de653f2cc338dea8",
+            "1a6729c84261128c",
+            "28ec98afd23c8a4c",
+            "2732ab2c5b4f68ca",
+            "d316f529f132245c",
+            "3eef12cba8a24711"
+        ],
+        "x": 114,
+        "y": 239,
+        "w": 812,
+        "h": 162
+    },
+    {
+        "id": "47f08f227be32506",
+        "type": "inject",
+        "z": "9c6fce89c089e687",
+        "g": "5d280072641a12fe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hola me llamo José!",
+        "payloadType": "str",
+        "x": 290,
+        "y": 80,
+        "wires": [
+            [
+                "09a5832957654029"
+            ]
+        ]
+    },
+    {
+        "id": "09a5832957654029",
+        "type": "function",
+        "z": "9c6fce89c089e687",
+        "g": "5d280072641a12fe",
+        "name": "",
+        "func": "sentence = msg.payload;\n//node.warn(sentence);\n\ncontext.set(\"phrase\", sentence);// store a variable\n\nphrase = context.get(\"phrase\");// retrieve a variable\n\nnode.warn(phrase);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 80,
+        "wires": [
+            [
+                "d006503a14888b07"
+            ]
+        ]
+    },
+    {
+        "id": "d006503a14888b07",
+        "type": "debug",
+        "z": "9c6fce89c089e687",
+        "g": "5d280072641a12fe",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "fb520da92585f8ab",
+        "type": "inject",
+        "z": "9c6fce89c089e687",
+        "g": "5d280072641a12fe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 160,
+        "wires": [
+            [
+                "20f09c25dcd87e46"
+            ]
+        ]
+    },
+    {
+        "id": "af3c29e3984860d6",
+        "type": "debug",
+        "z": "9c6fce89c089e687",
+        "g": "5d280072641a12fe",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "20f09c25dcd87e46",
+        "type": "function",
+        "z": "9c6fce89c089e687",
+        "g": "5d280072641a12fe",
+        "name": "",
+        "func": "\nphrase = context.get(\"phrase\");// retrieve a variable\n\nnode.warn(phrase);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 160,
+        "wires": [
+            [
+                "af3c29e3984860d6"
+            ]
+        ]
+    },
+    {
+        "id": "de653f2cc338dea8",
+        "type": "inject",
+        "z": "9c6fce89c089e687",
+        "g": "f02fde849db755a3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 280,
+        "wires": [
+            [
+                "1a6729c84261128c"
+            ]
+        ]
+    },
+    {
+        "id": "1a6729c84261128c",
+        "type": "function",
+        "z": "9c6fce89c089e687",
+        "g": "f02fde849db755a3",
+        "name": "",
+        "func": "count = 16;\n\nflow.set('count', count);\nnode.warn(count);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 280,
+        "wires": [
+            [
+                "28ec98afd23c8a4c"
+            ]
+        ]
+    },
+    {
+        "id": "28ec98afd23c8a4c",
+        "type": "debug",
+        "z": "9c6fce89c089e687",
+        "g": "f02fde849db755a3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "2732ab2c5b4f68ca",
+        "type": "function",
+        "z": "9c6fce89c089e687",
+        "g": "f02fde849db755a3",
+        "name": "",
+        "func": "var count = flow.get('count');\n\nmsg.payload = count;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 360,
+        "wires": [
+            [
+                "3eef12cba8a24711"
+            ]
+        ]
+    },
+    {
+        "id": "d316f529f132245c",
+        "type": "inject",
+        "z": "9c6fce89c089e687",
+        "g": "f02fde849db755a3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 360,
+        "wires": [
+            [
+                "2732ab2c5b4f68ca"
+            ]
+        ]
+    },
+    {
+        "id": "3eef12cba8a24711",
+        "type": "debug",
+        "z": "9c6fce89c089e687",
+        "g": "f02fde849db755a3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d8edbf0fd809e5eb",
+        "type": "inject",
+        "z": "9c6fce89c089e687",
+        "g": "c761c772521ae1d6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Ejemplo de uso objeto global!!",
+        "payloadType": "str",
+        "x": 230,
+        "y": 480,
+        "wires": [
+            [
+                "14ee72647c8497f9"
+            ]
+        ]
+    },
+    {
+        "id": "14ee72647c8497f9",
+        "type": "function",
+        "z": "9c6fce89c089e687",
+        "g": "c761c772521ae1d6",
+        "name": "",
+        "func": "var obj = msg.payload;\n\nglobal.set(\"GLOBAL\", obj);\nnode.warn(obj);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 480,
+        "wires": [
+            [
+                "3ed13299ebde4cc8"
+            ]
+        ]
+    },
+    {
+        "id": "3ed13299ebde4cc8",
+        "type": "debug",
+        "z": "9c6fce89c089e687",
+        "g": "c761c772521ae1d6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 480,
+        "wires": []
+    }
+]

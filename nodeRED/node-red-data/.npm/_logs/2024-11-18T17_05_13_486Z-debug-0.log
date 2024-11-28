@@ -1,0 +1,109 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.18.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/.npmrc
+5 silly config load:file:/usr/src/node-red/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install node-red-contrib-kafkajs@0.0.7
+8 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--omit" "dev" "--engine-strict" "node-red-contrib-kafkajs@0.0.7"
+9 verbose logfile logs-max:10 dir:/data/.npm/_logs/2024-11-18T17_05_13_486Z-
+10 verbose logfile /data/.npm/_logs/2024-11-18T17_05_13_486Z-debug-0.log
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest node-red-contrib-kafkajs@0.0.7
+15 silly packumentCache full:https://registry.npmjs.org/node-red-contrib-kafkajs cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-kafkajs 721ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/node-red-contrib-kafkajs set size:undefined disposed:false
+18 silly placeDep ROOT node-red-contrib-kafkajs@0.0.7 OK for: node-red-project@0.0.1 want: 0.0.7
+19 silly fetch manifest kafkajs@^1.12.0
+20 silly packumentCache full:https://registry.npmjs.org/kafkajs cache-miss
+21 silly fetch manifest passport-keycloak-oauth2-oidc@^1.0.5
+22 silly packumentCache full:https://registry.npmjs.org/passport-keycloak-oauth2-oidc cache-miss
+23 silly fetch manifest uuid@^8.3.2
+24 silly packumentCache full:https://registry.npmjs.org/uuid cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/uuid 116ms (cache miss)
+26 silly packumentCache full:https://registry.npmjs.org/uuid set size:undefined disposed:false
+27 http fetch GET 200 https://registry.npmjs.org/kafkajs 141ms (cache miss)
+28 silly packumentCache full:https://registry.npmjs.org/kafkajs set size:undefined disposed:false
+29 http fetch GET 200 https://registry.npmjs.org/passport-keycloak-oauth2-oidc 602ms (cache miss)
+30 silly packumentCache full:https://registry.npmjs.org/passport-keycloak-oauth2-oidc set size:undefined disposed:false
+31 silly placeDep ROOT kafkajs@1.16.0 OK for: node-red-contrib-kafkajs@0.0.7 want: ^1.12.0
+32 silly placeDep ROOT passport-keycloak-oauth2-oidc@1.0.5 OK for: node-red-contrib-kafkajs@0.0.7 want: ^1.0.5
+33 silly placeDep ROOT uuid@8.3.2 OK for: node-red-contrib-kafkajs@0.0.7 want: ^8.3.2
+34 silly fetch manifest lodash@^4.17.20
+35 silly packumentCache full:https://registry.npmjs.org/lodash cache-miss
+36 silly fetch manifest passport-oauth2@^1.5.0
+37 silly packumentCache full:https://registry.npmjs.org/passport-oauth2 cache-miss
+38 http fetch GET 200 https://registry.npmjs.org/lodash 49ms (cache miss)
+39 silly packumentCache full:https://registry.npmjs.org/lodash set size:undefined disposed:false
+40 http fetch GET 200 https://registry.npmjs.org/passport-oauth2 593ms (cache miss)
+41 silly packumentCache full:https://registry.npmjs.org/passport-oauth2 set size:undefined disposed:false
+42 silly placeDep ROOT lodash@4.17.21 OK for: passport-keycloak-oauth2-oidc@1.0.5 want: ^4.17.20
+43 silly placeDep ROOT passport-oauth2@1.8.0 OK for: passport-keycloak-oauth2-oidc@1.0.5 want: ^1.5.0
+44 silly fetch manifest base64url@3.x.x
+45 silly packumentCache full:https://registry.npmjs.org/base64url cache-miss
+46 silly fetch manifest oauth@0.10.x
+47 silly packumentCache full:https://registry.npmjs.org/oauth cache-miss
+48 silly fetch manifest passport-strategy@1.x.x
+49 silly packumentCache full:https://registry.npmjs.org/passport-strategy cache-miss
+50 silly fetch manifest uid2@0.0.x
+51 silly packumentCache full:https://registry.npmjs.org/uid2 cache-miss
+52 silly fetch manifest utils-merge@1.x.x
+53 silly packumentCache full:https://registry.npmjs.org/utils-merge cache-miss
+54 http fetch GET 200 https://registry.npmjs.org/oauth 91ms (cache miss)
+55 silly packumentCache full:https://registry.npmjs.org/oauth set size:undefined disposed:false
+56 http fetch GET 200 https://registry.npmjs.org/passport-strategy 94ms (cache miss)
+57 silly packumentCache full:https://registry.npmjs.org/passport-strategy set size:undefined disposed:false
+58 http fetch GET 200 https://registry.npmjs.org/base64url 98ms (cache miss)
+59 silly packumentCache full:https://registry.npmjs.org/base64url set size:undefined disposed:false
+60 http fetch GET 200 https://registry.npmjs.org/utils-merge 131ms (cache miss)
+61 silly packumentCache full:https://registry.npmjs.org/utils-merge set size:undefined disposed:false
+62 http fetch GET 200 https://registry.npmjs.org/uid2 152ms (cache miss)
+63 silly packumentCache full:https://registry.npmjs.org/uid2 set size:undefined disposed:false
+64 silly placeDep ROOT base64url@3.0.1 OK for: passport-oauth2@1.8.0 want: 3.x.x
+65 silly placeDep ROOT oauth@0.10.0 OK for: passport-oauth2@1.8.0 want: 0.10.x
+66 silly placeDep ROOT passport-strategy@1.0.0 OK for: passport-oauth2@1.8.0 want: 1.x.x
+67 silly placeDep ROOT uid2@0.0.4 OK for: passport-oauth2@1.8.0 want: 0.0.x
+68 silly placeDep ROOT utils-merge@1.0.1 OK for: passport-oauth2@1.8.0 want: 1.x.x
+69 silly reify moves {}
+70 silly tarball no local data for uid2@https://registry.npmjs.org/uid2/-/uid2-0.0.4.tgz. Extracting by manifest.
+71 silly tarball no local data for utils-merge@https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz. Extracting by manifest.
+72 silly tarball no local data for passport-strategy@https://registry.npmjs.org/passport-strategy/-/passport-strategy-1.0.0.tgz. Extracting by manifest.
+73 silly tarball no local data for oauth@https://registry.npmjs.org/oauth/-/oauth-0.10.0.tgz. Extracting by manifest.
+74 silly tarball no local data for base64url@https://registry.npmjs.org/base64url/-/base64url-3.0.1.tgz. Extracting by manifest.
+75 silly tarball no local data for passport-oauth2@https://registry.npmjs.org/passport-oauth2/-/passport-oauth2-1.8.0.tgz. Extracting by manifest.
+76 silly tarball no local data for lodash@https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz. Extracting by manifest.
+77 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz. Extracting by manifest.
+78 silly tarball no local data for passport-keycloak-oauth2-oidc@https://registry.npmjs.org/passport-keycloak-oauth2-oidc/-/passport-keycloak-oauth2-oidc-1.0.5.tgz. Extracting by manifest.
+79 silly tarball no local data for node-red-contrib-kafkajs@https://registry.npmjs.org/node-red-contrib-kafkajs/-/node-red-contrib-kafkajs-0.0.7.tgz. Extracting by manifest.
+80 silly tarball no local data for kafkajs@https://registry.npmjs.org/kafkajs/-/kafkajs-1.16.0.tgz. Extracting by manifest.
+81 http fetch GET 200 https://registry.npmjs.org/uid2/-/uid2-0.0.4.tgz 136ms (cache miss)
+82 http fetch GET 200 https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz 135ms (cache miss)
+83 http fetch GET 200 https://registry.npmjs.org/passport-strategy/-/passport-strategy-1.0.0.tgz 136ms (cache miss)
+84 http fetch GET 200 https://registry.npmjs.org/base64url/-/base64url-3.0.1.tgz 136ms (cache miss)
+85 http fetch GET 200 https://registry.npmjs.org/oauth/-/oauth-0.10.0.tgz 150ms (cache miss)
+86 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-kafkajs/-/node-red-contrib-kafkajs-0.0.7.tgz 193ms (cache miss)
+87 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz 232ms (cache miss)
+88 http fetch GET 200 https://registry.npmjs.org/passport-oauth2/-/passport-oauth2-1.8.0.tgz 234ms (cache miss)
+89 http fetch GET 200 https://registry.npmjs.org/passport-keycloak-oauth2-oidc/-/passport-keycloak-oauth2-oidc-1.0.5.tgz 336ms (cache miss)
+90 http fetch GET 200 https://registry.npmjs.org/kafkajs/-/kafkajs-1.16.0.tgz 348ms (cache miss)
+91 http fetch GET 200 https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz 381ms (cache miss)
+92 silly ADD node_modules/utils-merge
+93 silly ADD node_modules/uid2
+94 silly ADD node_modules/passport-strategy
+95 silly ADD node_modules/oauth
+96 silly ADD node_modules/base64url
+97 silly ADD node_modules/passport-oauth2
+98 silly ADD node_modules/lodash
+99 silly ADD node_modules/uuid
+100 silly ADD node_modules/passport-keycloak-oauth2-oidc
+101 silly ADD node_modules/kafkajs
+102 silly ADD node_modules/node-red-contrib-kafkajs
+103 verbose cwd /data
+104 verbose os Linux 6.8.0-48-generic
+105 verbose node v20.18.0
+106 verbose npm  v10.8.2
+107 verbose exit 0
+108 info ok

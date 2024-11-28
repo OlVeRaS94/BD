@@ -1,0 +1,16 @@
+services:
+  node-red:
+    image: nodered/node-red:latest
+    container_name: nodeRED
+    restart: unless-stopped
+    networks:
+      - net
+    ports:
+      - "1881:1880"
+    volumes:
+      - "/home/aluvesprada/Documentos/bd/nodeRED/node-red-data:/data"
+  
+networks:
+  net:
+    driver: bridge
+

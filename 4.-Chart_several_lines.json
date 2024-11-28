@@ -1,0 +1,309 @@
+[
+    {
+        "id": "3036d45896ad1af3",
+        "type": "tab",
+        "label": "More charts",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "0f6ce808fc16146d",
+        "type": "group",
+        "z": "3036d45896ad1af3",
+        "name": "Chart multiple lines",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffcf3f",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "3adb64b551fbfd3f",
+            "9b120bcc664d7723",
+            "0284b55fcf2590d1",
+            "bb109745306deb8f"
+        ],
+        "x": 114,
+        "y": 299,
+        "w": 832,
+        "h": 142
+    },
+    {
+        "id": "e0c1cbcbc944d01d",
+        "type": "group",
+        "z": "3036d45896ad1af3",
+        "name": "Chart single line",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffcf3f",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "ffc9f13396344b7d",
+            "4fb0f52ef7b891db",
+            "6533548bb5db5df6",
+            "3ff6a8ed275dfe7c"
+        ],
+        "x": 124,
+        "y": 79,
+        "w": 832,
+        "h": 142
+    },
+    {
+        "id": "ffc9f13396344b7d",
+        "type": "inject",
+        "z": "3036d45896ad1af3",
+        "g": "e0c1cbcbc944d01d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 120,
+        "wires": [
+            [
+                "4fb0f52ef7b891db"
+            ]
+        ]
+    },
+    {
+        "id": "4fb0f52ef7b891db",
+        "type": "function",
+        "z": "3036d45896ad1af3",
+        "g": "e0c1cbcbc944d01d",
+        "name": "Random number",
+        "func": "msg.payload = Math.round(Math.random()*100);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 120,
+        "wires": [
+            [
+                "6533548bb5db5df6",
+                "3ff6a8ed275dfe7c"
+            ]
+        ]
+    },
+    {
+        "id": "6533548bb5db5df6",
+        "type": "debug",
+        "z": "3036d45896ad1af3",
+        "g": "e0c1cbcbc944d01d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "3ff6a8ed275dfe7c",
+        "type": "ui_chart",
+        "z": "3036d45896ad1af3",
+        "g": "e0c1cbcbc944d01d",
+        "name": "",
+        "group": "e3f2402014330625",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 810,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3adb64b551fbfd3f",
+        "type": "inject",
+        "z": "3036d45896ad1af3",
+        "g": "0f6ce808fc16146d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 340,
+        "wires": [
+            [
+                "9b120bcc664d7723"
+            ]
+        ]
+    },
+    {
+        "id": "9b120bcc664d7723",
+        "type": "function",
+        "z": "3036d45896ad1af3",
+        "g": "0f6ce808fc16146d",
+        "name": "Random number",
+        "func": "msg = {};\nmsg1 = {};\n\nmsg.payload = Math.round(Math.random()*100);\nmsg.topic = 'Line 1';\n\nmsg1.payload = Math.round(Math.random()*100);\nmsg1.topic = 'Line 2';\n\nreturn [msg, msg1];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 340,
+        "wires": [
+            [
+                "0284b55fcf2590d1",
+                "bb109745306deb8f"
+            ],
+            [
+                "bb109745306deb8f"
+            ]
+        ]
+    },
+    {
+        "id": "0284b55fcf2590d1",
+        "type": "debug",
+        "z": "3036d45896ad1af3",
+        "g": "0f6ce808fc16146d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "bb109745306deb8f",
+        "type": "ui_chart",
+        "z": "3036d45896ad1af3",
+        "g": "0f6ce808fc16146d",
+        "name": "",
+        "group": "644f648ec14ade10",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 800,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3f2402014330625",
+        "type": "ui_group",
+        "name": "Chart1",
+        "tab": "7386f74b93cf95c3",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "644f648ec14ade10",
+        "type": "ui_group",
+        "name": "Chart2",
+        "tab": "7386f74b93cf95c3",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "7386f74b93cf95c3",
+        "type": "ui_tab",
+        "name": "Charts",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    }
+]

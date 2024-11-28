@@ -1,0 +1,12 @@
+{
+  "name": "node-red-contrib-uppercase",
+  "version": "1.0.0",
+  "description": "Un nodo para convertir msg.payload a mayúsculas",
+  "node-red": {
+    "nodes": {
+      "uppercase": "node.js"
+    }
+  },
+  "main": "node.js",
+  "dependencies": {}
+}

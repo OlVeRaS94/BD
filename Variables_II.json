@@ -1,0 +1,517 @@
+[
+    {
+        "id": "cbcd9788d8ee47e9",
+        "type": "tab",
+        "label": "Variables II",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1dcc03b22dc1df13",
+        "type": "group",
+        "z": "cbcd9788d8ee47e9",
+        "name": "Enabling flow without UI",
+        "style": {
+            "stroke": "#777777",
+            "fill": "#bfdbef",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "abaaaa57fd1bab79",
+            "0ccab4c3cb40c29b",
+            "386e7552643e80b7",
+            "487e02a83931bd97",
+            "c37ebeb9070e367f",
+            "288ce2cb4722562c",
+            "f60bdd7e72836060",
+            "330d36789e30aea3",
+            "ac96152a3fecc0b3",
+            "307c0694854517de"
+        ],
+        "x": 34,
+        "y": 399,
+        "w": 912,
+        "h": 222
+    },
+    {
+        "id": "3114655daba1cdd0",
+        "type": "group",
+        "z": "cbcd9788d8ee47e9",
+        "name": "Global Object II",
+        "style": {
+            "stroke": "#92d04f",
+            "fill": "#addb7b",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "329b6f61a66a58f2",
+            "748c5a13b9eb6d08",
+            "772f98acf3065db2"
+        ],
+        "x": 84,
+        "y": 119,
+        "w": 842,
+        "h": 82
+    },
+    {
+        "id": "95d946e65ab14187",
+        "type": "group",
+        "z": "cbcd9788d8ee47e9",
+        "name": "Flow Object II",
+        "style": {
+            "stroke": "#92d04f",
+            "fill": "#addb7b",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "90d9f976e029b0b5",
+            "123dbbf27ee4edc8",
+            "ddcabb0768957e67"
+        ],
+        "x": 114,
+        "y": 19,
+        "w": 782,
+        "h": 82
+    },
+    {
+        "id": "c9890ef811c67a29",
+        "type": "group",
+        "z": "cbcd9788d8ee47e9",
+        "name": "Set / Get Global Variables",
+        "style": {
+            "fill": "#ffff7f",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "4695a737bd46d76a",
+            "4889131adb74d4dd"
+        ],
+        "x": 54,
+        "y": 233,
+        "w": 878,
+        "h": 134
+    },
+    {
+        "id": "4889131adb74d4dd",
+        "type": "group",
+        "z": "cbcd9788d8ee47e9",
+        "g": "c9890ef811c67a29",
+        "name": "Ejemplo uso variables globales",
+        "style": {
+            "stroke": "#92d04f",
+            "fill": "#addb7b",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "6f86de538d01d5c1",
+            "686f5cea6c2619e5"
+        ],
+        "x": 274,
+        "y": 259,
+        "w": 632,
+        "h": 82
+    },
+    {
+        "id": "4695a737bd46d76a",
+        "type": "start-up-trigger",
+        "z": "cbcd9788d8ee47e9",
+        "g": "c9890ef811c67a29",
+        "x": 160,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "90d9f976e029b0b5",
+        "type": "inject",
+        "z": "cbcd9788d8ee47e9",
+        "g": "95d946e65ab14187",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 60,
+        "wires": [
+            [
+                "123dbbf27ee4edc8"
+            ]
+        ]
+    },
+    {
+        "id": "123dbbf27ee4edc8",
+        "type": "function",
+        "z": "cbcd9788d8ee47e9",
+        "g": "95d946e65ab14187",
+        "name": "",
+        "func": "var count = flow.get('count');\n\nmsg.payload = count;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 60,
+        "wires": [
+            [
+                "ddcabb0768957e67"
+            ]
+        ]
+    },
+    {
+        "id": "ddcabb0768957e67",
+        "type": "debug",
+        "z": "cbcd9788d8ee47e9",
+        "g": "95d946e65ab14187",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "329b6f61a66a58f2",
+        "type": "function",
+        "z": "cbcd9788d8ee47e9",
+        "g": "3114655daba1cdd0",
+        "name": "",
+        "func": "var obj = global.get('GLOBAL');\n\nmsg.payload = obj;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 160,
+        "wires": [
+            [
+                "772f98acf3065db2"
+            ]
+        ]
+    },
+    {
+        "id": "748c5a13b9eb6d08",
+        "type": "inject",
+        "z": "cbcd9788d8ee47e9",
+        "g": "3114655daba1cdd0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "329b6f61a66a58f2"
+            ]
+        ]
+    },
+    {
+        "id": "772f98acf3065db2",
+        "type": "debug",
+        "z": "cbcd9788d8ee47e9",
+        "g": "3114655daba1cdd0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6f86de538d01d5c1",
+        "type": "function",
+        "z": "cbcd9788d8ee47e9",
+        "g": "4889131adb74d4dd",
+        "name": "Env Variables: UPDATE THIS",
+        "func": "//  ###### User Defined Variables ######\n\nconst API_KEY = 'yourAPIKey'; //Your API KEY (Keep this secret. Do not publish)\nvar orgName = 'PRODEVELOP'; // Your default Organization Name\n\n// ###### Set and Get Global variables ######\n\n\n// Assign to Global Context \nglobal.set('apiKey', API_KEY);\n\nglobal.set('orgName', orgName);\n\n\nmsg.payload = \"settings set\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 300,
+        "wires": [
+            [
+                "686f5cea6c2619e5"
+            ]
+        ]
+    },
+    {
+        "id": "686f5cea6c2619e5",
+        "type": "debug",
+        "z": "cbcd9788d8ee47e9",
+        "g": "4889131adb74d4dd",
+        "name": "Flow Env Variables",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "abaaaa57fd1bab79",
+        "type": "inject",
+        "z": "cbcd9788d8ee47e9",
+        "g": "1dcc03b22dc1df13",
+        "name": "ON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 130,
+        "y": 440,
+        "wires": [
+            [
+                "307c0694854517de"
+            ]
+        ]
+    },
+    {
+        "id": "0ccab4c3cb40c29b",
+        "type": "inject",
+        "z": "cbcd9788d8ee47e9",
+        "g": "1dcc03b22dc1df13",
+        "name": "OFF",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 130,
+        "y": 480,
+        "wires": [
+            [
+                "307c0694854517de"
+            ]
+        ]
+    },
+    {
+        "id": "386e7552643e80b7",
+        "type": "switch",
+        "z": "cbcd9788d8ee47e9",
+        "g": "1dcc03b22dc1df13",
+        "name": "Is this flow enabled?",
+        "property": "start-stop",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 520,
+        "wires": [
+            [
+                "c37ebeb9070e367f"
+            ]
+        ]
+    },
+    {
+        "id": "487e02a83931bd97",
+        "type": "inject",
+        "z": "cbcd9788d8ee47e9",
+        "g": "1dcc03b22dc1df13",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 520,
+        "wires": [
+            [
+                "386e7552643e80b7",
+                "330d36789e30aea3"
+            ]
+        ]
+    },
+    {
+        "id": "c37ebeb9070e367f",
+        "type": "function",
+        "z": "cbcd9788d8ee47e9",
+        "g": "1dcc03b22dc1df13",
+        "name": "Generate Random Data",
+        "func": "msg.payload = Math.round(Math.random()*100);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 520,
+        "wires": [
+            [
+                "288ce2cb4722562c"
+            ]
+        ]
+    },
+    {
+        "id": "288ce2cb4722562c",
+        "type": "debug",
+        "z": "cbcd9788d8ee47e9",
+        "g": "1dcc03b22dc1df13",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 830,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "f60bdd7e72836060",
+        "type": "debug",
+        "z": "cbcd9788d8ee47e9",
+        "g": "1dcc03b22dc1df13",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 550,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "330d36789e30aea3",
+        "type": "function",
+        "z": "cbcd9788d8ee47e9",
+        "g": "1dcc03b22dc1df13",
+        "name": "",
+        "func": "var enabled = flow.get('start-stop')||false;\nmsg.payload = enabled;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 580,
+        "wires": [
+            [
+                "ac96152a3fecc0b3"
+            ]
+        ]
+    },
+    {
+        "id": "ac96152a3fecc0b3",
+        "type": "debug",
+        "z": "cbcd9788d8ee47e9",
+        "g": "1dcc03b22dc1df13",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "false",
+        "x": 590,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "307c0694854517de",
+        "type": "change",
+        "z": "cbcd9788d8ee47e9",
+        "g": "1dcc03b22dc1df13",
+        "name": "Enable / Disable this flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "start-stop",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 460,
+        "wires": [
+            [
+                "f60bdd7e72836060"
+            ]
+        ]
+    }
+]
