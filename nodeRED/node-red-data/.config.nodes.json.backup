@@ -782,5 +782,43 @@
                 "file": "/data/node_modules/node-red-dashboard/nodes/ui_spacer.js"
             }
         }
+    },
+    "node-red-node-ui-table": {
+        "name": "node-red-node-ui-table",
+        "version": "0.4.4",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "ui_table": {
+                "name": "ui_table",
+                "types": [
+                    "ui_table"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-node-ui-table",
+                "file": "/data/node_modules/node-red-node-ui-table/node.js"
+            }
+        }
+    },
+    "node-red-contrib-play-audio": {
+        "name": "node-red-contrib-play-audio",
+        "version": "2.5.0",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "play-audio": {
+                "name": "play-audio",
+                "types": [
+                    "play audio"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-play-audio",
+                "file": "/data/node_modules/node-red-contrib-play-audio/play-audio.js"
+            }
+        }
     }
 }

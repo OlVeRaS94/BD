@@ -125,6 +125,35 @@
         "env": []
     },
     {
+        "id": "8ed11f8071fc9831",
+        "type": "tab",
+        "label": "Unlock door",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e3e212049d38b568",
+        "type": "tab",
+        "label": "More template examples",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "fb475dde7b2882fa",
+        "type": "tab",
+        "label": "Template example",
+        "disabled": false,
+        "info": "Comentar que muchas veces nos puede interesar desarrollar una API. Nuestro sistema de adquisicion de datos puede ser pasivo esperando a que nos lleguen los datos antes de procesarlos y hacer algo con ellos"
+    },
+    {
+        "id": "ece54e72fd2eb599",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "58baabe08cf06c58",
         "type": "subflow",
         "name": "Split, Change & Switch",
@@ -834,6 +863,153 @@
         "h": 142
     },
     {
+        "id": "0db10deca63fa004",
+        "type": "group",
+        "z": "8ed11f8071fc9831",
+        "name": "Example of integration in node-RED (unlock door)",
+        "style": {
+            "stroke": "#6f2fa0",
+            "fill": "#b797cf",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "b7c42a32250285fc",
+            "0ddbb8c5546bbda0",
+            "49fbfe8e68cdc2c9",
+            "4feb3bd2edd7cda8",
+            "9a65aa86e15f3aeb",
+            "5c8673ddda77e07f",
+            "a26c4f1fe0f56512",
+            "490572302974c2ce",
+            "52e4f9e6ae6977e8",
+            "fb25bb507e6f2fb8",
+            "0216d7fc5632d123",
+            "166629ae79a46d6d"
+        ],
+        "x": 74,
+        "y": 29.0000057220459,
+        "w": 982,
+        "h": 451.9999942779541
+    },
+    {
+        "id": "1e9694446b33d301",
+        "type": "group",
+        "z": "e3e212049d38b568",
+        "name": "Obtain Login Form",
+        "style": {
+            "fill": "#bfdbef",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "0862dd82b02def0e",
+            "707f073acfefb94f",
+            "bc02e472943b5cc0",
+            "838b39c6622b8a72",
+            "752b0992a64871ca",
+            "22b85692703f1f7c"
+        ],
+        "x": 14,
+        "y": 39,
+        "w": 652,
+        "h": 162
+    },
+    {
+        "id": "1408aba70c56b46d",
+        "type": "group",
+        "z": "e3e212049d38b568",
+        "name": "Submit Login",
+        "style": {
+            "fill": "#7fb7df",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "310e70d601048d33",
+            "99423a87f15d87a7",
+            "0f20cfc00796a252",
+            "11704e04505ab7e7",
+            "b3d8564b99297723"
+        ],
+        "x": 14,
+        "y": 239,
+        "w": 832,
+        "h": 142
+    },
+    {
+        "id": "eb2ff452506b2304",
+        "type": "group",
+        "z": "e3e212049d38b568",
+        "name": "New User Login Form",
+        "style": {
+            "fill": "#d1d1d1",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "a6ebf09dc394a409",
+            "b5efe80169e0969d",
+            "3c0c1d7149abb63d",
+            "1970f6c2593cc41c",
+            "c808011f548db40c"
+        ],
+        "x": 14,
+        "y": 419,
+        "w": 852,
+        "h": 82
+    },
+    {
+        "id": "997151586b123a28",
+        "type": "group",
+        "z": "e3e212049d38b568",
+        "name": "Use of template node",
+        "style": {
+            "fill": "#c8e7a7",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "f9167c1414e7c97e",
+            "3057812139f4a3aa",
+            "7aced5cee04b4c96",
+            "18fb0b6d7c1207e3",
+            "6da30c795a17acf5",
+            "f5d5e648b3b9894b"
+        ],
+        "x": 14,
+        "y": 559,
+        "w": 932,
+        "h": 82
+    },
+    {
+        "id": "e02ca70a4de55a86",
+        "type": "group",
+        "z": "fb475dde7b2882fa",
+        "name": "Navigate between pages",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#d1d1d1",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "bad59d2802178494",
+            "ebd240a28b8ef21e",
+            "8d0cb0d047eb9140"
+        ],
+        "x": 74,
+        "y": 139,
+        "w": 612,
+        "h": 82
+    },
+    {
         "id": "4889131adb74d4dd",
         "type": "group",
         "z": "cbcd9788d8ee47e9",
@@ -1296,6 +1472,54 @@
         "width": "6",
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "906d0cc219ea895f",
+        "type": "ui_group",
+        "name": "Secure",
+        "tab": "62d4a8ab144e9636",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "110b88cfd3e072ee",
+        "type": "ui_group",
+        "name": "modal",
+        "tab": "62d4a8ab144e9636",
+        "order": 2,
+        "disp": false,
+        "width": "1",
+        "collapse": false
+    },
+    {
+        "id": "62d4a8ab144e9636",
+        "type": "ui_tab",
+        "name": "Unlock Door",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5a647fd07ff27317",
+        "type": "ui_group",
+        "name": "worldmap",
+        "tab": "be30572d7b7955b6",
+        "order": 1,
+        "disp": true,
+        "width": "21",
+        "collapse": false
+    },
+    {
+        "id": "be30572d7b7955b6",
+        "type": "ui_tab",
+        "name": "FlightRadar",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
     },
     {
         "id": "2df3c478576027ce",
@@ -6934,8 +7158,15 @@
         "name": "Obtener datos de OpenWeather",
         "method": "GET",
         "ret": "obj",
+        "paytoqs": "ignore",
         "url": "https://api.openweathermap.org/data/2.5/weather?q=Madrid&appid=e2cb20d879df95fd1f65af5238f52f1e&units=metric",
         "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
         "x": 550,
         "y": 380,
         "wires": [
@@ -7070,5 +7301,786 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "b7c42a32250285fc",
+        "type": "ui_button",
+        "z": "8ed11f8071fc9831",
+        "g": "0db10deca63fa004",
+        "name": "",
+        "group": "906d0cc219ea895f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Unlock_door",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "show",
+        "topicType": "str",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "a26c4f1fe0f56512"
+            ]
+        ]
+    },
+    {
+        "id": "0ddbb8c5546bbda0",
+        "type": "function",
+        "z": "8ed11f8071fc9831",
+        "g": "0db10deca63fa004",
+        "name": "verify_pin",
+        "func": "var pins = [\"2136\"];\nvar verified = false;\n\nfor(var i=0;i<pins.length;i++){\n    if(msg.passcode == pins[i]){\n        verified = true;\n        break;\n    }\n}\n\nmsg.verified = verified;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 555.6250038146973,
+        "y": 120.0000057220459,
+        "wires": [
+            [
+                "49fbfe8e68cdc2c9"
+            ]
+        ]
+    },
+    {
+        "id": "49fbfe8e68cdc2c9",
+        "type": "switch",
+        "z": "8ed11f8071fc9831",
+        "g": "0db10deca63fa004",
+        "name": "check",
+        "property": "verified",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 731.1250038146973,
+        "y": 120.0000057220459,
+        "wires": [
+            [
+                "9a65aa86e15f3aeb"
+            ],
+            [
+                "5c8673ddda77e07f"
+            ]
+        ]
+    },
+    {
+        "id": "4feb3bd2edd7cda8",
+        "type": "ui_toast",
+        "z": "8ed11f8071fc9831",
+        "g": "0db10deca63fa004",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 350,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "9a65aa86e15f3aeb",
+        "type": "function",
+        "z": "8ed11f8071fc9831",
+        "g": "0db10deca63fa004",
+        "name": "pin_ok",
+        "func": "msg.topic = \"Pin successfully verified!\";\nmsg.payload = \"PIN correcto\";\n    \nreturn msg;",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 896.1250038146973,
+        "y": 70.0000057220459,
+        "wires": [
+            [
+                "490572302974c2ce"
+            ]
+        ]
+    },
+    {
+        "id": "5c8673ddda77e07f",
+        "type": "function",
+        "z": "8ed11f8071fc9831",
+        "g": "0db10deca63fa004",
+        "name": "pin_error",
+        "func": " msg.topic = \"Wrong PIN\";\n msg.payload = \"PIN incorrecto\";\n    \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 907.1250038146973,
+        "y": 156.0000057220459,
+        "wires": [
+            [
+                "490572302974c2ce"
+            ]
+        ]
+    },
+    {
+        "id": "a26c4f1fe0f56512",
+        "type": "ui_template",
+        "z": "8ed11f8071fc9831",
+        "g": "0db10deca63fa004",
+        "group": "110b88cfd3e072ee",
+        "name": "Pin_Unlock",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "format": "<div ng-init=\"init()\" id=\"pin_insert\" class=\"dialog\">\n    \n    <div class=\"dialog_content\">\n        \n        <div class=\"dialog_header\">\n            <span ng-click=\"closeDialog()\" class=\"close\">&times;</span>\n            <h2>Insert PIN</h2>\n        </div>\n        \n        <div class=\"dialog_body\">\n\n           <div layout=\"row\" layout-align=\"center\">\n                <div class=\"number_placeholder\">\n                    {{passcode.substring(0, 1)}}\n                </div>\n                <div class=\"number_placeholder\">\n                    {{passcode.substring(1, 2)}}\n                </div>\n                <div class=\"number_placeholder\">\n                    {{passcode.substring(2, 3)}}\n                </div>\n                <div class=\"number_placeholder\">\n                    {{passcode.substring(3, 4)}}\n                </div>\n            </div>\n            \n            <div layout=\"column\" layout-align=\"center\" style=\"margin-top: 50px\">\n                <div layout=\"row\" layout-align=\"center\">\n                    <div class=\"number_box\">\n                        <md-button class=\"md-raised\" ng-click=\"add(1)\">1</md-button>\n                    </div>\n                    <div class=\"number_box\">\n                        <md-button class=\"md-raised\" ng-click=\"add(2)\">2</md-button>\n                    </div>\n                    <div class=\"number_box\">\n                        <md-button class=\"md-raised\" ng-click=\"add(3)\">3</md-button>\n                    </div>\n                </div>\n                 <div layout=\"row\" layout-align=\"center\">\n                    <div class=\"number_box\">\n                        <md-button class=\"md-raised\" ng-click=\"add(4)\">4</md-button>\n                    </div>\n                    <div class=\"number_box\">\n                        <md-button class=\"md-raised\" ng-click=\"add(5)\">5</md-button>\n                    </div>\n                    <div class=\"number_box\">\n                        <md-button class=\"md-raised\" ng-click=\"add(6)\">6</md-button>\n                    </div>\n                </div>\n                 <div layout=\"row\" layout-align=\"center\">\n                    <div class=\"number_box\">\n                        <md-button class=\"md-raised\" ng-click=\"add(7)\">7</md-button>\n                    </div>\n                    <div class=\"number_box\">\n                        <md-button class=\"md-raised\" ng-click=\"add(8)\">8</md-button>\n                    </div>\n                    <div class=\"number_box\">\n                        <md-button class=\"md-raised\" ng-click=\"add(9)\">9</md-button>\n                    </div>\n                </div>\n                 <div layout=\"row\" layout-align=\"center\">\n                    <div class=\"number_box\">\n                        <md-button class=\"md-raised\" ng-click=\"confirm()\">\n                            <ng-md-icon icon=\"done\" style=\"color:#fff;\"></ng-md-icon>\n                        </md-button>\n                    </div>\n                    <div class=\"number_box\">\n                        <md-button class=\"md-raised\" ng-click=\"add(0)\">0</md-button>\n                    </div>\n                    <div class=\"number_box\">\n                        <md-button class=\"md-raised\" ng-click=\"delete()\">\n                            <ng-md-icon icon=\"arrow_back\" style=\"color:#fff;\"></ng-md-icon>\n                        </md-button>\n                    </div>\n                </div>\n            </div> \n          \n        </div> <!--dialog_body-->\n    </div> <!--dialog_content-->\n</div>  <!--dialog-->\n\n\n<style>\n\n/* The Dialog (background) */\n.dialog {\n    display: none; /* Hidden by default */\n    position: fixed; /* Stay in place */\n    z-index: 9999; /* Sit on top */\n    left: 0;\n    top: 0;\n    width: 100%; /* Full width */\n    height: 100%; /* Full height */\n    overflow: auto; /* Enable scroll if needed */\n    background-color: rgb(0,0,0); /* Fallback color */\n    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\n    -webkit-transform: translateZ(0px);\n    -webkit-transform: translate3d(0,0,0);\n    -webkit-perspective: 1000;\n}\n\n.dialog_content {\n    position: absolute;\n    background-color: #fff;\n    margin-top: 10%;\n    margin-left: 40%;\n    padding: 0;\n    width: 345px;\n    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);\n    -webkit-animation-name: animatetop;\n    animation-name: animatetop;\n    animation-duration: 0.4s;\n}\n\n/* Media query for smartphones (to Fix?) */\n@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { \n    .dialog_content {\n    margin-top: 5%;\n    margin-left: 5%;\n}\n}\n\n/* Add Animation */\n@-webkit-keyframes animatetop {\n    from {top: -300px; opacity: 0} \n    to {top: 0; opacity: 1}\n}\n\n@keyframes animatetop {\n    from {top: -300px; opacity: 0}\n    to {top: 0; opacity: 1}\n}\n\n/* Dialog Header */\n.dialog_header {\n    padding: 2px 16px;\n    background-color: #03A9F4;\n    color: white;\n}\n\n/* Dialog Body */\n.dialog_body {padding: 16px 16px;}\n\n/* The Close Button */\n.close {\n    color: #fff;\n    float: right;\n    font-size: 28px;\n    font-weight: bold;\n}\n\n.close:hover,\n.close:focus {\n    color: #1565C0;\n    text-decoration: none;\n    cursor: pointer;\n}\n\n/* __ */\n.number_placeholder{\n    width: 50px;\n    height: 34px;\n    margin: 10px;\n    font-size: 20pt;\n    text-align: center;\n    border-bottom: 1px solid black;\n}\n\n/* Number container */\n.number_box{\n    margin: 10px;\n}\n\n/* Buttons style */\n.md-button.md-default-theme.md-raised, .md-button.md-raised{\n    min-height: 50px;\n    min-width: 50px;\n    font-weight: bold;\n    margin: 0px 10px 10px 0px;\n    box-shadow: 4px 4px 6px 0 #dadada;\n    background-color: #29B6F6;\n    color: #fff;\n}\n\n.md-button.md-default-theme.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]):hover{\n    background-color: #03A9F4;\n}\n\n.btn1 {\n  color : rgb(49, 46, 46);\n  background-color: rgba(255, 222, 121, 0.96);\n  border-radius: 10px 0 0 10px;\n  font-size: 16px;\n}\n\n.btn1:not([disabled]):hover {\n  background-color: rgba(107, 103, 91, 0.96);\n  color: white;\n}\n\n.btn1[disabled] {\n  color : rgb(187, 187, 187);\n  background-color: rgba(230, 230, 229, 0.96);\n}\n\n</style>\n\n<script>\n\n/**\n * pin_dialog.js\n * Node-Red UI template for Node-Red Dashboard. \n * Custom dialog that asks for a PIN to allow actions\n * Enjoy it :). \n * -- Daniel\n *\n *\n * @license The Unlicense, http://unlicense.org/\n * @version 0.1\n * @author  Daniel Lando, https://github.com/robertsLando\n * @updated 2017-03-08\n * @link    ----\n *\n *\n */\n\nvar dialog;\n\n/* ==== */\n(function(scope) {\n    \n    scope.passcode = \"\";\n    scope.payload = \"\";\n    scope.inited = false;\n    \n    scope.init = function() {\n        scope.passcode = \"\";\n        //Hide the md-panel\n        $('#pin_insert').parent().parent().css(\"display\", \"none\");\n        //This trick make it works on smartphones too :)\n        dialog = $('#pin_insert').detach();\n        dialog.appendTo(document.body);\n    }\n    \n    scope.showDialog = function() {\n        dialog.css(\"display\", \"block\");\n    }\n    \n    scope.closeDialog = function(){\n        dialog.css(\"display\", \"none\");\n    }\n    \n    scope.add = function(value) {\n        if(scope.passcode.length < 4) {\n            scope.passcode = scope.passcode + value;\n            if(scope.passcode.length == 4) {\n                console.log(\"The four digit code was entered\");\n                   \n            }\n        }\n    }\n \n    scope.delete = function() {\n        if(scope.passcode.length > 0) {\n            scope.passcode = scope.passcode.substring(0, scope.passcode.length - 1);\n        }\n    }\n    \n    scope.confirm = function() {\n        if(scope.passcode.length == 4) {\n            scope.send({passcode: scope.passcode, payload : scope.payload});\n            scope.closeDialog();\n            scope.passcode = \"\";\n            scope.payload = \"\";\n        }\n    }\n\n    scope.$watch('msg', function(data) {\n        if(data && data.topic){\n            switch(data.topic){\n               case \"show\":\n                   if(scope.inited){\n                        scope.payload = data.payload;\n                        scope.showDialog();\n                   }\n                   else\n                        scope.inited = true;\n                break;\n                case \"close\": \n                    scope.closeDialog(); \n                break;\n            }\n        }\n    });\n})(scope);\n\n</script>\n",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 361.3750343322754,
+        "y": 119.96426963806152,
+        "wires": [
+            [
+                "0ddbb8c5546bbda0"
+            ]
+        ]
+    },
+    {
+        "id": "490572302974c2ce",
+        "type": "link out",
+        "z": "8ed11f8071fc9831",
+        "g": "0db10deca63fa004",
+        "name": "showNotification",
+        "links": [
+            "52e4f9e6ae6977e8"
+        ],
+        "x": 1015,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "52e4f9e6ae6977e8",
+        "type": "link in",
+        "z": "8ed11f8071fc9831",
+        "g": "0db10deca63fa004",
+        "name": "showNotification",
+        "links": [
+            "490572302974c2ce"
+        ],
+        "x": 155,
+        "y": 280,
+        "wires": [
+            [
+                "4feb3bd2edd7cda8",
+                "166629ae79a46d6d"
+            ]
+        ]
+    },
+    {
+        "id": "fb25bb507e6f2fb8",
+        "type": "inject",
+        "z": "8ed11f8071fc9831",
+        "g": "0db10deca63fa004",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "PIN incorrecto",
+        "payloadType": "str",
+        "x": 257.28692626953125,
+        "y": 437.7215881347656,
+        "wires": [
+            [
+                "0216d7fc5632d123"
+            ]
+        ]
+    },
+    {
+        "id": "0216d7fc5632d123",
+        "type": "play audio",
+        "z": "8ed11f8071fc9831",
+        "g": "0db10deca63fa004",
+        "name": "",
+        "voice": "0",
+        "x": 590,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "166629ae79a46d6d",
+        "type": "play audio",
+        "z": "8ed11f8071fc9831",
+        "g": "0db10deca63fa004",
+        "name": "",
+        "voice": "0",
+        "x": 330,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "0862dd82b02def0e",
+        "type": "http in",
+        "z": "e3e212049d38b568",
+        "g": "1e9694446b33d301",
+        "name": "",
+        "url": "/loginForm",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "707f073acfefb94f"
+            ]
+        ]
+    },
+    {
+        "id": "310e70d601048d33",
+        "type": "http in",
+        "z": "e3e212049d38b568",
+        "g": "1408aba70c56b46d",
+        "name": "",
+        "url": "/submitLogin",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "99423a87f15d87a7",
+                "b3d8564b99297723"
+            ]
+        ]
+    },
+    {
+        "id": "707f073acfefb94f",
+        "type": "function",
+        "z": "e3e212049d38b568",
+        "g": "1e9694446b33d301",
+        "name": "msg.url = \"submitLogin\";",
+        "func": "msg.url = \"submitLogin\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 80,
+        "wires": [
+            [
+                "838b39c6622b8a72"
+            ]
+        ]
+    },
+    {
+        "id": "99423a87f15d87a7",
+        "type": "debug",
+        "z": "e3e212049d38b568",
+        "g": "1408aba70c56b46d",
+        "name": "submitLogin",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "0f20cfc00796a252",
+        "type": "http response",
+        "z": "e3e212049d38b568",
+        "g": "1408aba70c56b46d",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 770,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "bc02e472943b5cc0",
+        "type": "template",
+        "z": "e3e212049d38b568",
+        "g": "1e9694446b33d301",
+        "name": "CSS",
+        "field": "payload.style",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "input[type=text], select {\n    width: 100%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    display: inline-block;\n    border: 1px solid #ccc;\n    border-radius: 4px;\n    box-sizing: border-box;\n}\n\ninput[type=submit] {\n    width: 100%;\n    background-color: #4CAF50;\n    color: white;\n    padding: 14px 20px;\n    margin: 8px 0;\n    border: none;\n    border-radius: 4px;\n    cursor: pointer;\n}\n\ninput[type=submit]:hover {\n    background-color: #45a049;\n}\n\ndiv {\n    border-radius: 5px;\n    background-color: rgb(240, 242, 245);\n    overflow: 'hidden';\n    position: 'absolute';\n    padding: 20px;\n}",
+        "x": 230,
+        "y": 160,
+        "wires": [
+            [
+                "22b85692703f1f7c"
+            ]
+        ]
+    },
+    {
+        "id": "838b39c6622b8a72",
+        "type": "template",
+        "z": "e3e212049d38b568",
+        "g": "1e9694446b33d301",
+        "name": "JavaScript",
+        "field": "payload.script",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "plain",
+        "template": "$(document).ready(function(e) {\n    \n    $(\"form[ajax=true]\").submit(function(e) {\n        \n        e.preventDefault();\n        \n        var form_data = $(this).serialize();\n        var form_url = $(this).attr(\"action\");\n        var form_method = $(this).attr(\"method\").toUpperCase();\n        \n        $(\"#loadingimg\").show();\n        \n        \n        \n        $.ajax({\n            url: form_url, \n            type: form_method,      \n            data: form_data,     \n            cache: false,\n            success: function(returnhtml){                          \n                $(\"#result\").html(returnhtml); \n                $(\"#loadingimg\").hide();                    \n            }           \n        });\n        \n        $(\"input:checkbox\").on('click', function() {\n            // in the handler, 'this' refers to the box clicked on\n            var $box = $(this);\n            if ($box.is(\":checked\")) {\n                // the name of the box is retrieved using the .attr() method\n                // as it is assumed and expected to be immutable\n                var group = \"input:checkbox[name='\" + $box.attr(\"name\") + \"']\";\n                // the checked state of the group/box on the other hand will change\n                // and the current value is retrieved using .prop() method\n                $(group).prop(\"checked\", false);\n                $box.prop(\"checked\", true);\n            } else {\n                $box.prop(\"checked\", false);\n            }\n        });\n        \n    });\n    \n});",
+        "x": 550,
+        "y": 80,
+        "wires": [
+            [
+                "bc02e472943b5cc0"
+            ]
+        ]
+    },
+    {
+        "id": "752b0992a64871ca",
+        "type": "http response",
+        "z": "e3e212049d38b568",
+        "g": "1e9694446b33d301",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 590,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "22b85692703f1f7c",
+        "type": "template",
+        "z": "e3e212049d38b568",
+        "g": "1e9694446b33d301",
+        "name": "HTML",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n  <head>\n    <title>Login Form</title>\n    <meta name=\"viewport\" content=\"initial-scale=1.0, user-scalable=no\">\n    <meta charset=\"utf-8\">\n    <script src=\"http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js\"></script>\n    <style>{{{payload.style}}}</style>\n  </head>\n  \n\n    <!--<h2>Using CSS to style an HTML form with AJAX POST and Node-RED</h2>-->\n    <!--<h4><a href=\"http://www.internetoflego.com\">Internet of LEGO</a></h4>-->\n\n<div>\n  <form method=\"post\" action=\"/{{url}}\" ajax=\"true\">\n    <label for=\"fname\">First Name</label>\n    <input type=\"text\" id=\"fname\" name=\"firstname\">\n\n    <label for=\"lname\">Last Name</label>\n    <input type=\"text\" id=\"lname\" name=\"lastname\">\n\n    <label for=\"country\">Country</label>\n    <select id=\"country\" name=\"country\">\n      <option value=\"uk\">United Kingdom</option>\n      <option value=\"canada\">Canada</option>\n      <option value=\"spain\">Spain</option>\n      <option value=\"usa\">USA</option>\n    </select>\n    \n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</div>\n<div>\n    <span id=\"result\"></span>\n</div>\n\n</body>\n</html>\n<script>{{{payload.script}}}</script>",
+        "x": 410,
+        "y": 160,
+        "wires": [
+            [
+                "752b0992a64871ca"
+            ]
+        ]
+    },
+    {
+        "id": "11704e04505ab7e7",
+        "type": "function",
+        "z": "e3e212049d38b568",
+        "g": "1408aba70c56b46d",
+        "name": "return msg.payload to client",
+        "func": "msg.payload = 'The following data was submitted and available in the msg.payload: '+msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 280,
+        "wires": [
+            [
+                "0f20cfc00796a252"
+            ]
+        ]
+    },
+    {
+        "id": "b3d8564b99297723",
+        "type": "json",
+        "z": "e3e212049d38b568",
+        "g": "1408aba70c56b46d",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 350,
+        "y": 280,
+        "wires": [
+            [
+                "11704e04505ab7e7"
+            ]
+        ]
+    },
+    {
+        "id": "a6ebf09dc394a409",
+        "type": "http in",
+        "z": "e3e212049d38b568",
+        "g": "eb2ff452506b2304",
+        "name": "",
+        "url": "/login/newUser",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "3c0c1d7149abb63d"
+            ]
+        ]
+    },
+    {
+        "id": "b5efe80169e0969d",
+        "type": "template",
+        "z": "e3e212049d38b568",
+        "g": "eb2ff452506b2304",
+        "name": "CSS",
+        "field": "payload.style",
+        "fieldType": "msg",
+        "format": "css",
+        "syntax": "mustache",
+        "template": "input[type=text], select {\n    width: 100%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    display: inline-block;\n    border: 1px solid #ccc;\n    border-radius: 4px;\n    box-sizing: border-box;\n}\n\ninput[type=email], select {\n    width: 100%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    display: inline-block;\n    border: 1px solid #ccc;\n    border-radius: 4px;\n    box-sizing: border-box;\n}\n\ninput[type=submit] {\n    width: 50%;\n    background-color: #4CAF50;\n    color: white;\n    padding: 14px 20px;\n    margin: 8px 0;\n    border: none;\n    border-radius: 4px;\n    cursor: pointer;\n}\n\ninput[type=submit]:hover {\n    background-color: #45a049;\n}\n\ndiv form {\n    border-radius: 5px;\n    background-color: #f2f2f2;\n    padding: 20px;\n}\n\n.adminform {\n    width: 90%;\n}\n",
+        "x": 490,
+        "y": 460,
+        "wires": [
+            [
+                "c808011f548db40c"
+            ]
+        ]
+    },
+    {
+        "id": "3c0c1d7149abb63d",
+        "type": "template",
+        "z": "e3e212049d38b568",
+        "g": "eb2ff452506b2304",
+        "name": "JavaScript",
+        "field": "payload.script",
+        "fieldType": "msg",
+        "format": "javascript",
+        "syntax": "mustache",
+        "template": "\n$(document).ready(function(e) {\n    \n    $(\"form[ajax=true]\").submit(function(e) {\n        \n        e.preventDefault();\n        \n        var form_data = $(this).serialize();\n        var form_url = $(this).attr(\"action\");\n        var form_method = $(this).attr(\"method\").toUpperCase();\n        \n        var orgId = $(\"#orgs\").val();\n        \n        $(\"#loadingimg\").show();\n        \n    });\n    \n});",
+        "x": 330,
+        "y": 460,
+        "wires": [
+            [
+                "b5efe80169e0969d"
+            ]
+        ]
+    },
+    {
+        "id": "1970f6c2593cc41c",
+        "type": "http response",
+        "z": "e3e212049d38b568",
+        "g": "eb2ff452506b2304",
+        "name": "",
+        "x": 790,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "c808011f548db40c",
+        "type": "template",
+        "z": "e3e212049d38b568",
+        "g": "eb2ff452506b2304",
+        "name": "HTML",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n  <head>\n    <title>Create User</title>\n    <meta name=\"viewport\" content=\"initial-scale=1.0, user-scalable=no\">\n    <meta charset=\"utf-8\">\n    <!--\n    <script src=\"http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js\"></script>\n    -->\n    <script\n      src=\"https://code.jquery.com/jquery-3.2.1.min.js\"\n      integrity=\"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\"\n      crossorigin=\"anonymous\"></script>\n      \n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" integrity=\"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u\" crossorigin=\"anonymous\">  \n    <script>{{{payload.jquery}}}</script>\n    <style>{{{payload.style}}}</style>\n  </head>\n  \n<div class=\"container\">\n    <h2>Create a new user</h2>\n\n<div class=\"col-md-6\">\n<div class=\"adminform\">\n  <form id=\"createadmin\" method=\"post\" action=\"{{url}}\" ajax=\"true\">\n    <select id=\"orgs\" name=\"orgs\">\n        <option>Select Organization..</option>\n    </select>\n    <label>Contact Details</label>\n    <input type=\"text\" id=\"fname\" name=\"firstname\" placeholder=\"First Name\" required=true/>\n    <input type=\"text\" id=\"lname\" name=\"lastname\" placeholder=\"Last Name\" required=true/>\n    <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"E-mail\" required=true/>\n    <br>\n\n    <label>Organization Permissions</label>\n    <select id=\"orgAccess\" name=\"orgAccess\" placeholder=\"Org Access\">\n      <option value=\"full\">full</option>\n      <option value=\"read-only\">read-only</option>\n    </select>\n    \n  \n    <input type=\"submit\" class=\"button\" value=\"Submit\">\n  </form>\n</div>\n</div>\n\n<div class=\"col-md-6\">\n    <span id=\"result\"></span>\n</div>\n</div>\n</body>\n</html>\n<script>{{{payload.script}}}</script>",
+        "x": 630,
+        "y": 460,
+        "wires": [
+            [
+                "1970f6c2593cc41c"
+            ]
+        ]
+    },
+    {
+        "id": "f9167c1414e7c97e",
+        "type": "template",
+        "z": "e3e212049d38b568",
+        "g": "997151586b123a28",
+        "name": "html",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<head>\n    <style>\n        {{{payload.style}}}\n    </style>\n</head>\n\n\n<table width=\"100%\">\n  <tr>\n    <th>Country</th>\n    <th>Capital</th> \n  </tr>\n  {{#payload}}\n  <tr>\n    <td>{{{country}}}</td>\n    <td>{{capital}}</td> \n  </tr>\n  {{/payload}}\n</table>",
+        "x": 730,
+        "y": 600,
+        "wires": [
+            [
+                "3057812139f4a3aa"
+            ]
+        ]
+    },
+    {
+        "id": "3057812139f4a3aa",
+        "type": "http response",
+        "z": "e3e212049d38b568",
+        "g": "997151586b123a28",
+        "name": "",
+        "x": 870,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "7aced5cee04b4c96",
+        "type": "template",
+        "z": "e3e212049d38b568",
+        "g": "997151586b123a28",
+        "name": "css",
+        "field": "payload.style",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "table {\n    color: #333;\n    font-family: Helvetica, Arial, sans-serif;\n    width: 100%;\n    border-collapse: collapse;\n    border-spacing: 0;\n}\ntd, th {\n    border: 1px solid transparent;\n    /* No more visible border */\n    height: 30px;\n    transition: all 0.3s;\n    /* Simple transition for hover effect */\n}\nth {\n    background: #DFDFDF;\n    /* Darken header a bit */\n    font-weight: bold;\n}\ntd {\n    background: #FAFAFA;\n    text-align: center;\n}\n\n/* Cells in even rows (2,4,6...) are one color */\n\ntr:nth-child(even) td {\n    background: #F1F1F1;\n}\n\n/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */\n\ntr:nth-child(odd) td {\n    background: #FEFEFE;\n}\ntr td:hover {\n    background: #666;\n    color: #FFF;\n}\n\n/* Hover cell effect! */",
+        "x": 570,
+        "y": 600,
+        "wires": [
+            [
+                "f9167c1414e7c97e"
+            ]
+        ]
+    },
+    {
+        "id": "18fb0b6d7c1207e3",
+        "type": "template",
+        "z": "e3e212049d38b568",
+        "g": "997151586b123a28",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "[\n    {\"country\": \"Spain\", \"capital\": \"Madrid\"},\n    {\"country\": \"Italy\", \"capital\": \"Rome\"},\n    {\"country\": \"France\", \"capital\": \"Paris\"},\n    {\"country\": \"Germany\", \"capital\": \"Berlin\"}\n]\n    ",
+        "x": 270,
+        "y": 600,
+        "wires": [
+            [
+                "6da30c795a17acf5"
+            ]
+        ]
+    },
+    {
+        "id": "6da30c795a17acf5",
+        "type": "json",
+        "z": "e3e212049d38b568",
+        "g": "997151586b123a28",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 430,
+        "y": 600,
+        "wires": [
+            [
+                "7aced5cee04b4c96"
+            ]
+        ]
+    },
+    {
+        "id": "f5d5e648b3b9894b",
+        "type": "http in",
+        "z": "e3e212049d38b568",
+        "g": "997151586b123a28",
+        "name": "",
+        "url": "/table",
+        "method": "get",
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 600,
+        "wires": [
+            [
+                "18fb0b6d7c1207e3"
+            ]
+        ]
+    },
+    {
+        "id": "2fc790bbacfbadf7",
+        "type": "http response",
+        "z": "fb475dde7b2882fa",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 630,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "f2d1d9de55ff53c4",
+        "type": "template",
+        "z": "fb475dde7b2882fa",
+        "name": "page",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n    <head></head>\n    <body>\n        <h1>Hello {{req.params.name}}!</h1>\n    </body>\n</html>",
+        "x": 430,
+        "y": 60,
+        "wires": [
+            [
+                "2fc790bbacfbadf7"
+            ]
+        ]
+    },
+    {
+        "id": "a1613eeee604732b",
+        "type": "http in",
+        "z": "fb475dde7b2882fa",
+        "name": "",
+        "url": "/hello-param/:name",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "f2d1d9de55ff53c4"
+            ]
+        ]
+    },
+    {
+        "id": "bad59d2802178494",
+        "type": "http in",
+        "z": "fb475dde7b2882fa",
+        "g": "e02ca70a4de55a86",
+        "name": "Home_Page",
+        "url": "/Home_Page",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "ebd240a28b8ef21e"
+            ]
+        ]
+    },
+    {
+        "id": "ebd240a28b8ef21e",
+        "type": "template",
+        "z": "fb475dde7b2882fa",
+        "g": "e02ca70a4de55a86",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html> \n<html>\n<head>\n\t<title>Page Title</title>\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"stylesheet\" href=\"http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css\" />\n<script src=\"http://code.jquery.com/jquery-1.9.1.min.js\"></script>\n<script src=\"http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js\"></script>\n</head>\n\n<body>\n<!-- Start of first page: #one -->\n<div data-role=\"page\" id=\"one\">\n\n\t<div data-role=\"header\">\n\t\t<h1>Multi-page</h1>\n\t</div><!-- /header -->\n\n\t<div role=\"main\" class=\"ui-content\" >\n\t\t<h2>One</h2>\n\n\t\t<p>I have an <code>id</code> of \"one\" on my page container. I'm first in the source order so I'm shown when the page loads.</p>\n\n\t\t<p>This is a multi-page boilerplate template that you can copy to build your first jQuery Mobile page. This template contains multiple \"page\" containers inside, unlike a single page template that has just one page within it.</p>\n\t\t<p>Just view the source and copy the code to get started. All the CSS and JS is linked to the jQuery CDN versions so this is super easy to set up. Remember to include a meta viewport tag in the head to set the zoom level.</p>\n\t\t<p>You link to internal pages by referring to the <code>id</code> of the page you want to show. For example, to <a href=\"#two\" >link</a> to the page with an <code>id</code> of \"two\", my link would have a <code>href=\"#two\"</code> in the code.</p>\n\n\t\t<h3>Show internal pages:</h3>\n\t\t<p><a href=\"#two\" class=\"ui-btn ui-shadow ui-corner-all\">Show page \"two\"</a></p>\n\t\t<p><a href=\"#popup\" class=\"ui-btn ui-shadow ui-corner-all\" data-rel=\"dialog\" data-transition=\"pop\">Show page \"popup\" (as a dialog)</a></p>\n\t</div><!-- /content -->\n\n\t<div data-role=\"footer\" data-theme=\"a\">\n\t\t<h4>Page Footer</h4>\n\t</div><!-- /footer -->\n</div><!-- /page one -->\n\n<!-- Start of second page: #two -->\n<div data-role=\"page\" id=\"two\" data-theme=\"a\">\n\n\t<div data-role=\"header\">\n\t\t<h1>Two</h1>\n\t</div><!-- /header -->\n\n\t<div role=\"main\" class=\"ui-content\">\n\t\t<h2>Two</h2>\n\t\t<p>I have an id of \"two\" on my page container. I'm the second page container in this multi-page template.</p>\n\t\t<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>\n\t\t<p><a href=\"#one\" data-direction=\"reverse\" class=\"ui-btn ui-shadow ui-corner-all ui-btn-b\">Back to page \"one\"</a></p>\n\n\t</div><!-- /content -->\n\n\t<div data-role=\"footer\">\n\t\t<h4>Page Footer</h4>\n\t</div><!-- /footer -->\n</div><!-- /page two -->\n\n<!-- Start of third page: #popup -->\n<div data-role=\"page\" id=\"popup\">\n\n\t<div data-role=\"header\" data-theme=\"b\">\n\t\t<h1>Dialog</h1>\n\t</div><!-- /header -->\n\n\t<div role=\"main\" class=\"ui-content\">\n\t\t<h2>Popup</h2>\n\t\t<p>I have an id of \"popup\" on my page container and only look like a dialog because the link to me had a <code>data-rel=\"dialog\"</code> attribute which gives me this inset look and a <code>data-transition=\"pop\"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>\n\t\t<p><a href=\"#one\" data-rel=\"back\" class=\"ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left\">Back to page \"one\"</a></p>\n\t</div><!-- /content -->\n\n\t<div data-role=\"footer\">\n\t\t<h4>Page Footer</h4>\n\t</div><!-- /footer -->\n</div><!-- /page popup -->\n</body>\n\n\n\n\n\n</html>",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "8d0cb0d047eb9140"
+            ]
+        ]
+    },
+    {
+        "id": "8d0cb0d047eb9140",
+        "type": "http response",
+        "z": "fb475dde7b2882fa",
+        "g": "e02ca70a4de55a86",
+        "name": "",
+        "x": 610,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "996ee1bea68295cf",
+        "type": "inject",
+        "z": "ece54e72fd2eb599",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 140,
+        "wires": [
+            [
+                "c590ae1ff71faae3"
+            ]
+        ]
+    },
+    {
+        "id": "c590ae1ff71faae3",
+        "type": "ui_worldmap",
+        "z": "ece54e72fd2eb599",
+        "group": "5a647fd07ff27317",
+        "order": 1,
+        "width": 21,
+        "height": 12,
+        "name": "",
+        "lat": "39.4893100",
+        "lon": "-0.4816300",
+        "zoom": "10",
+        "layer": "OSMG",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "layers": "hide",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "true",
+        "coords": "none",
+        "showgrid": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,SN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriO,EsriDG,NatGeo,UKOS,OpTop",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 500,
+        "y": 140,
+        "wires": []
     }
 ]

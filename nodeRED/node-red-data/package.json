@@ -5,8 +5,10 @@
     "private": true,
     "dependencies": {
         "node-red-contrib-kafkajs": "~0.0.7",
+        "node-red-contrib-play-audio": "~2.5.0",
         "node-red-contrib-startup-trigger": "~0.1.0",
         "node-red-contrib-wait-paths": "~0.3.2",
+        "node-red-contrib-web-worldmap": "~5.0.8",
         "node-red-dashboard": "~3.6.5",
         "node-red-node-data-generator": "~1.0.2",
         "node-red-node-random": "~0.4.1",
