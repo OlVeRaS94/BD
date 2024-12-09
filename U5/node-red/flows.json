@@ -1,0 +1,653 @@
+[
+    {
+        "id": "3d8a9c664e2b2b5e",
+        "type": "tab",
+        "label": "FIWARE Orion API Test",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f5875de379bcac6b",
+        "type": "tab",
+        "label": "FIWARE Orion API (Subscriptions)",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b26d37ab546316c6",
+        "type": "tab",
+        "label": "Subscription with conditions",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bd23854dbfd4e86e",
+        "type": "http request",
+        "z": "3d8a9c664e2b2b5e",
+        "name": "Create Entity",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://172.17.0.1:1030/v2/entities",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 630,
+        "y": 60,
+        "wires": [
+            [
+                "e02acc33b4af696d"
+            ]
+        ]
+    },
+    {
+        "id": "edcf26d55a961422",
+        "type": "http request",
+        "z": "3d8a9c664e2b2b5e",
+        "name": "Query Entity",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://172.17.0.1:1030/v2/entities?type=Device",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 450,
+        "y": 200,
+        "wires": [
+            [
+                "e02acc33b4af696d"
+            ]
+        ]
+    },
+    {
+        "id": "4acb9f318b705908",
+        "type": "http request",
+        "z": "3d8a9c664e2b2b5e",
+        "name": "Update Entity",
+        "method": "PATCH",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://172.17.0.1:1030/v2/entities/Device001/attrs",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 440,
+        "y": 380,
+        "wires": [
+            [
+                "e02acc33b4af696d"
+            ]
+        ]
+    },
+    {
+        "id": "e034e574c6fd7568",
+        "type": "http request",
+        "z": "3d8a9c664e2b2b5e",
+        "name": "Delete Entity",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://172.17.0.1:1030/v2/entities/Device001",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 450,
+        "y": 460,
+        "wires": [
+            [
+                "e02acc33b4af696d"
+            ]
+        ]
+    },
+    {
+        "id": "a506f77cb5ef8d44",
+        "type": "inject",
+        "z": "3d8a9c664e2b2b5e",
+        "name": "Create Entity",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 170,
+        "y": 60,
+        "wires": [
+            [
+                "6bec841ce9986510"
+            ]
+        ]
+    },
+    {
+        "id": "e1026f71566024d7",
+        "type": "inject",
+        "z": "3d8a9c664e2b2b5e",
+        "name": "Query Entity",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "edcf26d55a961422"
+            ]
+        ]
+    },
+    {
+        "id": "ac852096859521d6",
+        "type": "inject",
+        "z": "3d8a9c664e2b2b5e",
+        "name": "Update Entity",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "e9b0773b16c53975"
+            ]
+        ]
+    },
+    {
+        "id": "6db560054d07f287",
+        "type": "inject",
+        "z": "3d8a9c664e2b2b5e",
+        "name": "Delete Entity",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 170,
+        "y": 460,
+        "wires": [
+            [
+                "e034e574c6fd7568"
+            ]
+        ]
+    },
+    {
+        "id": "e02acc33b4af696d",
+        "type": "debug",
+        "z": "3d8a9c664e2b2b5e",
+        "name": "Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "6bec841ce9986510",
+        "type": "function",
+        "z": "3d8a9c664e2b2b5e",
+        "name": "Prepare Create Entity",
+        "func": "msg.headers = {\n    \"Content-Type\": \"application/json\"\n};\nmsg.payload = {\n    \"id\": \"Device001\",\n    \"type\": \"Device\",\n    \"temperature\": {\n        \"value\": 22.5,\n        \"type\": \"Float\"\n    },\n    \"humidity\": {\n        \"value\": 60,\n        \"type\": \"Integer\"\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 60,
+        "wires": [
+            [
+                "bd23854dbfd4e86e"
+            ]
+        ]
+    },
+    {
+        "id": "e9b0773b16c53975",
+        "type": "function",
+        "z": "3d8a9c664e2b2b5e",
+        "name": "Prepare Update Entity",
+        "func": "msg.headers = {\n    \"Content-Type\": \"application/json\"\n};\nmsg.payload = {\n    \"temperature\": {\n        \"value\": 49.01,\n        \"type\": \"Float\"\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 280,
+        "wires": [
+            [
+                "4acb9f318b705908"
+            ]
+        ]
+    },
+    {
+        "id": "78065ba8cf7e7d51",
+        "type": "http request",
+        "z": "3d8a9c664e2b2b5e",
+        "name": "GET Entity",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://172.17.0.1:1030/v2/entities",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 510,
+        "y": 640,
+        "wires": [
+            [
+                "e02acc33b4af696d"
+            ]
+        ]
+    },
+    {
+        "id": "45b73d1d407e66f1",
+        "type": "inject",
+        "z": "3d8a9c664e2b2b5e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 640,
+        "wires": [
+            [
+                "78065ba8cf7e7d51"
+            ]
+        ]
+    },
+    {
+        "id": "ea4ac1fa914023cf",
+        "type": "http request",
+        "z": "f5875de379bcac6b",
+        "name": "List Subscriptions",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://172.17.0.1:1030/v2/subscriptions",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 430,
+        "y": 160,
+        "wires": [
+            [
+                "f438dc9ac53288fe"
+            ]
+        ]
+    },
+    {
+        "id": "8d9710b4eabdac5a",
+        "type": "http request",
+        "z": "f5875de379bcac6b",
+        "name": "Create Subscription",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://172.17.0.1:1030/v2/subscriptions",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": ""
+            }
+        ],
+        "x": 430,
+        "y": 340,
+        "wires": [
+            [
+                "f438dc9ac53288fe"
+            ]
+        ]
+    },
+    {
+        "id": "15bae6eaa8b06825",
+        "type": "http request",
+        "z": "f5875de379bcac6b",
+        "name": "Delete Subscription",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://172.17.0.1:1030/v2/subscriptions/{{{subscriptionId}}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 470,
+        "y": 440,
+        "wires": [
+            [
+                "f438dc9ac53288fe"
+            ]
+        ]
+    },
+    {
+        "id": "9df90bbb6d51052e",
+        "type": "function",
+        "z": "f5875de379bcac6b",
+        "name": "Prepare Create Subscription",
+        "func": "msg.payload = {\n    \"description\": \"Notify on temperature changes\",\n    \"subject\": {\n        \"entities\": [\n            { \"idPattern\": \"Device.*\", \"type\": \"Device\" }\n        ],\n        \"condition\": {\n            \"attrs\": [ \"temperature\" ]\n        }\n    },\n    \"notification\": {\n        \"http\": {\n            \"url\": \"http://172.17.0.1:1895/notify\"\n        },\n        \"attrs\": [ \"temperature\", \"humidity\" ]\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 240,
+        "wires": [
+            [
+                "8d9710b4eabdac5a"
+            ]
+        ]
+    },
+    {
+        "id": "1cfe6f3a24be2f3d",
+        "type": "inject",
+        "z": "f5875de379bcac6b",
+        "name": "Create Subscription",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 170,
+        "y": 240,
+        "wires": [
+            [
+                "9df90bbb6d51052e"
+            ]
+        ]
+    },
+    {
+        "id": "78c089a959a4a0a1",
+        "type": "inject",
+        "z": "f5875de379bcac6b",
+        "name": "List Subscriptions",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 180,
+        "y": 160,
+        "wires": [
+            [
+                "ea4ac1fa914023cf"
+            ]
+        ]
+    },
+    {
+        "id": "b1f80289f891dd2c",
+        "type": "inject",
+        "z": "f5875de379bcac6b",
+        "name": "Delete Subscription",
+        "props": [
+            {
+                "p": "subscriptionId",
+                "v": "67571e0a476bc28ed6ce8292",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "x": 170,
+        "y": 440,
+        "wires": [
+            [
+                "15bae6eaa8b06825"
+            ]
+        ]
+    },
+    {
+        "id": "6af16a1cd9480d5c",
+        "type": "http in",
+        "z": "f5875de379bcac6b",
+        "name": "Notify Endpoint",
+        "url": "/notify",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 540,
+        "wires": [
+            [
+                "ca3a6d62d183f288"
+            ]
+        ]
+    },
+    {
+        "id": "f438dc9ac53288fe",
+        "type": "debug",
+        "z": "f5875de379bcac6b",
+        "name": "Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 860,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "ca3a6d62d183f288",
+        "type": "debug",
+        "z": "f5875de379bcac6b",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "2409a1256c4a1ee1",
+        "type": "inject",
+        "z": "b26d37ab546316c6",
+        "name": "List Subscriptions",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "d65cb0575cb6f999"
+            ]
+        ]
+    },
+    {
+        "id": "d65cb0575cb6f999",
+        "type": "http request",
+        "z": "b26d37ab546316c6",
+        "name": "Get Subscriptions",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://172.17.0.1:1030/v2/subscriptions",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "5722a8b37b1c4872"
+            ]
+        ]
+    },
+    {
+        "id": "5722a8b37b1c4872",
+        "type": "debug",
+        "z": "b26d37ab546316c6",
+        "name": "Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 780,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "0d5a3bf9fcb64d97",
+        "type": "inject",
+        "z": "b26d37ab546316c6",
+        "name": "Create Subscription",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "c15fba52a90acc9b"
+            ]
+        ]
+    },
+    {
+        "id": "c15fba52a90acc9b",
+        "type": "function",
+        "z": "b26d37ab546316c6",
+        "name": "Prepare Create Subscription",
+        "func": "msg.payload = {\n    \"description\": \"Notify when temperature greater than 50\",\n    \"subject\": {\n        \"entities\": [\n            { \"idPattern\": \"Device.*\", \"type\": \"Device\" }\n        ],\n        \"condition\": {\n            \"attrs\": [\"temperature\"],\n            \"expression\": {\n                \"q\": \"temperature>50\"\n            }\n        }\n    },\n    \"notification\": {\n        \"http\": {\n            \"url\": \"http://172.17.0.1:1895/notify\"\n        },\n        \"attrs\": [ \"temperature\", \"humidity\" ]\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 80,
+        "wires": [
+            [
+                "b8f0d61b56ba87bf"
+            ]
+        ]
+    },
+    {
+        "id": "b8f0d61b56ba87bf",
+        "type": "http request",
+        "z": "b26d37ab546316c6",
+        "name": "Create Subscription",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://172.17.0.1:1030/v2/subscriptions",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": ""
+            }
+        ],
+        "x": 450,
+        "y": 140,
+        "wires": [
+            [
+                "616fb85f87bfb443"
+            ]
+        ]
+    },
+    {
+        "id": "616fb85f87bfb443",
+        "type": "debug",
+        "z": "b26d37ab546316c6",
+        "name": "Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 760,
+        "y": 140,
+        "wires": []
+    }
+]

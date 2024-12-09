@@ -1,0 +1,57 @@
+version: "3.7"
+services:      
+
+  # Service used for ORION Context broker
+  orion:
+    image: fiware/orion:2.2.0
+    container_name: orion_container
+    hostname: orion_container
+    networks:
+      - class_network
+    ports:
+      - "1030:1026"
+    entrypoint:
+      [
+        "sh",
+        "-c",
+        "rm /tmp/contextBroker.pid; /usr/bin/contextBroker -fg -multiservice -dbhost mongo_orion -logLevel DEBUG" # se usa el nombre del servicio no el nombre del contenedor
+      ]
+    restart: always
+    depends_on:
+      - "mongo_orion"
+
+  # Service used for MongoDB
+  mongo_orion:
+    restart: always
+    image: mongo:4.4
+    command: --nojournal
+    container_name: mongo_orion_container
+    networks:
+      - class_network
+    ports:
+      - "27030:27017"
+
+  # Service for deploying a Node-RED instance
+  node-red:
+    image: nodered/node-red:latest
+    container_name: node-red_fiware
+    volumes:
+      - "./node-red:/data"
+    ports:
+      - "1895:1880"
+    networks:
+      - class_network
+    user: "1000:0"
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: "100m"
+    environment:
+      - TZ=Europe/Paris
+ 
+
+networks:
+  class_network:
+    driver: bridge
