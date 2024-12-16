@@ -154,6 +154,13 @@
         "env": []
     },
     {
+        "id": "flow1",
+        "type": "tab",
+        "label": "Sistema de Calidad del Aire",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "58baabe08cf06c58",
         "type": "subflow",
         "name": "Split, Change & Switch",
@@ -863,28 +870,6 @@
         "h": 142
     },
     {
-        "id": "4889131adb74d4dd",
-        "type": "group",
-        "z": "cbcd9788d8ee47e9",
-        "g": "c9890ef811c67a29",
-        "name": "Ejemplo uso variables globales",
-        "style": {
-            "stroke": "#92d04f",
-            "fill": "#addb7b",
-            "label": true,
-            "label-position": "n",
-            "color": "#ffffff"
-        },
-        "nodes": [
-            "6f86de538d01d5c1",
-            "686f5cea6c2619e5"
-        ],
-        "x": 274,
-        "y": 259,
-        "w": 632,
-        "h": 82
-    },
-    {
         "id": "0db10deca63fa004",
         "type": "group",
         "z": "8ed11f8071fc9831",
@@ -1029,6 +1014,195 @@
         "x": 74,
         "y": 139,
         "w": 612,
+        "h": 82
+    },
+    {
+        "id": "4889131adb74d4dd",
+        "type": "group",
+        "z": "cbcd9788d8ee47e9",
+        "g": "c9890ef811c67a29",
+        "name": "Ejemplo uso variables globales",
+        "style": {
+            "stroke": "#92d04f",
+            "fill": "#addb7b",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "6f86de538d01d5c1",
+            "686f5cea6c2619e5"
+        ],
+        "x": 274,
+        "y": 259,
+        "w": 632,
+        "h": 82
+    },
+    {
+        "id": "096c515fd1288fae",
+        "type": "group",
+        "z": "ece54e72fd2eb599",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "851f880faf976c0c",
+            "ae4cb90469894cc6",
+            "87f0ac2ad90c32d2",
+            "3b73ab986b5b4427",
+            "a0f637d654042b4a",
+            "6f71218371acaa5a",
+            "64b073641736a173",
+            "77966af8d0912be9",
+            "1ac1a6cda68038d2",
+            "ad84a6b543c73b2d",
+            "a97c1c3f7e85dcee"
+        ],
+        "x": 94,
+        "y": 239,
+        "w": 832,
+        "h": 502
+    },
+    {
+        "id": "62a2253bee235d0f",
+        "type": "group",
+        "z": "ece54e72fd2eb599",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "slider",
+            "switch",
+            "debug"
+        ],
+        "x": 114,
+        "y": 119,
+        "w": 622,
+        "h": 82
+    },
+    {
+        "id": "ddab2e8bccebdd0e",
+        "type": "group",
+        "z": "ece54e72fd2eb599",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "e9d863edb6f08c4b",
+            "0886342b275ea28d",
+            "f4ff7a6aba7aa20e",
+            "cc647c23ef4c5072",
+            "a0ace9d38b407d7d",
+            "9f4119eb9138edbc",
+            "f1f076b1b5a950fc",
+            "5e8851e6670a950b",
+            "607cd9eafc399b3b",
+            "2f2e024122274530",
+            "fae4c4be92fb16fb"
+        ],
+        "x": 94,
+        "y": 819,
+        "w": 812,
+        "h": 502
+    },
+    {
+        "id": "a0e5cc583683a43c",
+        "type": "group",
+        "z": "ece54e72fd2eb599",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "242498d91167d5d2",
+            "8b13fbcfa76c5dd5",
+            "cca8f42b0cc702d2",
+            "952ad1eff04196f8",
+            "7cca4a0a72e1fdc3",
+            "1d8b75289ab61e91",
+            "c4655909a5b88fa1",
+            "c170454528a47648",
+            "736e06fe46f2e1fe",
+            "43ae5bebc9a375d8",
+            "56bf4d246a1e77b1",
+            "c404e91a8661d902",
+            "f8c649d0a8bb563b",
+            "a2f2a0c19d0eeb68",
+            "9f4977af42e23d25"
+        ],
+        "x": 94,
+        "y": 1359,
+        "w": 1242,
+        "h": 502
+    },
+    {
+        "id": "f7acac9ce0da6983",
+        "type": "group",
+        "z": "ece54e72fd2eb599",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "90778c7d.35b928",
+            "f7b60e45.c71928",
+            "8b928ef2.b69358",
+            "a3287d1e.b3842",
+            "45d1a89f.eab418"
+        ],
+        "x": 74,
+        "y": 1879,
+        "w": 692,
+        "h": 182
+    },
+    {
+        "id": "23e016715ed181a9",
+        "type": "group",
+        "z": "ece54e72fd2eb599",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9c9d063a.014c3",
+            "d82feee7.5a1ca8"
+        ],
+        "x": 134,
+        "y": 2139,
+        "w": 472,
         "h": 82
     },
     {
@@ -1518,6 +1692,60 @@
         "name": "FlightRadar",
         "icon": "dashboard",
         "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "44c5192b1d10f804",
+        "type": "ui_tab",
+        "name": "control",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0a5418cb2f58314f",
+        "type": "ui_group",
+        "name": "Monitorizacion",
+        "tab": "44c5192b1d10f804",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f2f63b33.0edfc8",
+        "type": "ui_group",
+        "name": "Datos en tiempo real",
+        "tab": "fe29c99e.33d2c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fe29c99e.33d2c",
+        "type": "ui_tab",
+        "name": "Simulacion de Sensores",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "group1",
+        "type": "ui_group",
+        "name": "Monitorización",
+        "tab": "tab1",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "tab1",
+        "type": "ui_tab",
+        "name": "Sistema Ambiental",
+        "icon": "dashboard",
         "disabled": false,
         "hidden": false
     },
@@ -8021,10 +8249,1054 @@
         "wires": []
     },
     {
-        "id": "996ee1bea68295cf",
-        "type": "inject",
+        "id": "slider",
+        "type": "ui_slider",
         "z": "ece54e72fd2eb599",
-        "name": "",
+        "g": "62a2253bee235d0f",
+        "name": "Control de Flujo",
+        "label": "Activar Flujo",
+        "tooltip": "",
+        "group": "0a5418cb2f58314f",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "topicType": "str",
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "className": "",
+        "x": 220,
+        "y": 160,
+        "wires": [
+            [
+                "switch"
+            ]
+        ]
+    },
+    {
+        "id": "switch",
+        "type": "switch",
+        "z": "ece54e72fd2eb599",
+        "g": "62a2253bee235d0f",
+        "name": "Selector de Flujo",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 420,
+        "y": 160,
+        "wires": [
+            [
+                "debug"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "debug",
+        "type": "debug",
+        "z": "ece54e72fd2eb599",
+        "g": "62a2253bee235d0f",
+        "name": "Flujo Activo",
+        "active": true,
+        "console": "false",
+        "x": 620,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "851f880faf976c0c",
+        "type": "ui_slider",
+        "z": "ece54e72fd2eb599",
+        "g": "096c515fd1288fae",
+        "name": "Control de Flujo",
+        "label": "Control de Flujo",
+        "tooltip": "",
+        "group": "f2f63b33.0edfc8",
+        "order": 8,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "topicType": "str",
+        "min": "0",
+        "max": "1",
+        "step": "1",
+        "className": "",
+        "x": 200,
+        "y": 280,
+        "wires": [
+            [
+                "ae4cb90469894cc6"
+            ]
+        ]
+    },
+    {
+        "id": "ae4cb90469894cc6",
+        "type": "switch",
+        "z": "ece54e72fd2eb599",
+        "g": "096c515fd1288fae",
+        "name": "Activar/Desactivar",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": "false",
+        "outputs": 1,
+        "x": 410,
+        "y": 280,
+        "wires": [
+            [
+                "87f0ac2ad90c32d2"
+            ]
+        ]
+    },
+    {
+        "id": "87f0ac2ad90c32d2",
+        "type": "function",
+        "z": "ece54e72fd2eb599",
+        "g": "096c515fd1288fae",
+        "name": "Simulacion de Datos",
+        "func": "msg.payload = {\n    sensor: \"sensor1\",\n    CO2: Math.random() * 50,         // CO₂ de 0 a 50\n    NO2: Math.random() * 40,         // NO₂ de 0 a 40\n    SO2: Math.random() * 30,         // SO₂ de 0 a 30\n    O3: Math.random() * 20,          // O₃ de 0 a 20\n    Humedad: Math.random() * 100,    // Humedad de 0 a 100%\n    Temperatura: Math.random() * 50, // Temperatura de 0 a 50°C\n    PM10: Math.random() * 200,       // PM10 de 0 a 200 µg/m³\n    PM25: Math.random() * 150        // PM2.5 de 0 a 150 µg/m³\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 630,
+        "y": 280,
+        "wires": [
+            [
+                "3b73ab986b5b4427",
+                "a0f637d654042b4a",
+                "6f71218371acaa5a",
+                "64b073641736a173",
+                "77966af8d0912be9"
+            ]
+        ]
+    },
+    {
+        "id": "3b73ab986b5b4427",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "096c515fd1288fae",
+        "name": "CO₂",
+        "group": "f2f63b33.0edfc8",
+        "order": 0,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "CO₂",
+        "label": "ppm",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 830,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a0f637d654042b4a",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "096c515fd1288fae",
+        "name": "NO₂",
+        "group": "f2f63b33.0edfc8",
+        "order": 1,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "NO₂",
+        "label": "ppm",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "40",
+        "x": 830,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6f71218371acaa5a",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "096c515fd1288fae",
+        "name": "SO₂",
+        "group": "f2f63b33.0edfc8",
+        "order": 2,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "SO₂",
+        "label": "ppm",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "30",
+        "x": 830,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "64b073641736a173",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "096c515fd1288fae",
+        "name": "O₃",
+        "group": "f2f63b33.0edfc8",
+        "order": 3,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "O₃",
+        "label": "ppm",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "20",
+        "x": 830,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "77966af8d0912be9",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "096c515fd1288fae",
+        "name": "Humedad",
+        "group": "f2f63b33.0edfc8",
+        "order": 4,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Humedad",
+        "label": "%",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "100",
+        "x": 830,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "1ac1a6cda68038d2",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "096c515fd1288fae",
+        "name": "Temperatura",
+        "group": "f2f63b33.0edfc8",
+        "order": 5,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "°C",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "50",
+        "x": 830,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "ad84a6b543c73b2d",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "096c515fd1288fae",
+        "name": "PM10",
+        "group": "f2f63b33.0edfc8",
+        "order": 6,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "PM10",
+        "label": "µg/m³",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "200",
+        "x": 830,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "a97c1c3f7e85dcee",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "096c515fd1288fae",
+        "name": "PM2.5",
+        "group": "f2f63b33.0edfc8",
+        "order": 7,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "PM2.5",
+        "label": "µg/m³",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "150",
+        "x": 830,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "e9d863edb6f08c4b",
+        "type": "ui_slider",
+        "z": "ece54e72fd2eb599",
+        "g": "ddab2e8bccebdd0e",
+        "name": "Control de Flujo",
+        "label": "Control de Flujo",
+        "tooltip": "",
+        "group": "f2f63b33.0edfc8",
+        "order": 17,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "topicType": "str",
+        "min": "0",
+        "max": "1",
+        "step": "1",
+        "className": "",
+        "x": 200,
+        "y": 860,
+        "wires": [
+            [
+                "0886342b275ea28d"
+            ]
+        ]
+    },
+    {
+        "id": "0886342b275ea28d",
+        "type": "switch",
+        "z": "ece54e72fd2eb599",
+        "g": "ddab2e8bccebdd0e",
+        "name": "Activar/Desactivar",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": true,
+        "outputs": 1,
+        "x": 410,
+        "y": 860,
+        "wires": [
+            [
+                "f4ff7a6aba7aa20e"
+            ]
+        ]
+    },
+    {
+        "id": "f4ff7a6aba7aa20e",
+        "type": "function",
+        "z": "ece54e72fd2eb599",
+        "g": "ddab2e8bccebdd0e",
+        "name": "Simulacion de Datos",
+        "func": "msg.payload = {\n    sensor: \"sensor1\",\n    CO2: Math.random() * 50,         // CO₂ de 0 a 50\n    NO2: Math.random() * 40,         // NO₂ de 0 a 40\n    SO2: Math.random() * 30,         // SO₂ de 0 a 30\n    O3: Math.random() * 20,          // O₃ de 0 a 20\n    Humedad: Math.random() * 100,    // Humedad de 0 a 100%\n    Temperatura: Math.random() * 50, // Temperatura de 0 a 50°C\n    PM10: Math.random() * 200,       // PM10 de 0 a 200 µg/m³\n    PM25: Math.random() * 150        // PM2.5 de 0 a 150 µg/m³\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 610,
+        "y": 860,
+        "wires": [
+            [
+                "cc647c23ef4c5072",
+                "a0ace9d38b407d7d",
+                "9f4119eb9138edbc",
+                "f1f076b1b5a950fc",
+                "5e8851e6670a950b"
+            ]
+        ]
+    },
+    {
+        "id": "cc647c23ef4c5072",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "ddab2e8bccebdd0e",
+        "name": "CO₂",
+        "group": "f2f63b33.0edfc8",
+        "order": 0,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "CO₂",
+        "label": "ppm",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 810,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "a0ace9d38b407d7d",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "ddab2e8bccebdd0e",
+        "name": "NO₂",
+        "group": "f2f63b33.0edfc8",
+        "order": 1,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "NO₂",
+        "label": "ppm",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "40",
+        "x": 810,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "9f4119eb9138edbc",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "ddab2e8bccebdd0e",
+        "name": "SO₂",
+        "group": "f2f63b33.0edfc8",
+        "order": 2,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "SO₂",
+        "label": "ppm",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "30",
+        "x": 810,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "f1f076b1b5a950fc",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "ddab2e8bccebdd0e",
+        "name": "O₃",
+        "group": "f2f63b33.0edfc8",
+        "order": 3,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "O₃",
+        "label": "ppm",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "20",
+        "x": 810,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "5e8851e6670a950b",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "ddab2e8bccebdd0e",
+        "name": "Humedad",
+        "group": "f2f63b33.0edfc8",
+        "order": 4,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Humedad",
+        "label": "%",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "100",
+        "x": 810,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "607cd9eafc399b3b",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "ddab2e8bccebdd0e",
+        "name": "Temperatura",
+        "group": "f2f63b33.0edfc8",
+        "order": 5,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "°C",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "50",
+        "x": 810,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "2f2e024122274530",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "ddab2e8bccebdd0e",
+        "name": "PM10",
+        "group": "f2f63b33.0edfc8",
+        "order": 6,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "PM10",
+        "label": "µg/m³",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "200",
+        "x": 810,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "fae4c4be92fb16fb",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "ddab2e8bccebdd0e",
+        "name": "PM2.5",
+        "group": "f2f63b33.0edfc8",
+        "order": 7,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "PM2.5",
+        "label": "µg/m³",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "150",
+        "x": 810,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "242498d91167d5d2",
+        "type": "ui_slider",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "name": "Control de Flujo",
+        "label": "Control de Flujo",
+        "tooltip": "",
+        "group": "b9d1cd8b.263428",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "topic": "",
+        "min": "0",
+        "max": "1",
+        "step": "1",
+        "x": 200,
+        "y": 1400,
+        "wires": [
+            [
+                "8b13fbcfa76c5dd5"
+            ]
+        ]
+    },
+    {
+        "id": "8b13fbcfa76c5dd5",
+        "type": "switch",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "name": "Activar/Desactivar",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": "false",
+        "outputs": 1,
+        "x": 410,
+        "y": 1400,
+        "wires": [
+            [
+                "cca8f42b0cc702d2"
+            ]
+        ]
+    },
+    {
+        "id": "cca8f42b0cc702d2",
+        "type": "function",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "name": "Simulacion de Datos",
+        "func": "msg.payload = {\n    sensor: \"sensor1\",\n    CO2: Math.random() * 50,         // CO₂ de 0 a 50\n    NO2: Math.random() * 40,         // NO₂ de 0 a 40\n    SO2: Math.random() * 30,         // SO₂ de 0 a 30\n    O3: Math.random() * 20,          // O₃ de 0 a 20\n    Humedad: Math.random() * 100,    // Humedad de 0 a 100%\n    Temperatura: Math.random() * 50, // Temperatura de 0 a 50°C\n    PM10: Math.random() * 200,       // PM10 de 0 a 200 µg/m³\n    PM25: Math.random() * 150        // PM2.5 de 0 a 150 µg/m³\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 610,
+        "y": 1400,
+        "wires": [
+            [
+                "952ad1eff04196f8",
+                "7cca4a0a72e1fdc3",
+                "1d8b75289ab61e91",
+                "c4655909a5b88fa1",
+                "c170454528a47648"
+            ]
+        ]
+    },
+    {
+        "id": "952ad1eff04196f8",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "name": "CO₂",
+        "group": "f2f63b33.0edfc8",
+        "order": 0,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "CO₂",
+        "label": "ppm",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "50",
+        "x": 810,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "7cca4a0a72e1fdc3",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "name": "NO₂",
+        "group": "f2f63b33.0edfc8",
+        "order": 1,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "NO₂",
+        "label": "ppm",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "40",
+        "x": 810,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "1d8b75289ab61e91",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "name": "SO₂",
+        "group": "f2f63b33.0edfc8",
+        "order": 2,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "SO₂",
+        "label": "ppm",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "30",
+        "x": 810,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "c4655909a5b88fa1",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "name": "O₃",
+        "group": "f2f63b33.0edfc8",
+        "order": 3,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "O₃",
+        "label": "ppm",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "20",
+        "x": 810,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "c170454528a47648",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "name": "Humedad",
+        "group": "f2f63b33.0edfc8",
+        "order": 4,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Humedad",
+        "label": "%",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "100",
+        "x": 810,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "736e06fe46f2e1fe",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "name": "Temperatura",
+        "group": "f2f63b33.0edfc8",
+        "order": 5,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "°C",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "50",
+        "x": 810,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "43ae5bebc9a375d8",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "name": "PM10",
+        "group": "f2f63b33.0edfc8",
+        "order": 6,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "PM10",
+        "label": "µg/m³",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "200",
+        "x": 810,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "56bf4d246a1e77b1",
+        "type": "ui_gauge",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "name": "PM2.5",
+        "group": "f2f63b33.0edfc8",
+        "order": 7,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "PM2.5",
+        "label": "µg/m³",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "150",
+        "x": 810,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "c404e91a8661d902",
+        "type": "switch",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "name": "Alerta Temperatura > 40°C",
+        "property": "payload.Temperatura",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "40",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": "false",
+        "outputs": 1,
+        "x": 1020,
+        "y": 1520,
+        "wires": [
+            [
+                "f8c649d0a8bb563b"
+            ]
+        ]
+    },
+    {
+        "id": "f8c649d0a8bb563b",
+        "type": "ui_text",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "group": "f2f63b33.0edfc8",
+        "order": 8,
+        "width": "3",
+        "height": "1",
+        "name": "Alerta Temperatura",
+        "label": "Alerta",
+        "format": "Alerta activada: Temperatura superior a 40°C",
+        "layout": "row-spread",
+        "x": 1220,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "a2f2a0c19d0eeb68",
+        "type": "switch",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "name": "Alerta PM10 > 150",
+        "property": "payload.PM10",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "150",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": "false",
+        "outputs": 1,
+        "x": 1020,
+        "y": 1580,
+        "wires": [
+            [
+                "9f4977af42e23d25"
+            ]
+        ]
+    },
+    {
+        "id": "9f4977af42e23d25",
+        "type": "ui_text",
+        "z": "ece54e72fd2eb599",
+        "g": "a0e5cc583683a43c",
+        "group": "f2f63b33.0edfc8",
+        "order": 9,
+        "width": "3",
+        "height": "1",
+        "name": "Alerta PM10",
+        "label": "Alerta",
+        "format": "Alerta activada: PM10 superior a 150 µg/m³",
+        "layout": "row-spread",
+        "x": 1220,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "90778c7d.35b928",
+        "type": "http request",
+        "z": "ece54e72fd2eb599",
+        "g": "f7acac9ce0da6983",
+        "name": "Suscripción a Orion",
+        "method": "POST",
+        "ret": "txt",
+        "url": "http://orion-context-broker:1026/v2/subscriptions",
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "x": 410,
+        "y": 1920,
+        "wires": [
+            [
+                "f7b60e45.c71928"
+            ]
+        ]
+    },
+    {
+        "id": "f7b60e45.c71928",
+        "type": "debug",
+        "z": "ece54e72fd2eb599",
+        "g": "f7acac9ce0da6983",
+        "name": "Respuesta de Orion",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 620,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "8b928ef2.b69358",
+        "type": "http in",
+        "z": "ece54e72fd2eb599",
+        "g": "f7acac9ce0da6983",
+        "name": "Endpoint de Callback",
+        "url": "/orion-alert",
+        "method": "post",
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 2020,
+        "wires": [
+            [
+                "a3287d1e.b3842"
+            ]
+        ]
+    },
+    {
+        "id": "a3287d1e.b3842",
+        "type": "function",
+        "z": "ece54e72fd2eb599",
+        "g": "f7acac9ce0da6983",
+        "name": "Procesar Alerta",
+        "func": "msg.payload = `Alerta de Orion: Sensor: ${msg.payload.sensor}, Parámetro: ${msg.payload.parametro}, Valor: ${msg.payload.valor}`;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 400,
+        "y": 2020,
+        "wires": [
+            [
+                "45d1a89f.eab418"
+            ]
+        ]
+    },
+    {
+        "id": "45d1a89f.eab418",
+        "type": "ui_text",
+        "z": "ece54e72fd2eb599",
+        "g": "f7acac9ce0da6983",
+        "group": "f2f63b33.0edfc8",
+        "order": 10,
+        "width": "3",
+        "height": "1",
+        "name": "Alerta Orion",
+        "label": "Alerta Orion",
+        "format": "{{payload}}",
+        "layout": "row-spread",
+        "x": 620,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "9c9d063a.014c3",
+        "type": "template",
+        "z": "ece54e72fd2eb599",
+        "g": "23e016715ed181a9",
+        "name": "Generar Texto de Alerta",
+        "x": 270,
+        "y": 2180,
+        "wires": [
+            [
+                "d82feee7.5a1ca8"
+            ]
+        ]
+    },
+    {
+        "id": "d82feee7.5a1ca8",
+        "type": "file",
+        "z": "ece54e72fd2eb599",
+        "g": "23e016715ed181a9",
+        "name": "Escribir en archivo",
+        "filename": "./alertas.log",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "x": 490,
+        "y": 2180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "slider1",
+        "type": "ui_slider",
+        "z": "flow1",
+        "name": "Control de Flujo",
+        "label": "Control de Flujo",
+        "group": "group1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "control/slider",
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "switch_control"
+            ]
+        ]
+    },
+    {
+        "id": "switch_control",
+        "type": "switch",
+        "z": "flow1",
+        "name": "Habilitar flujo",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [
+                "sensor_simulation"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "sensor_simulation",
+        "type": "inject",
+        "z": "flow1",
+        "name": "Simular Sensores",
         "props": [
             {
                 "p": "payload"
@@ -8034,47 +9306,95 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "600",
         "crontab": "",
-        "once": true,
+        "once": false,
         "onceDelay": 0.1,
-        "topic": "",
+        "topic": "sensor_data",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
-        "y": 140,
+        "x": 150,
+        "y": 200,
         "wires": [
             [
-                "c590ae1ff71faae3"
+                "generate_data"
             ]
         ]
     },
     {
-        "id": "c590ae1ff71faae3",
-        "type": "ui_worldmap",
-        "z": "ece54e72fd2eb599",
-        "group": "5a647fd07ff27317",
-        "order": 1,
-        "width": 21,
-        "height": 12,
-        "name": "",
-        "lat": "39.4893100",
-        "lon": "-0.4816300",
-        "zoom": "10",
-        "layer": "",
-        "cluster": "",
-        "maxage": "",
-        "usermenu": "hide",
-        "layers": "hide",
-        "panit": "false",
-        "panlock": "false",
-        "zoomlock": "false",
-        "hiderightclick": "true",
-        "coords": "none",
-        "showgrid": "false",
-        "path": "/worldmap",
-        "x": 500,
-        "y": 140,
+        "id": "generate_data",
+        "type": "function",
+        "z": "flow1",
+        "name": "Datos Sensores",
+        "func": "// Simulación de datos para sensores\nmsg.payload = {\n    sensor1: {\n        CO2: Math.random() * 50,\n        NO2: Math.random() * 100,\n        SO2: Math.random() * 50,\n        O3: Math.random() * 50,\n        Humedad: Math.random() * 100,\n        Temperatura: Math.random() * 50,\n        PM10: Math.random() * 200,\n        PM25: Math.random() * 150\n    },\n    sensor2: {\n        CO2: Math.random() * 50,\n        NO2: Math.random() * 100,\n        SO2: Math.random() * 50,\n        O3: Math.random() * 50,\n        Humedad: Math.random() * 100,\n        Temperatura: Math.random() * 50,\n        PM10: Math.random() * 200,\n        PM25: Math.random() * 150\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 200,
+        "wires": [
+            [
+                "sensor_gauge",
+                "alert_check"
+            ]
+        ]
+    },
+    {
+        "id": "sensor_gauge",
+        "type": "ui_gauge",
+        "z": "flow1",
+        "name": "Visualización de Sensores",
+        "group": "group1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Calidad del Aire",
+        "label": "Sensor 1 Temp",
+        "format": "{{payload.sensor1.Temperatura}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "35",
+        "x": 550,
+        "y": 200,
         "wires": []
+    },
+    {
+        "id": "alert_check",
+        "type": "function",
+        "z": "flow1",
+        "name": "Generar Alertas",
+        "func": "var alerts = [];\nif (msg.payload.sensor1.Temperatura >= 40) {\n    alerts.push('Alerta: Sensor 1 - Temperatura Alta');\n}\nif (msg.payload.sensor2.PM10 > 150) {\n    alerts.push('Alerta: Sensor 2 - PM10 Elevado');\n}\nif (alerts.length > 0) {\n    msg.payload = alerts;\n    return [msg, null];\n} else {\n    return [null, msg];\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "x": 550,
+        "y": 300,
+        "wires": [
+            [
+                "alert_log"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "alert_log",
+        "type": "file",
+        "z": "flow1",
+        "name": "Registro de Alertas",
+        "filename": "/data/alertas.log",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 750,
+        "y": 300,
+        "wires": [
+            []
+        ]
     }
 ]

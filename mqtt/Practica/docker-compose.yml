@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+
+  node-red:
+    container_name: nodeRED_1881
+    environment:
+      SERVER_NAME: localhost
+      ELASTICSEARCH_URL: http://elasticsearch:9200/
+    image: nodered/node-red:latest
+    user: "0:1000"
+    restart: unless-stopped
+    volumes:
+      - "./node-red:/data"
+    ports:
+      - "1881:1880"
+    networks:
+      - elk
+
+  mqtt:
+    image: eclipse-mosquitto:1.6.13
+    container_name: mqtt
+    restart: unless-stopped
+    networks:
+      - elk
+
+networks:
+  elk:
+    driver: bridge

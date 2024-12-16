@@ -146,12 +146,11 @@
         "info": "Comentar que muchas veces nos puede interesar desarrollar una API. Nuestro sistema de adquisicion de datos puede ser pasivo esperando a que nos lleguen los datos antes de procesarlos y hacer algo con ellos"
     },
     {
-        "id": "ece54e72fd2eb599",
+        "id": "flow1",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "Sistema de Calidad del Aire",
         "disabled": false,
-        "info": "",
-        "env": []
+        "info": ""
     },
     {
         "id": "58baabe08cf06c58",
@@ -1518,6 +1517,60 @@
         "name": "FlightRadar",
         "icon": "dashboard",
         "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "44c5192b1d10f804",
+        "type": "ui_tab",
+        "name": "control",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0a5418cb2f58314f",
+        "type": "ui_group",
+        "name": "Monitorizacion",
+        "tab": "44c5192b1d10f804",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f2f63b33.0edfc8",
+        "type": "ui_group",
+        "name": "Datos en tiempo real",
+        "tab": "fe29c99e.33d2c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fe29c99e.33d2c",
+        "type": "ui_tab",
+        "name": "Simulacion de Sensores",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "group1",
+        "type": "ui_group",
+        "name": "Monitorización",
+        "tab": "tab1",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "tab1",
+        "type": "ui_tab",
+        "name": "Sistema Ambiental",
+        "icon": "dashboard",
         "disabled": false,
         "hidden": false
     },
@@ -8021,10 +8074,66 @@
         "wires": []
     },
     {
-        "id": "996ee1bea68295cf",
+        "id": "slider1",
+        "type": "ui_slider",
+        "z": "flow1",
+        "name": "Control de Flujo",
+        "label": "Control de Flujo",
+        "tooltip": "",
+        "group": "group1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "control/slider",
+        "topicType": "str",
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "className": "",
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "switch_control"
+            ]
+        ]
+    },
+    {
+        "id": "switch_control",
+        "type": "switch",
+        "z": "flow1",
+        "name": "Habilitar flujo",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [
+                "sensor_simulation"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "sensor_simulation",
         "type": "inject",
-        "z": "ece54e72fd2eb599",
-        "name": "",
+        "z": "flow1",
+        "name": "Simular Sensores",
         "props": [
             {
                 "p": "payload"
@@ -8034,53 +8143,95 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "600",
         "crontab": "",
-        "once": true,
+        "once": false,
         "onceDelay": 0.1,
-        "topic": "",
+        "topic": "sensor_data",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
-        "y": 140,
+        "x": 150,
+        "y": 200,
         "wires": [
             [
-                "c590ae1ff71faae3"
+                "generate_data"
             ]
         ]
     },
     {
-        "id": "c590ae1ff71faae3",
-        "type": "ui_worldmap",
-        "z": "ece54e72fd2eb599",
-        "group": "5a647fd07ff27317",
-        "order": 1,
-        "width": 21,
-        "height": 12,
-        "name": "",
-        "lat": "39.4893100",
-        "lon": "-0.4816300",
-        "zoom": "10",
-        "layer": "OSMG",
-        "cluster": "",
-        "maxage": "",
-        "usermenu": "hide",
-        "layers": "hide",
-        "panit": "false",
-        "panlock": "false",
-        "zoomlock": "false",
-        "hiderightclick": "true",
-        "coords": "none",
-        "showgrid": "false",
-        "path": "/worldmap",
-        "overlist": "DR,CO,RA,DN,SN,HM",
-        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriO,EsriDG,NatGeo,UKOS,OpTop",
-        "mapname": "",
-        "mapurl": "",
-        "mapopt": "",
-        "mapwms": false,
-        "x": 500,
-        "y": 140,
+        "id": "generate_data",
+        "type": "function",
+        "z": "flow1",
+        "name": "Datos Sensores",
+        "func": "// Simulación de datos para sensores\nmsg.payload = {\n    sensor1: {\n        CO2: Math.random() * 50,\n        NO2: Math.random() * 100,\n        SO2: Math.random() * 50,\n        O3: Math.random() * 50,\n        Humedad: Math.random() * 100,\n        Temperatura: Math.random() * 50,\n        PM10: Math.random() * 200,\n        PM25: Math.random() * 150\n    },\n    sensor2: {\n        CO2: Math.random() * 50,\n        NO2: Math.random() * 100,\n        SO2: Math.random() * 50,\n        O3: Math.random() * 50,\n        Humedad: Math.random() * 100,\n        Temperatura: Math.random() * 50,\n        PM10: Math.random() * 200,\n        PM25: Math.random() * 150\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 200,
+        "wires": [
+            [
+                "sensor_gauge",
+                "alert_check"
+            ]
+        ]
+    },
+    {
+        "id": "sensor_gauge",
+        "type": "ui_gauge",
+        "z": "flow1",
+        "name": "Visualización de Sensores",
+        "group": "group1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Calidad del Aire",
+        "label": "Sensor 1 Temp",
+        "format": "{{payload.sensor1.Temperatura}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "35",
+        "x": 550,
+        "y": 200,
         "wires": []
+    },
+    {
+        "id": "alert_check",
+        "type": "function",
+        "z": "flow1",
+        "name": "Generar Alertas",
+        "func": "var alerts = [];\nif (msg.payload.sensor1.Temperatura >= 40) {\n    alerts.push('Alerta: Sensor 1 - Temperatura Alta');\n}\nif (msg.payload.sensor2.PM10 > 150) {\n    alerts.push('Alerta: Sensor 2 - PM10 Elevado');\n}\nif (alerts.length > 0) {\n    msg.payload = alerts;\n    return [msg, null];\n} else {\n    return [null, msg];\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "x": 550,
+        "y": 300,
+        "wires": [
+            [
+                "alert_log"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "alert_log",
+        "type": "file",
+        "z": "flow1",
+        "name": "Registro de Alertas",
+        "filename": "/data/alertas.log",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 750,
+        "y": 300,
+        "wires": [
+            []
+        ]
     }
 ]

@@ -1,0 +1,13 @@
+Broker MQTT publico gratuito:
+
+Servidor: broker.emqx.io
+Puerto TCP: 1883
+----------------------------------------------
+Links: 
+
+- https://www.emqx.com/en/blog/how-to-use-mqtt-in-python
+
+- https://www.hivemq.com/blog/implementing-mqtt-in-python/
+
+- https://github.com/eclipse/paho.mqtt.python
+
