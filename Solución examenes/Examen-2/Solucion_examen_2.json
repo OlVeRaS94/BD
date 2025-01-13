@@ -1,0 +1,1296 @@
+[
+    {
+        "id": "9b34c3ef5f307a0b",
+        "type": "tab",
+        "label": "Flujo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "241eb6ab6aa0b5e7",
+        "type": "group",
+        "z": "9b34c3ef5f307a0b",
+        "name": "1.- a)\tDiseña un flujo que reciba datos de 2 sensores",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#0070c0",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "d17d55d9f4328d17",
+            "e8dde14fb7910692",
+            "7ef59113b60f73c1",
+            "3fdc080f10654617",
+            "9b11b3bc3a87d536",
+            "8adf0026b28193be",
+            "f705e9057ca757d2",
+            "e52d1541e08ea011",
+            "4410791c14832f20",
+            "c740de89e1411daf",
+            "2a2334c4c5fd5012",
+            "ce8c705996b0c116"
+        ],
+        "x": 54,
+        "y": 19,
+        "w": 772,
+        "h": 302
+    },
+    {
+        "id": "7b33daed0885b5d8",
+        "type": "group",
+        "z": "9b34c3ef5f307a0b",
+        "name": "2.- a)Guardar todas las lecturas de los sensores en una colección de MongoDB",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#0070c0",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "c67879e6963e998c",
+            "a7660c3ea50b86a0",
+            "a993743f657833d7",
+            "2083ef17894d17f3",
+            "a825d20515ec6873"
+        ],
+        "x": 514,
+        "y": 379,
+        "w": 552,
+        "h": 202
+    },
+    {
+        "id": "1ce1b5e8887e3e4b",
+        "type": "group",
+        "z": "9b34c3ef5f307a0b",
+        "g": "139a1146df7dd401",
+        "name": "Check Subscription exists?",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#0070c0",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "inject-startup",
+            "get-subscriptions",
+            "check-patterns",
+            "66dc18d8f8a16078",
+            "570f394311f6663f",
+            "beacbd039d5b16ed",
+            "a161ab095a3f8277",
+            "3fb50aa3a27d2e55",
+            "fd522926bbde1068",
+            "e78f3a3d14dd1503",
+            "12dbebc9d4fac1e5",
+            "2579937a53ebd6e4",
+            "f72d5653ba5a5455"
+        ],
+        "x": 94,
+        "y": 819,
+        "w": 832,
+        "h": 382
+    },
+    {
+        "id": "090a9240efbb2098",
+        "type": "group",
+        "z": "9b34c3ef5f307a0b",
+        "g": "139a1146df7dd401",
+        "name": "Create entities",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#0070c0",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "6cdb0bfa6c721342",
+            "f0c6c10c187b4537",
+            "7cb16cc31d4a944d",
+            "8e27854a7595438f",
+            "852a455695492938",
+            "1aa2a359f374daa9"
+        ],
+        "x": 94,
+        "y": 639,
+        "w": 732,
+        "h": 142
+    },
+    {
+        "id": "d9749c3376583b4d",
+        "type": "group",
+        "z": "9b34c3ef5f307a0b",
+        "g": "139a1146df7dd401",
+        "name": "Create subscriptions",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#0070c0",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "76d34def366b6d1c",
+            "9f22e1a5967ee2e4",
+            "68cf718cfc015c4c",
+            "cb37be129e7dec46",
+            "63db73864d471872",
+            "f88545a97dea08e9",
+            "e01663856debce9c",
+            "b80d0f6e779cc07c",
+            "e493af805cb6ba46"
+        ],
+        "x": 84,
+        "y": 1239,
+        "w": 902,
+        "h": 182
+    },
+    {
+        "id": "9c08220da1100eb3",
+        "type": "group",
+        "z": "9b34c3ef5f307a0b",
+        "g": "139a1146df7dd401",
+        "name": "Notification endpoint",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#0070c0",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "436b2328c055f129",
+            "9eeaccf2f099387c",
+            "b4b5228b5635161d",
+            "a72fc21dc29a71ac"
+        ],
+        "x": 94,
+        "y": 1459,
+        "w": 632,
+        "h": 142
+    },
+    {
+        "id": "139a1146df7dd401",
+        "type": "group",
+        "z": "9b34c3ef5f307a0b",
+        "name": "1.- b)Generar alertas automaticas",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#92d04f",
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "090a9240efbb2098",
+            "1ce1b5e8887e3e4b",
+            "d9749c3376583b4d",
+            "9c08220da1100eb3"
+        ],
+        "x": 58,
+        "y": 613,
+        "w": 954,
+        "h": 1014
+    },
+    {
+        "id": "b8f8f85fd330e00c",
+        "type": "group",
+        "z": "9b34c3ef5f307a0b",
+        "name": "1.- c)Configura un log en Node-RED para registrar todas las alertas",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#0070c0",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "9860389ef8b563e3",
+            "d1daf0a250c5c2af",
+            "34d25e1d7fa2179e",
+            "0513542da6b48d53",
+            "6891663ea34d1481",
+            "62c5f27ea2f3e82a"
+        ],
+        "x": 334,
+        "y": 1659,
+        "w": 792,
+        "h": 142
+    },
+    {
+        "id": "d17d55d9f4328d17",
+        "type": "function",
+        "z": "9b34c3ef5f307a0b",
+        "g": "241eb6ab6aa0b5e7",
+        "name": "getDate for id and dateObserved",
+        "func": "// Capturar el instante de tiempo actual\nlet dateObserved = new Date().toISOString(); // Formato estándar ISO 8601\nlet date = new Date();\nlet dateObserved_timestamp = date.getTime();\n\nmsg.payload = dateObserved_timestamp;\nmsg.dateObserved = dateObserved;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 60,
+        "wires": [
+            [
+                "f705e9057ca757d2"
+            ]
+        ]
+    },
+    {
+        "id": "e8dde14fb7910692",
+        "type": "data-generator",
+        "z": "9b34c3ef5f307a0b",
+        "g": "241eb6ab6aa0b5e7",
+        "name": "Sensor X",
+        "field": "payload",
+        "fieldType": "msg",
+        "syntax": "json",
+        "template": "{\n    \"type\": \"AirQualityObserved\",\n    \"so2\": {{float 0 350}},\n    \"no2\": {{float 50 360}},\n    \"temperature\": {{float 30 80}},\n    \"dateObserved\": \"{{dateObserved}}\",\n    \"dateObserved_timestamp\": {{payload}}\n}\n",
+        "x": 240,
+        "y": 180,
+        "wires": [
+            [
+                "4410791c14832f20"
+            ]
+        ]
+    },
+    {
+        "id": "7ef59113b60f73c1",
+        "type": "inject",
+        "z": "9b34c3ef5f307a0b",
+        "g": "241eb6ab6aa0b5e7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 60,
+        "wires": [
+            [
+                "d17d55d9f4328d17"
+            ]
+        ]
+    },
+    {
+        "id": "3fdc080f10654617",
+        "type": "data-generator",
+        "z": "9b34c3ef5f307a0b",
+        "g": "241eb6ab6aa0b5e7",
+        "name": "Sensor Y",
+        "field": "payload",
+        "fieldType": "msg",
+        "syntax": "json",
+        "template": "{\n    \"type\": \"AirQualityObserved\",\n    \"o3\": {{float 1 200}},\n    \"pm25\": {{float 1 200}},\n    \"pm10\": {{float 1 200}},\n    \"co2\": {{float 1 100}},\n    \"dateObserved\": \"{{dateObserved}}\",\n    \"dateObserved_timestamp\": {{payload}}\n}\n",
+        "x": 240,
+        "y": 240,
+        "wires": [
+            [
+                "c740de89e1411daf"
+            ]
+        ]
+    },
+    {
+        "id": "9b11b3bc3a87d536",
+        "type": "debug",
+        "z": "9b34c3ef5f307a0b",
+        "g": "241eb6ab6aa0b5e7",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "8adf0026b28193be",
+        "type": "debug",
+        "z": "9b34c3ef5f307a0b",
+        "g": "241eb6ab6aa0b5e7",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c67879e6963e998c",
+        "type": "file",
+        "z": "9b34c3ef5f307a0b",
+        "g": "7b33daed0885b5d8",
+        "name": "Escribir Log (Sensor X)",
+        "filename": "/data/sensorX.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 930,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f705e9057ca757d2",
+        "type": "link out",
+        "z": "9b34c3ef5f307a0b",
+        "g": "241eb6ab6aa0b5e7",
+        "name": "lnkSensores",
+        "mode": "link",
+        "links": [
+            "e52d1541e08ea011"
+        ],
+        "x": 725,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "e52d1541e08ea011",
+        "type": "link in",
+        "z": "9b34c3ef5f307a0b",
+        "g": "241eb6ab6aa0b5e7",
+        "name": "lnkSensores",
+        "links": [
+            "f705e9057ca757d2"
+        ],
+        "x": 115,
+        "y": 180,
+        "wires": [
+            [
+                "e8dde14fb7910692",
+                "3fdc080f10654617"
+            ]
+        ]
+    },
+    {
+        "id": "a7660c3ea50b86a0",
+        "type": "function",
+        "z": "9b34c3ef5f307a0b",
+        "g": "7b33daed0885b5d8",
+        "name": "Acumular datos en un array",
+        "func": "// Obtener el array acumulado del contexto\nlet dataArray = flow.get('dataSensorX') || [];\n\n// Agregar el nuevo dato al array\ndataArray.push(msg.payload);\n\n// Guardar el array actualizado en el contexto\nflow.set('dataSensorX', dataArray);\n\n// Enviar el array completo al siguiente nodo\nmsg.payload = dataArray;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 420,
+        "wires": [
+            [
+                "c67879e6963e998c"
+            ]
+        ]
+    },
+    {
+        "id": "a993743f657833d7",
+        "type": "function",
+        "z": "9b34c3ef5f307a0b",
+        "g": "7b33daed0885b5d8",
+        "name": "Acumular datos en un array",
+        "func": "// Obtener el array acumulado del contexto\nlet dataArray = flow.get('dataSensorY') || [];\n\n// Agregar el nuevo dato al array\ndataArray.push(msg.payload);\n\n// Guardar el array actualizado en el contexto\nflow.set('dataSensorY', dataArray);\n\n// Enviar el array completo al siguiente nodo\nmsg.payload = dataArray;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 480,
+        "wires": [
+            [
+                "2083ef17894d17f3"
+            ]
+        ]
+    },
+    {
+        "id": "2083ef17894d17f3",
+        "type": "file",
+        "z": "9b34c3ef5f307a0b",
+        "g": "7b33daed0885b5d8",
+        "name": "Escribir Log (Sensor Y)",
+        "filename": "/data/sensorY.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 930,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a825d20515ec6873",
+        "type": "comment",
+        "z": "9b34c3ef5f307a0b",
+        "g": "7b33daed0885b5d8",
+        "name": "MongoImport",
+        "info": "mongoimport --db miBaseDeDatos --collection miColección --file /data/sensors.json --jsonArray\n",
+        "x": 810,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "inject-startup",
+        "type": "inject",
+        "z": "9b34c3ef5f307a0b",
+        "g": "1ce1b5e8887e3e4b",
+        "name": "Startup Trigger",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "",
+        "x": 220,
+        "y": 900,
+        "wires": [
+            [
+                "get-subscriptions"
+            ]
+        ]
+    },
+    {
+        "id": "get-subscriptions",
+        "type": "http request",
+        "z": "9b34c3ef5f307a0b",
+        "g": "1ce1b5e8887e3e4b",
+        "name": "Get Subscriptions",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://host.docker.internal:1030/v2/subscriptions",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 430,
+        "y": 900,
+        "wires": [
+            [
+                "check-patterns",
+                "f72d5653ba5a5455"
+            ]
+        ]
+    },
+    {
+        "id": "check-patterns",
+        "type": "function",
+        "z": "9b34c3ef5f307a0b",
+        "g": "1ce1b5e8887e3e4b",
+        "name": "Check Patterns",
+        "func": "let sensorXExists = false;\nlet sensorYExists = false;\n\nmsg.payload.forEach(sub => {\n    if (sub.subject.entities.some(e => e.idPattern === 'SensorX.*')) {\n        sensorXExists = true;\n    }\n    if (sub.subject.entities.some(e => e.idPattern === 'SensorY.*')) {\n        sensorYExists = true;\n    }\n});\n\nmsg.sensorXExists = sensorXExists;\nmsg.sensorYExists = sensorYExists;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 900,
+        "wires": [
+            [
+                "66dc18d8f8a16078",
+                "570f394311f6663f"
+            ]
+        ]
+    },
+    {
+        "id": "66dc18d8f8a16078",
+        "type": "debug",
+        "z": "9b34c3ef5f307a0b",
+        "g": "1ce1b5e8887e3e4b",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "570f394311f6663f",
+        "type": "link out",
+        "z": "9b34c3ef5f307a0b",
+        "g": "1ce1b5e8887e3e4b",
+        "name": "lnkSubscriptions",
+        "mode": "link",
+        "links": [
+            "beacbd039d5b16ed"
+        ],
+        "x": 815,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "beacbd039d5b16ed",
+        "type": "link in",
+        "z": "9b34c3ef5f307a0b",
+        "g": "1ce1b5e8887e3e4b",
+        "name": "lnkSubscriptions",
+        "links": [
+            "570f394311f6663f"
+        ],
+        "x": 145,
+        "y": 1020,
+        "wires": [
+            [
+                "a161ab095a3f8277",
+                "3fb50aa3a27d2e55"
+            ]
+        ]
+    },
+    {
+        "id": "a161ab095a3f8277",
+        "type": "switch",
+        "z": "9b34c3ef5f307a0b",
+        "g": "1ce1b5e8887e3e4b",
+        "name": "Check sensorXExists?",
+        "property": "sensorXExists",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 1020,
+        "wires": [
+            [
+                "fd522926bbde1068",
+                "12dbebc9d4fac1e5"
+            ]
+        ]
+    },
+    {
+        "id": "3fb50aa3a27d2e55",
+        "type": "switch",
+        "z": "9b34c3ef5f307a0b",
+        "g": "1ce1b5e8887e3e4b",
+        "name": "Check sensorYExists?",
+        "property": "sensorYExists",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 1100,
+        "wires": [
+            [
+                "e78f3a3d14dd1503",
+                "2579937a53ebd6e4"
+            ]
+        ]
+    },
+    {
+        "id": "fd522926bbde1068",
+        "type": "debug",
+        "z": "9b34c3ef5f307a0b",
+        "g": "1ce1b5e8887e3e4b",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "e78f3a3d14dd1503",
+        "type": "debug",
+        "z": "9b34c3ef5f307a0b",
+        "g": "1ce1b5e8887e3e4b",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "12dbebc9d4fac1e5",
+        "type": "link out",
+        "z": "9b34c3ef5f307a0b",
+        "g": "1ce1b5e8887e3e4b",
+        "name": "lnkCreateSubscription_SensorX",
+        "mode": "link",
+        "links": [
+            "76d34def366b6d1c"
+        ],
+        "x": 625,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "2579937a53ebd6e4",
+        "type": "link out",
+        "z": "9b34c3ef5f307a0b",
+        "g": "1ce1b5e8887e3e4b",
+        "name": "lnkCreateSubscription_SensorY",
+        "mode": "link",
+        "links": [
+            "9f22e1a5967ee2e4"
+        ],
+        "x": 615,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "76d34def366b6d1c",
+        "type": "link in",
+        "z": "9b34c3ef5f307a0b",
+        "g": "d9749c3376583b4d",
+        "name": "lnkCreateSubscription_SensorX",
+        "links": [
+            "12dbebc9d4fac1e5"
+        ],
+        "x": 125,
+        "y": 1280,
+        "wires": [
+            [
+                "68cf718cfc015c4c"
+            ]
+        ]
+    },
+    {
+        "id": "9f22e1a5967ee2e4",
+        "type": "link in",
+        "z": "9b34c3ef5f307a0b",
+        "g": "d9749c3376583b4d",
+        "name": "lnkCreateSubscription_SensorY",
+        "links": [
+            "2579937a53ebd6e4"
+        ],
+        "x": 125,
+        "y": 1340,
+        "wires": [
+            [
+                "b80d0f6e779cc07c",
+                "e493af805cb6ba46"
+            ]
+        ]
+    },
+    {
+        "id": "68cf718cfc015c4c",
+        "type": "function",
+        "z": "9b34c3ef5f307a0b",
+        "g": "d9749c3376583b4d",
+        "name": "Create Subscription Sensor X",
+        "func": "msg.payload = {\n    \"description\": \"Notify when no2 greater than 50\",\n    \"subject\": {\n        \"entities\": [\n            { \"idPattern\": \"SensorX.*\", \"type\": \"AirQualityObserved\" }\n        ],\n        \"condition\": {\n            \"attrs\": [\"no2\"],\n            \"expression\": {\n                \"q\": \"no2>50\"\n            }\n        }\n    },\n    \"notification\": {\n        \"http\": {\n            \"url\": \"http://host.docker.internal:1895/notify_sensorX\"\n        },\n        \"attrs\": [\"no2\", \"so2\", \"temperature\"]\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1280,
+        "wires": [
+            [
+                "cb37be129e7dec46"
+            ]
+        ]
+    },
+    {
+        "id": "436b2328c055f129",
+        "type": "http in",
+        "z": "9b34c3ef5f307a0b",
+        "g": "9c08220da1100eb3",
+        "name": "Notify Endpoint (Sensor X)",
+        "url": "/notify_sensorX",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 1500,
+        "wires": [
+            [
+                "9eeaccf2f099387c",
+                "9860389ef8b563e3"
+            ]
+        ]
+    },
+    {
+        "id": "9eeaccf2f099387c",
+        "type": "debug",
+        "z": "9b34c3ef5f307a0b",
+        "g": "9c08220da1100eb3",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "cb37be129e7dec46",
+        "type": "http request",
+        "z": "9b34c3ef5f307a0b",
+        "g": "d9749c3376583b4d",
+        "name": "Create Subscription",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://host.docker.internal:1030/v2/subscriptions",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": ""
+            }
+        ],
+        "x": 630,
+        "y": 1280,
+        "wires": [
+            [
+                "63db73864d471872"
+            ]
+        ]
+    },
+    {
+        "id": "63db73864d471872",
+        "type": "debug",
+        "z": "9b34c3ef5f307a0b",
+        "g": "d9749c3376583b4d",
+        "name": "Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "4410791c14832f20",
+        "type": "function",
+        "z": "9b34c3ef5f307a0b",
+        "g": "241eb6ab6aa0b5e7",
+        "name": "Add id",
+        "func": "// Verifica que msg.payload sea un objeto\nif (msg.payload && msg.payload.dateObserved_timestamp) {\n    // Agrega la propiedad 'id'\n    msg.payload.id = `SensorX_${msg.payload.dateObserved_timestamp}`;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 180,
+        "wires": [
+            [
+                "9b11b3bc3a87d536",
+                "a7660c3ea50b86a0",
+                "2a2334c4c5fd5012"
+            ]
+        ]
+    },
+    {
+        "id": "f72d5653ba5a5455",
+        "type": "debug",
+        "z": "9b34c3ef5f307a0b",
+        "g": "1ce1b5e8887e3e4b",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "c740de89e1411daf",
+        "type": "function",
+        "z": "9b34c3ef5f307a0b",
+        "g": "241eb6ab6aa0b5e7",
+        "name": "Add id",
+        "func": "// Verifica que msg.payload sea un objeto\nif (msg.payload && msg.payload.dateObserved_timestamp) {\n    // Agrega la propiedad 'id'\n    msg.payload.id = `SensorY_${msg.payload.dateObserved_timestamp}`;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 240,
+        "wires": [
+            [
+                "8adf0026b28193be",
+                "a993743f657833d7",
+                "ce8c705996b0c116"
+            ]
+        ]
+    },
+    {
+        "id": "2a2334c4c5fd5012",
+        "type": "link out",
+        "z": "9b34c3ef5f307a0b",
+        "g": "241eb6ab6aa0b5e7",
+        "name": "lnkOrionSensorX",
+        "mode": "link",
+        "links": [
+            "6cdb0bfa6c721342"
+        ],
+        "x": 685,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "6cdb0bfa6c721342",
+        "type": "link in",
+        "z": "9b34c3ef5f307a0b",
+        "g": "090a9240efbb2098",
+        "name": "lnkOrionSensorX",
+        "links": [
+            "2a2334c4c5fd5012"
+        ],
+        "x": 135,
+        "y": 680,
+        "wires": [
+            [
+                "7cb16cc31d4a944d"
+            ]
+        ]
+    },
+    {
+        "id": "ce8c705996b0c116",
+        "type": "link out",
+        "z": "9b34c3ef5f307a0b",
+        "g": "241eb6ab6aa0b5e7",
+        "name": "lnkOrionSensorY",
+        "mode": "link",
+        "links": [
+            "f0c6c10c187b4537"
+        ],
+        "x": 595,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "f0c6c10c187b4537",
+        "type": "link in",
+        "z": "9b34c3ef5f307a0b",
+        "g": "090a9240efbb2098",
+        "name": "lnkOrionSensorY",
+        "links": [
+            "ce8c705996b0c116"
+        ],
+        "x": 135,
+        "y": 740,
+        "wires": [
+            [
+                "7cb16cc31d4a944d"
+            ]
+        ]
+    },
+    {
+        "id": "7cb16cc31d4a944d",
+        "type": "function",
+        "z": "9b34c3ef5f307a0b",
+        "g": "090a9240efbb2098",
+        "name": "Add headers",
+        "func": "msg.headers = {\n    \"Content-Type\": \"application/json\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 700,
+        "wires": [
+            [
+                "8e27854a7595438f",
+                "852a455695492938"
+            ]
+        ]
+    },
+    {
+        "id": "8e27854a7595438f",
+        "type": "debug",
+        "z": "9b34c3ef5f307a0b",
+        "g": "090a9240efbb2098",
+        "name": "debug 10",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "852a455695492938",
+        "type": "http request",
+        "z": "9b34c3ef5f307a0b",
+        "g": "090a9240efbb2098",
+        "name": "Create Entity",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://host.docker.internal:1030/v2/entities?options=keyValues",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 470,
+        "y": 700,
+        "wires": [
+            [
+                "1aa2a359f374daa9"
+            ]
+        ]
+    },
+    {
+        "id": "1aa2a359f374daa9",
+        "type": "debug",
+        "z": "9b34c3ef5f307a0b",
+        "g": "090a9240efbb2098",
+        "name": "Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "f88545a97dea08e9",
+        "type": "http request",
+        "z": "9b34c3ef5f307a0b",
+        "g": "d9749c3376583b4d",
+        "name": "Create Subscription",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://host.docker.internal:1030/v2/subscriptions",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": ""
+            }
+        ],
+        "x": 630,
+        "y": 1340,
+        "wires": [
+            [
+                "e01663856debce9c"
+            ]
+        ]
+    },
+    {
+        "id": "e01663856debce9c",
+        "type": "debug",
+        "z": "9b34c3ef5f307a0b",
+        "g": "d9749c3376583b4d",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "b4b5228b5635161d",
+        "type": "http in",
+        "z": "9b34c3ef5f307a0b",
+        "g": "9c08220da1100eb3",
+        "name": "Notify Endpoint (Sensor Y)",
+        "url": "/notify_sensorY",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 230,
+        "y": 1560,
+        "wires": [
+            [
+                "a72fc21dc29a71ac",
+                "0513542da6b48d53"
+            ]
+        ]
+    },
+    {
+        "id": "a72fc21dc29a71ac",
+        "type": "debug",
+        "z": "9b34c3ef5f307a0b",
+        "g": "9c08220da1100eb3",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "b80d0f6e779cc07c",
+        "type": "function",
+        "z": "9b34c3ef5f307a0b",
+        "g": "d9749c3376583b4d",
+        "name": "Create Subscription Sensor Y",
+        "func": "msg.payload = {\n    \"description\": \"Notify when PM2.5 greater than 35\",\n    \"subject\": {\n        \"entities\": [\n            { \"idPattern\": \"SensorY.*\", \"type\": \"AirQualityObserved\" }\n        ],\n        \"condition\": {\n            \"attrs\": [\"pm25\"],\n            \"expression\": {\n                \"q\": \"pm25>35\"\n            }\n        }\n    },\n    \"notification\": {\n        \"http\": {\n            \"url\": \"http://host.docker.internal:1895/notify_sensorY\"\n        },\n        \"attrs\": [\"pm25\", \"pm10\", \"o3\", \"co2\"]\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1340,
+        "wires": [
+            [
+                "f88545a97dea08e9"
+            ]
+        ]
+    },
+    {
+        "id": "e493af805cb6ba46",
+        "type": "function",
+        "z": "9b34c3ef5f307a0b",
+        "g": "d9749c3376583b4d",
+        "name": "Create Subscription Sensor Y",
+        "func": "msg.payload = {\n    \"description\": \"Notify when PM10 greater than 70\",\n    \"subject\": {\n        \"entities\": [\n            { \"idPattern\": \"SensorY.*\", \"type\": \"AirQualityObserved\" }\n        ],\n        \"condition\": {\n            \"attrs\": [\"pm10\"],\n            \"expression\": {\n                \"q\": \"pm10>70\"\n            }\n        }\n    },\n    \"notification\": {\n        \"http\": {\n            \"url\": \"http://host.docker.internal:1895/notify_sensorY\"\n        },\n        \"attrs\": [\"pm25\", \"pm10\", \"o3\", \"co2\"]\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1380,
+        "wires": [
+            [
+                "f88545a97dea08e9"
+            ]
+        ]
+    },
+    {
+        "id": "9860389ef8b563e3",
+        "type": "function",
+        "z": "9b34c3ef5f307a0b",
+        "g": "b8f8f85fd330e00c",
+        "name": "function 1",
+        "func": "var data = msg.payload.data;\n\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 1700,
+        "wires": [
+            [
+                "d1daf0a250c5c2af"
+            ]
+        ]
+    },
+    {
+        "id": "d1daf0a250c5c2af",
+        "type": "function",
+        "z": "9b34c3ef5f307a0b",
+        "g": "b8f8f85fd330e00c",
+        "name": "Acumular datos en un array",
+        "func": "// Obtener el array acumulado del contexto\nlet dataArray = flow.get('alertsX') || [];\n\n// Agregar el nuevo dato al array\ndataArray.push(msg.payload);\n\n// Guardar el array actualizado en el contexto\nflow.set('alertsX', dataArray);\n\n// Enviar el array completo al siguiente nodo\nmsg.payload = dataArray;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 1700,
+        "wires": [
+            [
+                "6891663ea34d1481"
+            ]
+        ]
+    },
+    {
+        "id": "34d25e1d7fa2179e",
+        "type": "function",
+        "z": "9b34c3ef5f307a0b",
+        "g": "b8f8f85fd330e00c",
+        "name": "Acumular datos en un array",
+        "func": "// Obtener el array acumulado del contexto\nlet dataArray = flow.get('alertsY') || [];\n\n// Agregar el nuevo dato al array\ndataArray.push(msg.payload);\n\n// Guardar el array actualizado en el contexto\nflow.set('alertsY', dataArray);\n\n// Enviar el array completo al siguiente nodo\nmsg.payload = dataArray;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 1760,
+        "wires": [
+            [
+                "62c5f27ea2f3e82a"
+            ]
+        ]
+    },
+    {
+        "id": "0513542da6b48d53",
+        "type": "function",
+        "z": "9b34c3ef5f307a0b",
+        "g": "b8f8f85fd330e00c",
+        "name": "function 2",
+        "func": "var data = msg.payload.data;\n\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1760,
+        "wires": [
+            [
+                "34d25e1d7fa2179e"
+            ]
+        ]
+    },
+    {
+        "id": "6891663ea34d1481",
+        "type": "file",
+        "z": "9b34c3ef5f307a0b",
+        "g": "b8f8f85fd330e00c",
+        "name": "Escribir alertas (Sensor X)",
+        "filename": "/data/alertsX.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 990,
+        "y": 1700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "62c5f27ea2f3e82a",
+        "type": "file",
+        "z": "9b34c3ef5f307a0b",
+        "g": "b8f8f85fd330e00c",
+        "name": "Escribir alertas (Sensor y)",
+        "filename": "/data/alertsY.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 990,
+        "y": 1760,
+        "wires": [
+            []
+        ]
+    }
+]

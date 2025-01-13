@@ -1,0 +1,352 @@
+[
+    {
+        "id": "9764365797544665",
+        "type": "tab",
+        "label": "Examen 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4e20c1977dbac247",
+        "type": "group",
+        "z": "9764365797544665",
+        "name": "1.- a),b) y c)  Diseña flujo que simule 3 sensores. Frecuencia de envio. Ontología",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#0070c0",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "f1e2b5eac6224d13",
+            "e0490b2596650bd2",
+            "5ffaad14519c4870",
+            "dfcc76e15c932f8a",
+            "8d069727217e29e3",
+            "4356628af3507c38",
+            "06682f66864595c2",
+            "f137448573435e67",
+            "ec24de0e7b1fe224",
+            "ff27d45b480eba18",
+            "7413c4398a9f5849",
+            "ba76245eb21c7e3e"
+        ],
+        "x": 54,
+        "y": 39,
+        "w": 702,
+        "h": 262
+    },
+    {
+        "id": "8c2baff7f9275e7b",
+        "type": "group",
+        "z": "9764365797544665",
+        "name": "2.- a) Almacena los datos en MongoDB",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#0070c0",
+            "label": true,
+            "label-position": "n",
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "48df3ce9f81f385b",
+            "f2491d82c631df3d",
+            "18d5bb4abf56fa0b"
+        ],
+        "x": 494,
+        "y": 359,
+        "w": 472,
+        "h": 142
+    },
+    {
+        "id": "f1e2b5eac6224d13",
+        "type": "function",
+        "z": "9764365797544665",
+        "g": "4e20c1977dbac247",
+        "name": "getDate for id and dateObserved",
+        "func": "// Capturar el instante de tiempo actual\nlet dateObserved = new Date().toISOString(); // Formato estándar ISO 8601\nlet date = new Date();\nlet dateObserved_timestamp = date.getTime();\n\nmsg.payload = dateObserved_timestamp;\nmsg.dateObserved = dateObserved;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 80,
+        "wires": [
+            [
+                "06682f66864595c2"
+            ]
+        ]
+    },
+    {
+        "id": "e0490b2596650bd2",
+        "type": "data-generator",
+        "z": "9764365797544665",
+        "g": "4e20c1977dbac247",
+        "name": "Sensor 5m",
+        "field": "payload",
+        "fieldType": "msg",
+        "syntax": "json",
+        "template": "{\n    \"type\": \"AirQualityObserved\",\n    \"relativeHumidity\": {{float 50 360}},\n    \"temperature\": {{float 30 80}},\n    \"dateObserved\": \"{{dateObserved}}\",\n    \"dateObserved_timestamp\": {{payload}}\n}\n",
+        "x": 250,
+        "y": 200,
+        "wires": [
+            [
+                "4356628af3507c38"
+            ]
+        ]
+    },
+    {
+        "id": "5ffaad14519c4870",
+        "type": "inject",
+        "z": "9764365797544665",
+        "g": "4e20c1977dbac247",
+        "name": "Parametros 5 minutos",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 80,
+        "wires": [
+            [
+                "f1e2b5eac6224d13"
+            ]
+        ]
+    },
+    {
+        "id": "dfcc76e15c932f8a",
+        "type": "data-generator",
+        "z": "9764365797544665",
+        "g": "4e20c1977dbac247",
+        "name": "Sensor 20m",
+        "field": "payload",
+        "fieldType": "msg",
+        "syntax": "json",
+        "template": "{\n    \"type\": \"AirQualityObserved\",\n    \"pm25\": {{float 1 200}},\n    \"co2\": {{float 1 100}},\n    \"dateObserved\": \"{{dateObserved}}\",\n    \"dateObserved_timestamp\": {{payload}}\n}\n",
+        "x": 250,
+        "y": 260,
+        "wires": [
+            [
+                "4356628af3507c38"
+            ]
+        ]
+    },
+    {
+        "id": "8d069727217e29e3",
+        "type": "debug",
+        "z": "9764365797544665",
+        "g": "4e20c1977dbac247",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "4356628af3507c38",
+        "type": "function",
+        "z": "9764365797544665",
+        "g": "4e20c1977dbac247",
+        "name": "Add id",
+        "func": "// Verifica que msg.payload sea un objeto\nif (msg.payload && msg.payload.dateObserved_timestamp) {\n    // Agrega la propiedad 'id'\n    msg.payload.id = `Sensor_${msg.payload.dateObserved_timestamp}`;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 220,
+        "wires": [
+            [
+                "8d069727217e29e3",
+                "f2491d82c631df3d"
+            ]
+        ]
+    },
+    {
+        "id": "06682f66864595c2",
+        "type": "link out",
+        "z": "9764365797544665",
+        "g": "4e20c1977dbac247",
+        "name": "lnkSensor_5",
+        "mode": "link",
+        "links": [
+            "f137448573435e67"
+        ],
+        "x": 715,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "f137448573435e67",
+        "type": "link in",
+        "z": "9764365797544665",
+        "g": "4e20c1977dbac247",
+        "name": "lnkSensor_5",
+        "links": [
+            "06682f66864595c2"
+        ],
+        "x": 95,
+        "y": 200,
+        "wires": [
+            [
+                "e0490b2596650bd2"
+            ]
+        ]
+    },
+    {
+        "id": "ec24de0e7b1fe224",
+        "type": "inject",
+        "z": "9764365797544665",
+        "g": "4e20c1977dbac247",
+        "name": "Parámetros 20 minutos",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "900",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 140,
+        "wires": [
+            [
+                "ff27d45b480eba18"
+            ]
+        ]
+    },
+    {
+        "id": "ff27d45b480eba18",
+        "type": "function",
+        "z": "9764365797544665",
+        "g": "4e20c1977dbac247",
+        "name": "getDate for id and dateObserved",
+        "func": "// Capturar el instante de tiempo actual\nlet dateObserved = new Date().toISOString(); // Formato estándar ISO 8601\nlet date = new Date();\nlet dateObserved_timestamp = date.getTime();\n\nmsg.payload = dateObserved_timestamp;\nmsg.dateObserved = dateObserved;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 140,
+        "wires": [
+            [
+                "7413c4398a9f5849"
+            ]
+        ]
+    },
+    {
+        "id": "7413c4398a9f5849",
+        "type": "link out",
+        "z": "9764365797544665",
+        "g": "4e20c1977dbac247",
+        "name": "lnkSensor_20",
+        "mode": "link",
+        "links": [
+            "ba76245eb21c7e3e"
+        ],
+        "x": 715,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ba76245eb21c7e3e",
+        "type": "link in",
+        "z": "9764365797544665",
+        "g": "4e20c1977dbac247",
+        "name": "lnkSensor_20",
+        "links": [
+            "7413c4398a9f5849"
+        ],
+        "x": 95,
+        "y": 260,
+        "wires": [
+            [
+                "dfcc76e15c932f8a"
+            ]
+        ]
+    },
+    {
+        "id": "48df3ce9f81f385b",
+        "type": "file",
+        "z": "9764365797544665",
+        "g": "8c2baff7f9275e7b",
+        "name": "Escribir Log",
+        "filename": "/data/sensor_ex3.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 870,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2491d82c631df3d",
+        "type": "function",
+        "z": "9764365797544665",
+        "g": "8c2baff7f9275e7b",
+        "name": "Acumular datos en un array",
+        "func": "// Obtener el array acumulado del contexto\nlet dataArray = flow.get('dataSensor') || [];\n\n// Agregar el nuevo dato al array\ndataArray.push(msg.payload);\n\n// Guardar el array actualizado en el contexto\nflow.set('dataSensor', dataArray);\n\n// Enviar el array completo al siguiente nodo\nmsg.payload = dataArray;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 400,
+        "wires": [
+            [
+                "48df3ce9f81f385b"
+            ]
+        ]
+    },
+    {
+        "id": "18d5bb4abf56fa0b",
+        "type": "comment",
+        "z": "9764365797544665",
+        "g": "8c2baff7f9275e7b",
+        "name": "MongoImport",
+        "info": "mongoimport --db miBaseDeDatos --collection miColección --file /data/sensors.json --jsonArray\n",
+        "x": 790,
+        "y": 460,
+        "wires": []
+    }
+]
