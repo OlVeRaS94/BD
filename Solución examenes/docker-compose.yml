@@ -9,7 +9,7 @@ services:
     networks:
       - class_network
     ports:
-      - "1030:1026"
+      - "1031:1030"
     entrypoint:
       [
         "sh",
@@ -29,7 +29,7 @@ services:
     networks:
       - class_network
     ports:
-      - "27030:27017"
+      - "27031:27030"
 
   # Service for deploying a Node-RED instance
   node-red:
