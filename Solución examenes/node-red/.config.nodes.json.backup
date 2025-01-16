@@ -426,5 +426,24 @@
                 "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/storage/23-watch.js"
             }
         }
+    },
+    "node-red-node-data-generator": {
+        "name": "node-red-node-data-generator",
+        "version": "1.0.2",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "data-generator": {
+                "name": "data-generator",
+                "types": [
+                    "data-generator"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-node-data-generator",
+                "file": "/data/node_modules/node-red-node-data-generator/datagenerator.js"
+            }
+        }
     }
 }
