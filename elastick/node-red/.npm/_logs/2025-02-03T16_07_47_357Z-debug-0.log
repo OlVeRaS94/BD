@@ -1,0 +1,117 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.18.1
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/.npmrc
+5 silly config load:file:/root/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install node-red-node-data-generator@1.0.2
+8 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--omit" "dev" "--engine-strict" "node-red-node-data-generator@1.0.2"
+9 verbose logfile logs-max:10 dir:/data/.npm/_logs/2025-02-03T16_07_47_357Z-
+10 verbose logfile /data/.npm/_logs/2025-02-03T16_07_47_357Z-debug-0.log
+11 silly packumentCache heap:2023227392 maxSize:505806848 maxEntrySize:252903424
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest node-red-node-data-generator@1.0.2
+15 silly packumentCache full:https://registry.npmjs.org/node-red-node-data-generator cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/node-red-node-data-generator 242ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/node-red-node-data-generator set size:undefined disposed:false
+18 silly placeDep ROOT node-red-node-data-generator@1.0.2 OK for: node-red-project@0.0.1 want: 1.0.2
+19 silly fetch manifest dummy-json@^3.0.5
+20 silly packumentCache full:https://registry.npmjs.org/dummy-json cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/dummy-json 544ms (cache miss)
+22 silly packumentCache full:https://registry.npmjs.org/dummy-json set size:undefined disposed:false
+23 silly placeDep ROOT dummy-json@3.0.5 OK for: node-red-node-data-generator@1.0.2 want: ^3.0.5
+24 silly fetch manifest fecha@^3.0.3
+25 silly packumentCache full:https://registry.npmjs.org/fecha cache-miss
+26 silly fetch manifest handlebars@^4.7.6
+27 silly packumentCache full:https://registry.npmjs.org/handlebars cache-miss
+28 silly fetch manifest numbro@^2.3.1
+29 silly packumentCache full:https://registry.npmjs.org/numbro cache-miss
+30 silly fetch manifest seedrandom@^3.0.5
+31 silly packumentCache full:https://registry.npmjs.org/seedrandom cache-miss
+32 http fetch GET 200 https://registry.npmjs.org/fecha 73ms (cache miss)
+33 silly packumentCache full:https://registry.npmjs.org/fecha set size:undefined disposed:false
+34 http fetch GET 200 https://registry.npmjs.org/numbro 138ms (cache miss)
+35 silly packumentCache full:https://registry.npmjs.org/numbro set size:undefined disposed:false
+36 http fetch GET 200 https://registry.npmjs.org/seedrandom 141ms (cache miss)
+37 silly packumentCache full:https://registry.npmjs.org/seedrandom set size:undefined disposed:false
+38 http fetch GET 200 https://registry.npmjs.org/handlebars 152ms (cache miss)
+39 silly packumentCache full:https://registry.npmjs.org/handlebars set size:undefined disposed:false
+40 silly placeDep ROOT fecha@3.0.3 OK for: dummy-json@3.0.5 want: ^3.0.3
+41 silly placeDep ROOT handlebars@4.7.8 OK for: dummy-json@3.0.5 want: ^4.7.6
+42 silly placeDep ROOT numbro@2.5.0 OK for: dummy-json@3.0.5 want: ^2.3.1
+43 silly placeDep ROOT seedrandom@3.0.5 OK for: dummy-json@3.0.5 want: ^3.0.5
+44 silly fetch manifest minimist@^1.2.5
+45 silly packumentCache full:https://registry.npmjs.org/minimist cache-miss
+46 silly fetch manifest neo-async@^2.6.2
+47 silly packumentCache full:https://registry.npmjs.org/neo-async cache-miss
+48 silly fetch manifest source-map@^0.6.1
+49 silly packumentCache full:https://registry.npmjs.org/source-map cache-miss
+50 silly fetch manifest wordwrap@^1.0.0
+51 silly packumentCache full:https://registry.npmjs.org/wordwrap cache-miss
+52 silly fetch manifest uglify-js@^3.1.4
+53 silly packumentCache full:https://registry.npmjs.org/uglify-js cache-miss
+54 http fetch GET 200 https://registry.npmjs.org/wordwrap 46ms (cache miss)
+55 silly packumentCache full:https://registry.npmjs.org/wordwrap set size:undefined disposed:false
+56 silly fetch manifest bignumber.js@^8 || ^9
+57 silly packumentCache full:https://registry.npmjs.org/bignumber.js cache-miss
+58 http fetch GET 200 https://registry.npmjs.org/minimist 65ms (cache miss)
+59 silly packumentCache full:https://registry.npmjs.org/minimist set size:undefined disposed:false
+60 http fetch GET 200 https://registry.npmjs.org/neo-async 76ms (cache miss)
+61 silly packumentCache full:https://registry.npmjs.org/neo-async set size:undefined disposed:false
+62 http fetch GET 200 https://registry.npmjs.org/source-map 82ms (cache miss)
+63 silly packumentCache full:https://registry.npmjs.org/source-map set size:undefined disposed:false
+64 http fetch GET 200 https://registry.npmjs.org/bignumber.js 46ms (cache miss)
+65 silly packumentCache full:https://registry.npmjs.org/bignumber.js set size:undefined disposed:false
+66 http fetch GET 200 https://registry.npmjs.org/uglify-js 127ms (cache miss)
+67 silly packumentCache full:https://registry.npmjs.org/uglify-js set size:undefined disposed:false
+68 silly placeDep ROOT minimist@1.2.8 OK for: handlebars@4.7.8 want: ^1.2.5
+69 silly placeDep ROOT neo-async@2.6.2 OK for: handlebars@4.7.8 want: ^2.6.2
+70 silly placeDep ROOT source-map@0.6.1 OK for: handlebars@4.7.8 want: ^0.6.1
+71 silly placeDep ROOT uglify-js@3.19.3 OK for: handlebars@4.7.8 want: ^3.1.4
+72 silly placeDep ROOT wordwrap@1.0.0 OK for: handlebars@4.7.8 want: ^1.0.0
+73 silly placeDep ROOT bignumber.js@9.1.2 OK for: numbro@2.5.0 want: ^8 || ^9
+74 silly reify moves {}
+75 silly tarball no local data for wordwrap@https://registry.npmjs.org/wordwrap/-/wordwrap-1.0.0.tgz. Extracting by manifest.
+76 silly tarball no local data for uglify-js@https://registry.npmjs.org/uglify-js/-/uglify-js-3.19.3.tgz. Extracting by manifest.
+77 silly tarball no local data for source-map@https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz. Extracting by manifest.
+78 silly tarball no local data for minimist@https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz. Extracting by manifest.
+79 silly tarball no local data for neo-async@https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz. Extracting by manifest.
+80 silly tarball no local data for handlebars@https://registry.npmjs.org/handlebars/-/handlebars-4.7.8.tgz. Extracting by manifest.
+81 silly tarball no local data for bignumber.js@https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.1.2.tgz. Extracting by manifest.
+82 silly tarball no local data for seedrandom@https://registry.npmjs.org/seedrandom/-/seedrandom-3.0.5.tgz. Extracting by manifest.
+83 silly tarball no local data for numbro@https://registry.npmjs.org/numbro/-/numbro-2.5.0.tgz. Extracting by manifest.
+84 silly tarball no local data for fecha@https://registry.npmjs.org/fecha/-/fecha-3.0.3.tgz. Extracting by manifest.
+85 silly tarball no local data for dummy-json@https://registry.npmjs.org/dummy-json/-/dummy-json-3.0.5.tgz. Extracting by manifest.
+86 silly tarball no local data for node-red-node-data-generator@https://registry.npmjs.org/node-red-node-data-generator/-/node-red-node-data-generator-1.0.2.tgz. Extracting by manifest.
+87 http fetch GET 200 https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz 204ms (cache miss)
+88 http fetch GET 200 https://registry.npmjs.org/wordwrap/-/wordwrap-1.0.0.tgz 215ms (cache miss)
+89 http fetch GET 200 https://registry.npmjs.org/node-red-node-data-generator/-/node-red-node-data-generator-1.0.2.tgz 218ms (cache miss)
+90 http fetch GET 200 https://registry.npmjs.org/fecha/-/fecha-3.0.3.tgz 237ms (cache miss)
+91 http fetch GET 200 https://registry.npmjs.org/dummy-json/-/dummy-json-3.0.5.tgz 260ms (cache miss)
+92 http fetch GET 200 https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.1.2.tgz 297ms (cache miss)
+93 http fetch GET 200 https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz 315ms (cache miss)
+94 http fetch GET 200 https://registry.npmjs.org/uglify-js/-/uglify-js-3.19.3.tgz 347ms (cache miss)
+95 http fetch GET 200 https://registry.npmjs.org/seedrandom/-/seedrandom-3.0.5.tgz 355ms (cache miss)
+96 http fetch GET 200 https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz 375ms (cache miss)
+97 http fetch GET 200 https://registry.npmjs.org/numbro/-/numbro-2.5.0.tgz 528ms (cache miss)
+98 http fetch GET 200 https://registry.npmjs.org/handlebars/-/handlebars-4.7.8.tgz 543ms (cache miss)
+99 silly ADD node_modules/bignumber.js
+100 silly ADD node_modules/wordwrap
+101 silly ADD node_modules/uglify-js
+102 silly ADD node_modules/source-map
+103 silly ADD node_modules/neo-async
+104 silly ADD node_modules/minimist
+105 silly ADD node_modules/seedrandom
+106 silly ADD node_modules/numbro
+107 silly ADD node_modules/handlebars
+108 silly ADD node_modules/fecha
+109 silly ADD node_modules/dummy-json
+110 silly ADD node_modules/node-red-node-data-generator
+111 verbose cwd /data
+112 verbose os Linux 6.10.14-linuxkit
+113 verbose node v20.18.1
+114 verbose npm  v10.8.2
+115 verbose exit 0
+116 info ok

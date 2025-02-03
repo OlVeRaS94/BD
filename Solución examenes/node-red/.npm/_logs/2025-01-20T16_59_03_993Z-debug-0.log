@@ -1,0 +1,25 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.18.1
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/.npmrc
+5 silly config load:file:/usr/src/node-red/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm remove node-red-node-ui-lineargauge
+8 verbose argv "remove" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "node-red-node-ui-lineargauge"
+9 verbose logfile logs-max:10 dir:/data/.npm/_logs/2025-01-20T16_59_03_993Z-
+10 verbose logfile /data/.npm/_logs/2025-01-20T16_59_03_993Z-debug-0.log
+11 silly packumentCache heap:2023227392 maxSize:505806848 maxEntrySize:252903424
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly reify mark retired [ '/data/node_modules/node-red-node-ui-lineargauge' ]
+15 silly reify moves {
+15 silly reify   '/data/node_modules/node-red-node-ui-lineargauge': '/data/node_modules/.node-red-node-ui-lineargauge-QXvyOsPf'
+15 silly reify }
+16 silly REMOVE node_modules/node-red-node-ui-lineargauge
+17 verbose cwd /data
+18 verbose os Linux 6.10.14-linuxkit
+19 verbose node v20.18.1
+20 verbose npm  v10.8.2
+21 verbose exit 0
+22 info ok

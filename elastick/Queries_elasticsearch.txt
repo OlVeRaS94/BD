@@ -1,0 +1,147 @@
+#--------------------------------------------
+#list indexes
+GET /_cat/indices
+
+#--------------------------------------------
+#create index
+PUT /exam?pretty
+
+#--------------------------------------------
+PUT /facebook?pretty
+{
+  "settings" : {
+    "index" : {
+      "number_of_shards" : 3,
+      "number_of_replicas" : 2 
+    }
+  }
+}
+
+#--------------------------------------------
+PUT instagram
+{
+  "settings" : {
+      "number_of_shards" : 3,
+      "number_of_replicas" : 2
+  }
+}
+
+#--------------------------------------------
+PUT prueba
+{
+  "settings" : {
+      "number_of_shards" : 1
+  },
+  "mappings" : {
+    "properties" : {
+        "age" : { "type" : "long" },
+        "name": { "type": "text"}
+    }
+  }
+}
+
+#--------------------------------------------
+#Delete index
+DELETE /twitter
+
+#--------------------------------------------
+#Recover status from an index
+GET /prueba/_stats
+
+#--------------------------------------------
+#Recover mapping from an index
+GET /prueba/_mapping
+
+#--------------------------------------------
+#Count 
+GET /exam/_count
+
+#--------------------------------------------
+#retrieve data from an index
+GET /exam/_search?pretty
+{
+    "query": {
+        "exists": {
+            "timestamp": "nick"
+        }
+    }
+}
+
+#--------------------------------------------
+#Data filtering
+GET /twitter/_search?q=period:22
+
+#--------------------------------------------
+#Inserting data
+POST /facebook/_doc
+{
+  "nick": "Hannon",
+  "email": "joselito@gmail.com"
+}
+
+#--------------------------------------------
+POST /twitter/_doc
+{
+  "name": "Luis",
+  "period": 22
+}
+
+#--------------------------------------------
+GET /twitter/_count
+
+#--------------------------------------------
+#recover last register 
+POST /facebook/_search
+{
+  "query": {
+    "match_all": {}
+  },
+  "size": "1",
+  "sort": [
+    {
+      "timestamp": {
+        "order": "desc"
+      }
+    }
+  ]
+}
+
+#--------------------------------------------
+#insert following a mapping
+POST /prueba/_doc
+{
+  "age": "23",
+  "name": 56
+}
+
+#--------------------------------------------
+GET /exam/_count
+
+#--------------------------------------------
+#see registers from an index
+GET /facebook/_search
+
+#--------------------------------------------
+#Count filtering a range
+GET /exam/_count
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match_phrase": {
+            "type": "WeatherObserved"
+          }
+        },
+        {
+          "range":{
+            "date": {
+              "gte": "01/01/2022 00:30:00",
+              "lte": "11/01/2022 21:00:00"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

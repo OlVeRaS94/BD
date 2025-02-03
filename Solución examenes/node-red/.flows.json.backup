@@ -1,377 +1,203 @@
 [
     {
-        "id": "9c279e92c1482d13",
+        "id": "73f15769.b43868",
         "type": "tab",
-        "label": "Examen 1",
+        "label": "Work with elasticsearch",
         "disabled": false,
-        "info": "",
-        "env": []
+        "info": ""
     },
     {
-        "id": "9b34c3ef5f307a0b",
-        "type": "tab",
-        "label": "Flujo 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "9764365797544665",
-        "type": "tab",
-        "label": "Examen 3",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "085559de0fcd73eb",
+        "id": "215a9d76.e345d2",
         "type": "group",
-        "z": "9c279e92c1482d13",
-        "name": "1.- a),b) y c)  Diseña flujo que simule 3 sensores. Frecuencia de envio. Ontología",
+        "z": "73f15769.b43868",
+        "name": "Recover data filtering",
         "style": {
-            "stroke": "#000000",
-            "fill": "#0070c0",
+            "fill": "#dbcbe7",
             "label": true,
             "label-position": "n",
-            "color": "#ffffff"
+            "color": "#000000"
         },
         "nodes": [
-            "32b2c76261d62297",
-            "33d83172bca8c6ea",
-            "e168d19d7742d1d0",
-            "6b095ca4ae648d5c",
-            "057d1555b9e32be1",
-            "6944f9b0da38092a",
-            "0c0796a999fa1a7f",
-            "74690950197f8a0f",
-            "5d5260883f3e905a",
-            "36d8f0557ee3469e",
-            "7204f55a0a8f8aa6",
-            "831bb6dd8b7035db",
-            "6318e53dfd8b6d73",
-            "573850f9ea69fa5c",
-            "107aad8a01ecca91",
-            "db4ed6252dc91974",
-            "eabc932f56a6c8d4"
+            "3703ef99.9900b",
+            "1fd7d845.bfa288",
+            "f8478ba1.2f0898",
+            "ba3a40bb.9a871"
         ],
-        "x": 54,
-        "y": 39,
-        "w": 702,
-        "h": 322
+        "x": 14,
+        "y": 1039,
+        "w": 1192,
+        "h": 82
     },
     {
-        "id": "d2a554062354f2c7",
+        "id": "310b1502.7049ba",
         "type": "group",
-        "z": "9c279e92c1482d13",
-        "name": "2.- a)Guardar todas las lecturas de los sensores en una colección de MongoDB",
+        "z": "73f15769.b43868",
+        "name": "Count items in a specific index",
         "style": {
-            "stroke": "#000000",
-            "fill": "#0070c0",
+            "fill": "#dbcbe7",
             "label": true,
             "label-position": "n",
-            "color": "#ffffff"
+            "color": "#000000"
         },
         "nodes": [
-            "f1336058836ce281",
-            "083d206991ccda98",
-            "812e36c4f6cc49c3",
-            "1cdb71e79f52bc1b",
-            "fc0a29c594f63ffe",
-            "7ea1d6e64978977b",
-            "65f5eafa6bd12321"
+            "3524f48e.e2f1cc",
+            "e48fc5c7.a3ff28",
+            "f1d00441.04ebb8",
+            "abb9440.be02bc"
         ],
-        "x": 574,
-        "y": 399,
-        "w": 552,
-        "h": 262
+        "x": 14,
+        "y": 839,
+        "w": 1032,
+        "h": 82
     },
     {
-        "id": "241eb6ab6aa0b5e7",
+        "id": "384ad95f.68d3c6",
         "type": "group",
-        "z": "9b34c3ef5f307a0b",
-        "name": "1.- a)\tDiseña un flujo que reciba datos de 2 sensores",
+        "z": "73f15769.b43868",
+        "name": "Create indexes for Envira's data",
         "style": {
-            "stroke": "#000000",
-            "fill": "#0070c0",
             "label": true,
             "label-position": "n",
-            "color": "#ffffff"
+            "color": "#000000",
+            "fill": "#dbcbe7"
         },
         "nodes": [
-            "d17d55d9f4328d17",
-            "e8dde14fb7910692",
-            "7ef59113b60f73c1",
-            "3fdc080f10654617",
-            "9b11b3bc3a87d536",
-            "8adf0026b28193be",
-            "f705e9057ca757d2",
-            "e52d1541e08ea011",
-            "4410791c14832f20",
-            "c740de89e1411daf",
-            "2a2334c4c5fd5012",
-            "ce8c705996b0c116"
+            "dc820dfa.0eea3",
+            "66616c28.149bf4",
+            "b9a03406.cc7128",
+            "8a12fcac.1d838",
+            "71809884.f31308",
+            "9078b6d8.44e598",
+            "c6b80c4e.b9ed7",
+            "942fdf86.4a6cb",
+            "93b34b8.5060eb8",
+            "7780edd5.b10fe4",
+            "c03df57d.4be8b8",
+            "a0b777c.625cf88"
         ],
-        "x": 54,
-        "y": 19,
-        "w": 772,
-        "h": 302
+        "x": 14,
+        "y": 239,
+        "w": 1172,
+        "h": 162
     },
     {
-        "id": "7b33daed0885b5d8",
+        "id": "84459954.14e238",
         "type": "group",
-        "z": "9b34c3ef5f307a0b",
-        "name": "2.- a)Guardar todas las lecturas de los sensores en una colección de MongoDB",
+        "z": "73f15769.b43868",
+        "name": "Delete indexes related to Envira's data",
         "style": {
-            "stroke": "#000000",
-            "fill": "#0070c0",
+            "fill": "#dbcbe7",
             "label": true,
             "label-position": "n",
-            "color": "#ffffff"
+            "color": "#000000"
         },
         "nodes": [
-            "c67879e6963e998c",
-            "a7660c3ea50b86a0",
-            "a993743f657833d7",
-            "2083ef17894d17f3",
-            "a825d20515ec6873"
+            "6090d07a.3e0b4",
+            "3007b47.50b4d4c",
+            "169b3ceb.00b0f3",
+            "bacc8f5e.f4b7e",
+            "adb9fc04.2e796",
+            "e14aafec.9e639",
+            "e510c553.e25128",
+            "933e7d2f.34ec8",
+            "6feafa34.1907f4",
+            "d5191e3.fd7f7e",
+            "db49adf.11cc05",
+            "fb1463f7.e7bd1"
         ],
-        "x": 694,
-        "y": 359,
-        "w": 552,
+        "x": 14,
+        "y": 419,
+        "w": 1172,
         "h": 202
     },
     {
-        "id": "139a1146df7dd401",
+        "id": "ac6c313a.24b3d",
         "type": "group",
-        "z": "9b34c3ef5f307a0b",
-        "name": "1.- b)Generar alertas automaticas",
+        "z": "73f15769.b43868",
+        "name": "Status of an index",
         "style": {
-            "label": true,
-            "stroke": "#000000",
-            "fill": "#92d04f",
-            "label-position": "n",
-            "color": "#ffffff"
-        },
-        "nodes": [
-            "090a9240efbb2098",
-            "1ce1b5e8887e3e4b",
-            "d9749c3376583b4d",
-            "9c08220da1100eb3"
-        ],
-        "x": 58,
-        "y": 613,
-        "w": 954,
-        "h": 1014
-    },
-    {
-        "id": "b8f8f85fd330e00c",
-        "type": "group",
-        "z": "9b34c3ef5f307a0b",
-        "name": "1.- c)Configura un log en Node-RED para registrar todas las alertas",
-        "style": {
-            "stroke": "#000000",
-            "fill": "#0070c0",
+            "fill": "#dbcbe7",
             "label": true,
             "label-position": "n",
-            "color": "#ffffff"
+            "color": "#000000"
         },
         "nodes": [
-            "9860389ef8b563e3",
-            "d1daf0a250c5c2af",
-            "34d25e1d7fa2179e",
-            "0513542da6b48d53",
-            "6891663ea34d1481",
-            "62c5f27ea2f3e82a"
+            "a1d00b78.31dd28",
+            "2212f53b.80433a",
+            "54e935af.022adc",
+            "dd920356.f65f5"
         ],
-        "x": 334,
-        "y": 1659,
-        "w": 792,
-        "h": 142
-    },
-    {
-        "id": "4e20c1977dbac247",
-        "type": "group",
-        "z": "9764365797544665",
-        "name": "1.- a),b) y c)  Diseña flujo que simule 3 sensores. Frecuencia de envio. Ontología",
-        "style": {
-            "stroke": "#000000",
-            "fill": "#0070c0",
-            "label": true,
-            "label-position": "n",
-            "color": "#ffffff"
-        },
-        "nodes": [
-            "f1e2b5eac6224d13",
-            "e0490b2596650bd2",
-            "5ffaad14519c4870",
-            "dfcc76e15c932f8a",
-            "8d069727217e29e3",
-            "4356628af3507c38",
-            "06682f66864595c2",
-            "f137448573435e67",
-            "ec24de0e7b1fe224",
-            "ff27d45b480eba18",
-            "7413c4398a9f5849",
-            "ba76245eb21c7e3e"
-        ],
-        "x": 54,
-        "y": 39,
-        "w": 702,
-        "h": 262
-    },
-    {
-        "id": "8c2baff7f9275e7b",
-        "type": "group",
-        "z": "9764365797544665",
-        "name": "2.- a) Almacena los datos en MongoDB",
-        "style": {
-            "stroke": "#000000",
-            "fill": "#0070c0",
-            "label": true,
-            "label-position": "n",
-            "color": "#ffffff"
-        },
-        "nodes": [
-            "48df3ce9f81f385b",
-            "f2491d82c631df3d",
-            "18d5bb4abf56fa0b"
-        ],
-        "x": 494,
-        "y": 359,
-        "w": 472,
-        "h": 142
-    },
-    {
-        "id": "1ce1b5e8887e3e4b",
-        "type": "group",
-        "z": "9b34c3ef5f307a0b",
-        "g": "139a1146df7dd401",
-        "name": "Check Subscription exists?",
-        "style": {
-            "stroke": "#000000",
-            "fill": "#0070c0",
-            "label": true,
-            "label-position": "n",
-            "color": "#ffffff"
-        },
-        "nodes": [
-            "inject-startup",
-            "get-subscriptions",
-            "check-patterns",
-            "66dc18d8f8a16078",
-            "570f394311f6663f",
-            "beacbd039d5b16ed",
-            "a161ab095a3f8277",
-            "3fb50aa3a27d2e55",
-            "fd522926bbde1068",
-            "e78f3a3d14dd1503",
-            "12dbebc9d4fac1e5",
-            "2579937a53ebd6e4",
-            "f72d5653ba5a5455"
-        ],
-        "x": 94,
-        "y": 819,
-        "w": 832,
-        "h": 382
-    },
-    {
-        "id": "090a9240efbb2098",
-        "type": "group",
-        "z": "9b34c3ef5f307a0b",
-        "g": "139a1146df7dd401",
-        "name": "Create entities",
-        "style": {
-            "stroke": "#000000",
-            "fill": "#0070c0",
-            "label": true,
-            "label-position": "n",
-            "color": "#ffffff"
-        },
-        "nodes": [
-            "6cdb0bfa6c721342",
-            "f0c6c10c187b4537",
-            "7cb16cc31d4a944d",
-            "8e27854a7595438f",
-            "852a455695492938",
-            "1aa2a359f374daa9"
-        ],
-        "x": 94,
+        "x": 14,
         "y": 639,
-        "w": 732,
-        "h": 142
+        "w": 1052,
+        "h": 82
     },
     {
-        "id": "d9749c3376583b4d",
+        "id": "cfc821cb.39bbe",
         "type": "group",
-        "z": "9b34c3ef5f307a0b",
-        "g": "139a1146df7dd401",
-        "name": "Create subscriptions",
+        "z": "73f15769.b43868",
+        "name": "Recover indexes",
         "style": {
-            "stroke": "#000000",
-            "fill": "#0070c0",
+            "fill": "#dbcbe7",
             "label": true,
             "label-position": "n",
-            "color": "#ffffff"
+            "color": "#000000"
         },
         "nodes": [
-            "76d34def366b6d1c",
-            "9f22e1a5967ee2e4",
-            "68cf718cfc015c4c",
-            "cb37be129e7dec46",
-            "63db73864d471872",
-            "f88545a97dea08e9",
-            "e01663856debce9c",
-            "b80d0f6e779cc07c",
-            "e493af805cb6ba46"
+            "67ec26ca.c74888",
+            "74f99cc2.54d544",
+            "4aa5a30.7b2905c",
+            "1e938ade.6254a5"
         ],
-        "x": 84,
-        "y": 1239,
-        "w": 902,
-        "h": 182
+        "x": 14,
+        "y": 39,
+        "w": 852,
+        "h": 82
     },
     {
-        "id": "9c08220da1100eb3",
+        "id": "d326b21.2a1e55",
         "type": "group",
-        "z": "9b34c3ef5f307a0b",
-        "g": "139a1146df7dd401",
-        "name": "Notification endpoint",
+        "z": "73f15769.b43868",
+        "name": "View Mapping of an index",
         "style": {
-            "stroke": "#000000",
-            "fill": "#0070c0",
+            "fill": "#dbcbe7",
             "label": true,
             "label-position": "n",
-            "color": "#ffffff"
+            "color": "#000000"
         },
         "nodes": [
-            "436b2328c055f129",
-            "9eeaccf2f099387c",
-            "b4b5228b5635161d",
-            "a72fc21dc29a71ac"
+            "ad84ef15.7d6f",
+            "812987a7.599dc8",
+            "bf8ae526.8facd8",
+            "6dee66a7.2c4848"
         ],
-        "x": 94,
-        "y": 1459,
-        "w": 632,
-        "h": 142
+        "x": 14,
+        "y": 739,
+        "w": 1032,
+        "h": 82
     },
     {
-        "id": "8f0d93017ce70716",
+        "id": "f621b7d7.5a1208",
         "type": "group",
-        "z": "9b34c3ef5f307a0b",
-        "name": "",
+        "z": "73f15769.b43868",
+        "name": "Retrieving data of an index",
         "style": {
-            "stroke": "#000000",
+            "fill": "#dbcbe7",
             "label": true,
-            "color": "#0070c0",
-            "fill": "#0070c0"
+            "label-position": "n",
+            "color": "#000000"
         },
         "nodes": [
-            "0be002c120456568",
-            "1d89c7fc897b7005"
+            "8a15ccb1.58366",
+            "4af5af5a.d1f77",
+            "bc3b44f9.fa5398",
+            "4047b36d.d1ff4c",
+            "326f759c.f588ca"
         ],
-        "x": 94,
-        "y": 439,
-        "w": 492,
-        "h": 102
+        "x": 14,
+        "y": 939,
+        "w": 1052,
+        "h": 82
     },
     {
         "id": "dffe17047348ca55",
@@ -384,516 +210,135 @@
         "name": "MongoDB Config"
     },
     {
-        "id": "32b2c76261d62297",
-        "type": "function",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "getDate for id and dateObserved",
-        "func": "// Capturar el instante de tiempo actual\nlet dateObserved = new Date().toISOString(); // Formato estándar ISO 8601\nlet date = new Date();\nlet dateObserved_timestamp = date.getTime();\n\nmsg.payload = dateObserved_timestamp;\nmsg.dateObserved = dateObserved;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 470,
-        "y": 80,
-        "wires": [
-            [
-                "5d5260883f3e905a"
-            ]
-        ]
+        "id": "cf7c3e347706cf0d",
+        "type": "ui_tab",
+        "name": "Sensor Agua",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     },
     {
-        "id": "33d83172bca8c6ea",
-        "type": "data-generator",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "Sensor A",
-        "field": "payload",
-        "fieldType": "msg",
-        "syntax": "json",
-        "template": "{\n    \"type\": \"AirQualityObserved\",\n    \"relativeHumidity\": {{float 50 360}},\n    \"temperature\": {{float 30 80}},\n    \"dateObserved\": \"{{dateObserved}}\",\n    \"dateObserved_timestamp\": {{payload}}\n}\n",
-        "x": 240,
-        "y": 200,
-        "wires": [
-            [
-                "0c0796a999fa1a7f"
-            ]
-        ]
-    },
-    {
-        "id": "e168d19d7742d1d0",
-        "type": "inject",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "5 minutos (A)",
-        "props": [
-            {
-                "p": "payload"
+        "id": "6a37853b64eb8537",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
             },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "300",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 180,
-        "y": 80,
-        "wires": [
-            [
-                "32b2c76261d62297"
-            ]
-        ]
-    },
-    {
-        "id": "6b095ca4ae648d5c",
-        "type": "data-generator",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "Sensor B",
-        "field": "payload",
-        "fieldType": "msg",
-        "syntax": "json",
-        "template": "{\n    \"type\": \"AirQualityObserved\",\n    \"no2\": {{float 1 200}},\n    \"co2\": {{float 1 100}},\n    \"dateObserved\": \"{{dateObserved}}\",\n    \"dateObserved_timestamp\": {{payload}}\n}\n",
-        "x": 240,
-        "y": 260,
-        "wires": [
-            [
-                "74690950197f8a0f"
-            ]
-        ]
-    },
-    {
-        "id": "057d1555b9e32be1",
-        "type": "debug",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "debug 13",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "6944f9b0da38092a",
-        "type": "debug",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "debug 14",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "0c0796a999fa1a7f",
-        "type": "function",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "Add id",
-        "func": "// Verifica que msg.payload sea un objeto\nif (msg.payload && msg.payload.dateObserved_timestamp) {\n    // Agrega la propiedad 'id'\n    msg.payload.id = `SensorA_${msg.payload.dateObserved_timestamp}`;\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 410,
-        "y": 200,
-        "wires": [
-            [
-                "057d1555b9e32be1",
-                "083d206991ccda98"
-            ]
-        ]
-    },
-    {
-        "id": "74690950197f8a0f",
-        "type": "function",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "Add id",
-        "func": "// Verifica que msg.payload sea un objeto\nif (msg.payload && msg.payload.dateObserved_timestamp) {\n    // Agrega la propiedad 'id'\n    msg.payload.id = `SensorB_${msg.payload.dateObserved_timestamp}`;\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 410,
-        "y": 260,
-        "wires": [
-            [
-                "6944f9b0da38092a",
-                "812e36c4f6cc49c3"
-            ]
-        ]
-    },
-    {
-        "id": "5d5260883f3e905a",
-        "type": "link out",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "lnkSensor_A",
-        "mode": "link",
-        "links": [
-            "36d8f0557ee3469e"
-        ],
-        "x": 715,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "36d8f0557ee3469e",
-        "type": "link in",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "lnkSensor_A",
-        "links": [
-            "5d5260883f3e905a"
-        ],
-        "x": 95,
-        "y": 200,
-        "wires": [
-            [
-                "33d83172bca8c6ea"
-            ]
-        ]
-    },
-    {
-        "id": "7204f55a0a8f8aa6",
-        "type": "data-generator",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "Sensor C",
-        "field": "payload",
-        "fieldType": "msg",
-        "syntax": "json",
-        "template": "{\n    \"type\": \"AirQualityObserved\",\n    \"o3\": {{float 1 200}},\n    \"so2\": {{float 1 200}},\n    \"pm10\": {{float 1 200}},\n    \"dateObserved\": \"{{dateObserved}}\",\n    \"dateObserved_timestamp\": {{payload}}\n}\n",
-        "x": 240,
-        "y": 320,
-        "wires": [
-            [
-                "831bb6dd8b7035db"
-            ]
-        ]
-    },
-    {
-        "id": "831bb6dd8b7035db",
-        "type": "function",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "Add id",
-        "func": "// Verifica que msg.payload sea un objeto\nif (msg.payload && msg.payload.dateObserved_timestamp) {\n    // Agrega la propiedad 'id'\n    msg.payload.id = `SensorC_${msg.payload.dateObserved_timestamp}`;\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 410,
-        "y": 320,
-        "wires": [
-            [
-                "6318e53dfd8b6d73",
-                "7ea1d6e64978977b"
-            ]
-        ]
-    },
-    {
-        "id": "6318e53dfd8b6d73",
-        "type": "debug",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "debug 15",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "573850f9ea69fa5c",
-        "type": "inject",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "15 minutos (B y C)",
-        "props": [
-            {
-                "p": "payload"
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
             },
-            {
-                "p": "topic",
-                "vt": "str"
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
             }
-        ],
-        "repeat": "900",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 200,
-        "y": 140,
-        "wires": [
-            [
-                "107aad8a01ecca91"
-            ]
-        ]
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
     },
     {
-        "id": "107aad8a01ecca91",
-        "type": "function",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "getDate for id and dateObserved",
-        "func": "// Capturar el instante de tiempo actual\nlet dateObserved = new Date().toISOString(); // Formato estándar ISO 8601\nlet date = new Date();\nlet dateObserved_timestamp = date.getTime();\n\nmsg.payload = dateObserved_timestamp;\nmsg.dateObserved = dateObserved;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 470,
-        "y": 140,
-        "wires": [
-            [
-                "db4ed6252dc91974"
-            ]
-        ]
+        "id": "491a85ed051047b7",
+        "type": "ui_group",
+        "name": "temperatura",
+        "tab": "cf7c3e347706cf0d",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
     },
     {
-        "id": "db4ed6252dc91974",
-        "type": "link out",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "lnkSensor_B_C",
-        "mode": "link",
-        "links": [
-            "eabc932f56a6c8d4"
-        ],
-        "x": 715,
-        "y": 140,
-        "wires": []
+        "id": "612d9faf3b38e403",
+        "type": "ui_tab",
+        "name": "Sensor Atmosfera",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     },
     {
-        "id": "eabc932f56a6c8d4",
-        "type": "link in",
-        "z": "9c279e92c1482d13",
-        "g": "085559de0fcd73eb",
-        "name": "lnkSensor_B_C",
-        "links": [
-            "db4ed6252dc91974"
-        ],
-        "x": 95,
-        "y": 260,
-        "wires": [
-            [
-                "6b095ca4ae648d5c",
-                "7204f55a0a8f8aa6"
-            ]
-        ]
-    },
-    {
-        "id": "f1336058836ce281",
-        "type": "file",
-        "z": "9c279e92c1482d13",
-        "g": "d2a554062354f2c7",
-        "name": "Escribir Log (Sensor A)",
-        "filename": "/data/sensorA.json",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "utf8",
-        "x": 990,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "083d206991ccda98",
-        "type": "function",
-        "z": "9c279e92c1482d13",
-        "g": "d2a554062354f2c7",
-        "name": "Acumular datos en un array",
-        "func": "// Obtener el array acumulado del contexto\nlet dataArray = flow.get('dataSensorA') || [];\n\n// Agregar el nuevo dato al array\ndataArray.push(msg.payload);\n\n// Guardar el array actualizado en el contexto\nflow.set('dataSensorA', dataArray);\n\n// Enviar el array completo al siguiente nodo\nmsg.payload = dataArray;\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 720,
-        "y": 440,
-        "wires": [
-            [
-                "f1336058836ce281"
-            ]
-        ]
-    },
-    {
-        "id": "812e36c4f6cc49c3",
-        "type": "function",
-        "z": "9c279e92c1482d13",
-        "g": "d2a554062354f2c7",
-        "name": "Acumular datos en un array",
-        "func": "// Obtener el array acumulado del contexto\nlet dataArray = flow.get('dataSensorB') || [];\n\n// Agregar el nuevo dato al array\ndataArray.push(msg.payload);\n\n// Guardar el array actualizado en el contexto\nflow.set('dataSensorB', dataArray);\n\n// Enviar el array completo al siguiente nodo\nmsg.payload = dataArray;\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 720,
-        "y": 500,
-        "wires": [
-            [
-                "1cdb71e79f52bc1b"
-            ]
-        ]
-    },
-    {
-        "id": "1cdb71e79f52bc1b",
-        "type": "file",
-        "z": "9c279e92c1482d13",
-        "g": "d2a554062354f2c7",
-        "name": "Escribir Log (Sensor B)",
-        "filename": "/data/sensorB.json",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "utf8",
-        "x": 990,
-        "y": 500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fc0a29c594f63ffe",
-        "type": "comment",
-        "z": "9c279e92c1482d13",
-        "g": "d2a554062354f2c7",
-        "name": "MongoImport",
-        "info": "mongoimport --db miBaseDeDatos --collection miColección --file /data/sensors.json --jsonArray\n",
-        "x": 870,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "7ea1d6e64978977b",
-        "type": "function",
-        "z": "9c279e92c1482d13",
-        "g": "d2a554062354f2c7",
-        "name": "Acumular datos en un array",
-        "func": "// Obtener el array acumulado del contexto\nlet dataArray = flow.get('dataSensorC') || [];\n\n// Agregar el nuevo dato al array\ndataArray.push(msg.payload);\n\n// Guardar el array actualizado en el contexto\nflow.set('dataSensorC', dataArray);\n\n// Enviar el array completo al siguiente nodo\nmsg.payload = dataArray;\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 720,
-        "y": 560,
-        "wires": [
-            [
-                "65f5eafa6bd12321"
-            ]
-        ]
-    },
-    {
-        "id": "65f5eafa6bd12321",
-        "type": "file",
-        "z": "9c279e92c1482d13",
-        "g": "d2a554062354f2c7",
-        "name": "Escribir Log (Sensor C)",
-        "filename": "/data/sensorC.json",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "utf8",
-        "x": 990,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d17d55d9f4328d17",
-        "type": "function",
-        "z": "9b34c3ef5f307a0b",
-        "g": "241eb6ab6aa0b5e7",
-        "name": "getDate for id and dateObserved",
-        "func": "// Capturar el instante de tiempo actual\nlet dateObserved = new Date().toISOString(); // Formato estándar ISO 8601\nlet date = new Date();\nlet dateObserved_timestamp = date.getTime();\n\nmsg.payload = dateObserved_timestamp;\nmsg.dateObserved = dateObserved;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 470,
-        "y": 60,
-        "wires": [
-            [
-                "f705e9057ca757d2"
-            ]
-        ]
-    },
-    {
-        "id": "e8dde14fb7910692",
-        "type": "data-generator",
-        "z": "9b34c3ef5f307a0b",
-        "g": "241eb6ab6aa0b5e7",
-        "name": "Sensor X",
-        "field": "payload",
-        "fieldType": "msg",
-        "syntax": "json",
-        "template": "{\n    \"type\": \"AirQualityObserved\",\n    \"so2\": {{float 0 350}},\n    \"no2\": {{float 50 360}},\n    \"temperature\": {{float 30 80}},\n    \"dateObserved\": \"{{dateObserved}}\",\n    \"dateObserved_timestamp\": {{payload}}\n}\n",
-        "x": 240,
-        "y": 180,
-        "wires": [
-            [
-                "4410791c14832f20"
-            ]
-        ]
-    },
-    {
-        "id": "7ef59113b60f73c1",
+        "id": "67ec26ca.c74888",
         "type": "inject",
-        "z": "9b34c3ef5f307a0b",
-        "g": "241eb6ab6aa0b5e7",
-        "name": "",
+        "z": "73f15769.b43868",
+        "g": "cfc821cb.39bbe",
+        "name": "Call API REST",
         "props": [
             {
                 "p": "payload"
@@ -910,549 +355,45 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 170,
-        "y": 60,
+        "x": 140,
+        "y": 80,
         "wires": [
             [
-                "d17d55d9f4328d17"
+                "74f99cc2.54d544"
             ]
         ]
     },
     {
-        "id": "3fdc080f10654617",
-        "type": "data-generator",
-        "z": "9b34c3ef5f307a0b",
-        "g": "241eb6ab6aa0b5e7",
-        "name": "Sensor Y",
-        "field": "payload",
-        "fieldType": "msg",
-        "syntax": "json",
-        "template": "{\n    \"type\": \"AirQualityObserved\",\n    \"o3\": {{float 1 200}},\n    \"pm25\": {{float 1 200}},\n    \"pm10\": {{float 1 200}},\n    \"co2\": {{float 1 100}},\n    \"dateObserved\": \"{{dateObserved}}\",\n    \"dateObserved_timestamp\": {{payload}}\n}\n",
-        "x": 240,
-        "y": 240,
-        "wires": [
-            [
-                "c740de89e1411daf"
-            ]
-        ]
-    },
-    {
-        "id": "9b11b3bc3a87d536",
-        "type": "debug",
-        "z": "9b34c3ef5f307a0b",
-        "g": "241eb6ab6aa0b5e7",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "8adf0026b28193be",
-        "type": "debug",
-        "z": "9b34c3ef5f307a0b",
-        "g": "241eb6ab6aa0b5e7",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "c67879e6963e998c",
-        "type": "file",
-        "z": "9b34c3ef5f307a0b",
-        "g": "7b33daed0885b5d8",
-        "name": "Escribir Log (Sensor X)",
-        "filename": "/data/sensorX.json",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "utf8",
-        "x": 1110,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f705e9057ca757d2",
-        "type": "link out",
-        "z": "9b34c3ef5f307a0b",
-        "g": "241eb6ab6aa0b5e7",
-        "name": "lnkSensores",
-        "mode": "link",
-        "links": [
-            "e52d1541e08ea011"
-        ],
-        "x": 725,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "e52d1541e08ea011",
-        "type": "link in",
-        "z": "9b34c3ef5f307a0b",
-        "g": "241eb6ab6aa0b5e7",
-        "name": "lnkSensores",
-        "links": [
-            "f705e9057ca757d2"
-        ],
-        "x": 115,
-        "y": 180,
-        "wires": [
-            [
-                "e8dde14fb7910692",
-                "3fdc080f10654617"
-            ]
-        ]
-    },
-    {
-        "id": "a7660c3ea50b86a0",
-        "type": "function",
-        "z": "9b34c3ef5f307a0b",
-        "g": "7b33daed0885b5d8",
-        "name": "Acumular datos en un array",
-        "func": "// Obtener el array acumulado del contexto\nlet dataArray = flow.get('dataSensorX') || [];\n\n// Agregar el nuevo dato al array\ndataArray.push(msg.payload);\n\n// Guardar el array actualizado en el contexto\nflow.set('dataSensorX', dataArray);\n\n// Enviar el array completo al siguiente nodo\nmsg.payload = dataArray;\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 400,
-        "wires": [
-            [
-                "c67879e6963e998c"
-            ]
-        ]
-    },
-    {
-        "id": "a993743f657833d7",
-        "type": "function",
-        "z": "9b34c3ef5f307a0b",
-        "g": "7b33daed0885b5d8",
-        "name": "Acumular datos en un array",
-        "func": "// Obtener el array acumulado del contexto\nlet dataArray = flow.get('dataSensorY') || [];\n\n// Agregar el nuevo dato al array\ndataArray.push(msg.payload);\n\n// Guardar el array actualizado en el contexto\nflow.set('dataSensorY', dataArray);\n\n// Enviar el array completo al siguiente nodo\nmsg.payload = dataArray;\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 460,
-        "wires": [
-            [
-                "2083ef17894d17f3"
-            ]
-        ]
-    },
-    {
-        "id": "2083ef17894d17f3",
-        "type": "file",
-        "z": "9b34c3ef5f307a0b",
-        "g": "7b33daed0885b5d8",
-        "name": "Escribir Log (Sensor Y)",
-        "filename": "/data/sensorY.json",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "utf8",
-        "x": 1110,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a825d20515ec6873",
-        "type": "comment",
-        "z": "9b34c3ef5f307a0b",
-        "g": "7b33daed0885b5d8",
-        "name": "MongoImport",
-        "info": "mongoimport --db miBaseDeDatos --collection miColección --file /data/sensors.json --jsonArray\n",
-        "x": 990,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "inject-startup",
-        "type": "inject",
-        "z": "9b34c3ef5f307a0b",
-        "g": "1ce1b5e8887e3e4b",
-        "name": "Startup Trigger",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "",
-        "topic": "",
-        "x": 220,
-        "y": 900,
-        "wires": [
-            [
-                "get-subscriptions"
-            ]
-        ]
-    },
-    {
-        "id": "get-subscriptions",
+        "id": "74f99cc2.54d544",
         "type": "http request",
-        "z": "9b34c3ef5f307a0b",
-        "g": "1ce1b5e8887e3e4b",
-        "name": "Get Subscriptions",
+        "z": "73f15769.b43868",
+        "g": "cfc821cb.39bbe",
+        "name": "GET _cat/indices",
         "method": "GET",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "http://host.docker.internal:1030/v2/subscriptions",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 430,
-        "y": 900,
-        "wires": [
-            [
-                "check-patterns",
-                "f72d5653ba5a5455"
-            ]
-        ]
-    },
-    {
-        "id": "check-patterns",
-        "type": "function",
-        "z": "9b34c3ef5f307a0b",
-        "g": "1ce1b5e8887e3e4b",
-        "name": "Check Patterns",
-        "func": "let sensorXExists = false;\nlet sensorYExists = false;\n\nmsg.payload.forEach(sub => {\n    if (sub.subject.entities.some(e => e.idPattern === 'SensorX.*')) {\n        sensorXExists = true;\n    }\n    if (sub.subject.entities.some(e => e.idPattern === 'SensorY.*')) {\n        sensorYExists = true;\n    }\n});\n\nmsg.sensorXExists = sensorXExists;\nmsg.sensorYExists = sensorYExists;\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 660,
-        "y": 900,
-        "wires": [
-            [
-                "66dc18d8f8a16078",
-                "570f394311f6663f"
-            ]
-        ]
-    },
-    {
-        "id": "66dc18d8f8a16078",
-        "type": "debug",
-        "z": "9b34c3ef5f307a0b",
-        "g": "1ce1b5e8887e3e4b",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 820,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "570f394311f6663f",
-        "type": "link out",
-        "z": "9b34c3ef5f307a0b",
-        "g": "1ce1b5e8887e3e4b",
-        "name": "lnkSubscriptions",
-        "mode": "link",
-        "links": [
-            "beacbd039d5b16ed"
-        ],
-        "x": 815,
-        "y": 900,
-        "wires": []
-    },
-    {
-        "id": "beacbd039d5b16ed",
-        "type": "link in",
-        "z": "9b34c3ef5f307a0b",
-        "g": "1ce1b5e8887e3e4b",
-        "name": "lnkSubscriptions",
-        "links": [
-            "570f394311f6663f"
-        ],
-        "x": 145,
-        "y": 1020,
-        "wires": [
-            [
-                "a161ab095a3f8277",
-                "3fb50aa3a27d2e55"
-            ]
-        ]
-    },
-    {
-        "id": "a161ab095a3f8277",
-        "type": "switch",
-        "z": "9b34c3ef5f307a0b",
-        "g": "1ce1b5e8887e3e4b",
-        "name": "Check sensorXExists?",
-        "property": "sensorXExists",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "false"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 360,
-        "y": 1020,
-        "wires": [
-            [
-                "fd522926bbde1068",
-                "12dbebc9d4fac1e5"
-            ]
-        ]
-    },
-    {
-        "id": "3fb50aa3a27d2e55",
-        "type": "switch",
-        "z": "9b34c3ef5f307a0b",
-        "g": "1ce1b5e8887e3e4b",
-        "name": "Check sensorYExists?",
-        "property": "sensorYExists",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "false"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 360,
-        "y": 1100,
-        "wires": [
-            [
-                "e78f3a3d14dd1503",
-                "2579937a53ebd6e4"
-            ]
-        ]
-    },
-    {
-        "id": "fd522926bbde1068",
-        "type": "debug",
-        "z": "9b34c3ef5f307a0b",
-        "g": "1ce1b5e8887e3e4b",
-        "name": "debug 7",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 960,
-        "wires": []
-    },
-    {
-        "id": "e78f3a3d14dd1503",
-        "type": "debug",
-        "z": "9b34c3ef5f307a0b",
-        "g": "1ce1b5e8887e3e4b",
-        "name": "debug 8",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 560,
-        "y": 1160,
-        "wires": []
-    },
-    {
-        "id": "12dbebc9d4fac1e5",
-        "type": "link out",
-        "z": "9b34c3ef5f307a0b",
-        "g": "1ce1b5e8887e3e4b",
-        "name": "lnkCreateSubscription_SensorX",
-        "mode": "link",
-        "links": [
-            "76d34def366b6d1c"
-        ],
-        "x": 625,
-        "y": 1020,
-        "wires": []
-    },
-    {
-        "id": "2579937a53ebd6e4",
-        "type": "link out",
-        "z": "9b34c3ef5f307a0b",
-        "g": "1ce1b5e8887e3e4b",
-        "name": "lnkCreateSubscription_SensorY",
-        "mode": "link",
-        "links": [
-            "9f22e1a5967ee2e4"
-        ],
-        "x": 615,
-        "y": 1100,
-        "wires": []
-    },
-    {
-        "id": "76d34def366b6d1c",
-        "type": "link in",
-        "z": "9b34c3ef5f307a0b",
-        "g": "d9749c3376583b4d",
-        "name": "lnkCreateSubscription_SensorX",
-        "links": [
-            "12dbebc9d4fac1e5"
-        ],
-        "x": 125,
-        "y": 1280,
-        "wires": [
-            [
-                "68cf718cfc015c4c"
-            ]
-        ]
-    },
-    {
-        "id": "9f22e1a5967ee2e4",
-        "type": "link in",
-        "z": "9b34c3ef5f307a0b",
-        "g": "d9749c3376583b4d",
-        "name": "lnkCreateSubscription_SensorY",
-        "links": [
-            "2579937a53ebd6e4"
-        ],
-        "x": 125,
-        "y": 1340,
-        "wires": [
-            [
-                "b80d0f6e779cc07c",
-                "e493af805cb6ba46"
-            ]
-        ]
-    },
-    {
-        "id": "68cf718cfc015c4c",
-        "type": "function",
-        "z": "9b34c3ef5f307a0b",
-        "g": "d9749c3376583b4d",
-        "name": "Create Subscription Sensor X",
-        "func": "msg.payload = {\n    \"description\": \"Notify when no2 greater than 50\",\n    \"subject\": {\n        \"entities\": [\n            { \"idPattern\": \"SensorX.*\", \"type\": \"AirQualityObserved\" }\n        ],\n        \"condition\": {\n            \"attrs\": [\"no2\"],\n            \"expression\": {\n                \"q\": \"no2>50\"\n            }\n        }\n    },\n    \"notification\": {\n        \"http\": {\n            \"url\": \"http://host.docker.internal:1895/notify_sensorX\"\n        },\n        \"attrs\": [\"no2\", \"so2\", \"temperature\"]\n    }\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 1280,
-        "wires": [
-            [
-                "cb37be129e7dec46"
-            ]
-        ]
-    },
-    {
-        "id": "436b2328c055f129",
-        "type": "http in",
-        "z": "9b34c3ef5f307a0b",
-        "g": "9c08220da1100eb3",
-        "name": "Notify Endpoint (Sensor X)",
-        "url": "/notify_sensorX",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 330,
-        "y": 1500,
-        "wires": [
-            [
-                "9eeaccf2f099387c",
-                "9860389ef8b563e3"
-            ]
-        ]
-    },
-    {
-        "id": "9eeaccf2f099387c",
-        "type": "debug",
-        "z": "9b34c3ef5f307a0b",
-        "g": "9c08220da1100eb3",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 620,
-        "y": 1500,
-        "wires": []
-    },
-    {
-        "id": "cb37be129e7dec46",
-        "type": "http request",
-        "z": "9b34c3ef5f307a0b",
-        "g": "d9749c3376583b4d",
-        "name": "Create Subscription",
-        "method": "POST",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://host.docker.internal:1030/v2/subscriptions",
+        "url": "http://172.17.0.1:9200/_cat/indices",
         "tls": "",
         "persist": false,
         "proxy": "",
         "insecureHTTPParser": false,
-        "authType": "",
+        "authType": "basic",
         "senderr": false,
-        "headers": [
-            {
-                "keyType": "other",
-                "keyValue": "",
-                "valueType": "other",
-                "valueValue": ""
-            }
-        ],
-        "x": 630,
-        "y": 1280,
+        "headers": [],
+        "x": 410,
+        "y": 80,
         "wires": [
             [
-                "63db73864d471872"
+                "1e938ade.6254a5"
             ]
         ]
     },
     {
-        "id": "63db73864d471872",
+        "id": "4aa5a30.7b2905c",
         "type": "debug",
-        "z": "9b34c3ef5f307a0b",
-        "g": "d9749c3376583b4d",
-        "name": "Response",
+        "z": "73f15769.b43868",
+        "g": "cfc821cb.39bbe",
+        "name": "",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -1461,798 +402,982 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 880,
-        "y": 1280,
+        "x": 770,
+        "y": 80,
         "wires": []
     },
     {
-        "id": "4410791c14832f20",
-        "type": "function",
-        "z": "9b34c3ef5f307a0b",
-        "g": "241eb6ab6aa0b5e7",
-        "name": "Add id",
-        "func": "// Verifica que msg.payload sea un objeto\nif (msg.payload && msg.payload.dateObserved_timestamp) {\n    // Agrega la propiedad 'id'\n    msg.payload.id = `SensorX_${msg.payload.dateObserved_timestamp}`;\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 390,
-        "y": 180,
+        "id": "1e938ade.6254a5",
+        "type": "json",
+        "z": "73f15769.b43868",
+        "g": "cfc821cb.39bbe",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": true,
+        "x": 610,
+        "y": 80,
         "wires": [
             [
-                "9b11b3bc3a87d536",
-                "a7660c3ea50b86a0",
-                "2a2334c4c5fd5012",
-                "0be002c120456568"
+                "4aa5a30.7b2905c"
             ]
         ]
     },
     {
-        "id": "f72d5653ba5a5455",
-        "type": "debug",
-        "z": "9b34c3ef5f307a0b",
-        "g": "1ce1b5e8887e3e4b",
-        "name": "debug 9",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 620,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "c740de89e1411daf",
-        "type": "function",
-        "z": "9b34c3ef5f307a0b",
-        "g": "241eb6ab6aa0b5e7",
-        "name": "Add id",
-        "func": "// Verifica que msg.payload sea un objeto\nif (msg.payload && msg.payload.dateObserved_timestamp) {\n    // Agrega la propiedad 'id'\n    msg.payload.id = `SensorY_${msg.payload.dateObserved_timestamp}`;\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 410,
-        "y": 240,
-        "wires": [
-            [
-                "8adf0026b28193be",
-                "a993743f657833d7",
-                "ce8c705996b0c116",
-                "0be002c120456568"
-            ]
-        ]
-    },
-    {
-        "id": "2a2334c4c5fd5012",
-        "type": "link out",
-        "z": "9b34c3ef5f307a0b",
-        "g": "241eb6ab6aa0b5e7",
-        "name": "lnkOrionSensorX",
-        "mode": "link",
-        "links": [
-            "6cdb0bfa6c721342"
-        ],
-        "x": 685,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "6cdb0bfa6c721342",
-        "type": "link in",
-        "z": "9b34c3ef5f307a0b",
-        "g": "090a9240efbb2098",
-        "name": "lnkOrionSensorX",
-        "links": [
-            "2a2334c4c5fd5012"
-        ],
-        "x": 135,
+        "id": "a1d00b78.31dd28",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "ac6c313a.24b3d",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
         "y": 680,
         "wires": [
             [
-                "7cb16cc31d4a944d"
+                "2212f53b.80433a"
             ]
         ]
     },
     {
-        "id": "ce8c705996b0c116",
-        "type": "link out",
-        "z": "9b34c3ef5f307a0b",
-        "g": "241eb6ab6aa0b5e7",
-        "name": "lnkOrionSensorY",
-        "mode": "link",
-        "links": [
-            "f0c6c10c187b4537"
-        ],
-        "x": 595,
+        "id": "2212f53b.80433a",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "ac6c313a.24b3d",
+        "name": "Recover status of index pm10",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/pm10_validated?pretty",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 430,
+        "y": 680,
+        "wires": [
+            [
+                "dd920356.f65f5"
+            ]
+        ]
+    },
+    {
+        "id": "54e935af.022adc",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "ac6c313a.24b3d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 950,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "dd920356.f65f5",
+        "type": "json",
+        "z": "73f15769.b43868",
+        "g": "ac6c313a.24b3d",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": true,
+        "x": 710,
+        "y": 680,
+        "wires": [
+            [
+                "54e935af.022adc"
+            ]
+        ]
+    },
+    {
+        "id": "6891b94d.bc3638",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "bdab0a2f.1bfa88"
+            ]
+        ]
+    },
+    {
+        "id": "128cc06e.a3ee8",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "name": "Creating index",
+        "method": "PUT",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/school",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 540,
+        "y": 200,
+        "wires": [
+            [
+                "bc154570.da8a88"
+            ]
+        ]
+    },
+    {
+        "id": "16d2c8da.884717",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 950,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "bc154570.da8a88",
+        "type": "json",
+        "z": "73f15769.b43868",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": true,
+        "x": 710,
+        "y": 200,
+        "wires": [
+            [
+                "16d2c8da.884717"
+            ]
+        ]
+    },
+    {
+        "id": "bdab0a2f.1bfa88",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "name": "append payload",
+        "func": "msg.payload ={\n  \"settings\": {\n    \"index\": {\n      \"number_of_shards\": 1,\n      \"number_of_replicas\": 1\n    }\n  },\n  \"mappings\":{\n    \"properties\": {\n      \"age\": { \"type\": \"long\" },\n      \"experienceInYears\": { \"type\": \"long\" },\n      \"name\": { \"type\": \"text\" }\n    }\n  }\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 200,
+        "wires": [
+            [
+                "128cc06e.a3ee8"
+            ]
+        ]
+    },
+    {
+        "id": "4f9c2209.f815cc",
+        "type": "comment",
+        "z": "73f15769.b43868",
+        "name": "Ejemplo create index",
+        "info": "",
+        "x": 380,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ad84ef15.7d6f",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "d326b21.2a1e55",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 780,
+        "wires": [
+            [
+                "812987a7.599dc8"
+            ]
+        ]
+    },
+    {
+        "id": "812987a7.599dc8",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "d326b21.2a1e55",
+        "name": "View the mapping of an index (pm10)",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/pm10_validated/_mapping",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 470,
+        "y": 780,
+        "wires": [
+            [
+                "6dee66a7.2c4848"
+            ]
+        ]
+    },
+    {
+        "id": "bf8ae526.8facd8",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "d326b21.2a1e55",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 930,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "6dee66a7.2c4848",
+        "type": "json",
+        "z": "73f15769.b43868",
+        "g": "d326b21.2a1e55",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 720,
+        "y": 780,
+        "wires": [
+            [
+                "bf8ae526.8facd8"
+            ]
+        ]
+    },
+    {
+        "id": "8a15ccb1.58366",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "f621b7d7.5a1208",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 980,
+        "wires": [
+            [
+                "4047b36d.d1ff4c"
+            ]
+        ]
+    },
+    {
+        "id": "4af5af5a.d1f77",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "f621b7d7.5a1208",
+        "name": "retrieving data",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/pm10_validated/_doc/_search?pretty",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 580,
+        "y": 980,
+        "wires": [
+            [
+                "326f759c.f588ca"
+            ]
+        ]
+    },
+    {
+        "id": "bc3b44f9.fa5398",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "f621b7d7.5a1208",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 950,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "4047b36d.d1ff4c",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "g": "f621b7d7.5a1208",
+        "name": "",
+        "func": "msg.payload = {\n    \"query\": {\n        \"exists\": {\n            \"field\": \"inStock\"\n        }\n    }\n}\n\nmsg.headers = {};\nmsg.headers['Content-Type'] = 'application/json';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 330,
+        "y": 980,
+        "wires": [
+            [
+                "4af5af5a.d1f77"
+            ]
+        ]
+    },
+    {
+        "id": "326f759c.f588ca",
+        "type": "json",
+        "z": "73f15769.b43868",
+        "g": "f621b7d7.5a1208",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 750,
+        "y": 980,
+        "wires": [
+            [
+                "bc3b44f9.fa5398"
+            ]
+        ]
+    },
+    {
+        "id": "3524f48e.e2f1cc",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "310b1502.7049ba",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 880,
+        "wires": [
+            [
+                "e48fc5c7.a3ff28"
+            ]
+        ]
+    },
+    {
+        "id": "e48fc5c7.a3ff28",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "310b1502.7049ba",
+        "name": "Count of elements in a specific index (pm10)",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/pm10_validated/_count",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 430,
+        "y": 880,
+        "wires": [
+            [
+                "abb9440.be02bc"
+            ]
+        ]
+    },
+    {
+        "id": "f1d00441.04ebb8",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "310b1502.7049ba",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 930,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "abb9440.be02bc",
+        "type": "json",
+        "z": "73f15769.b43868",
+        "g": "310b1502.7049ba",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 720,
+        "y": 880,
+        "wires": [
+            [
+                "f1d00441.04ebb8"
+            ]
+        ]
+    },
+    {
+        "id": "3703ef99.9900b",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "215a9d76.e345d2",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 1080,
+        "wires": [
+            [
+                "1fd7d845.bfa288"
+            ]
+        ]
+    },
+    {
+        "id": "1fd7d845.bfa288",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "215a9d76.e345d2",
+        "name": "Recover document filtering specific parameter and value",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/pm10_validated/_doc/_search?q=period:22",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 470,
+        "y": 1080,
+        "wires": [
+            [
+                "ba3a40bb.9a871"
+            ]
+        ]
+    },
+    {
+        "id": "f8478ba1.2f0898",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "215a9d76.e345d2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1090,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "ba3a40bb.9a871",
+        "type": "json",
+        "z": "73f15769.b43868",
+        "g": "215a9d76.e345d2",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 850,
+        "y": 1080,
+        "wires": [
+            [
+                "f8478ba1.2f0898"
+            ]
+        ]
+    },
+    {
+        "id": "dc820dfa.0eea3",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "pm10",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "8a12fcac.1d838"
+            ]
+        ]
+    },
+    {
+        "id": "66616c28.149bf4",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "wind_speed",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "71809884.f31308"
+            ]
+        ]
+    },
+    {
+        "id": "b9a03406.cc7128",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "wind_direction",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "9078b6d8.44e598"
+            ]
+        ]
+    },
+    {
+        "id": "8a12fcac.1d838",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Payload for index",
+        "func": "msg.payload ={\n  \"settings\": {\n    \"index\": {\n      \"number_of_shards\": 1,\n      \"number_of_replicas\": 1\n    }\n  },\n  \"mappings\":{\n        //\"_doc\": {\n            \"properties\": {\n                  \"stationName\": { \"type\": \"text\" },\n                  \"parameter\": { \"type\": \"text\" },\n                  \"descParameter\": { \"type\": \"text\" },\n                  \"date\": { \"type\": \"text\" },\n                  \"dateAndPeriod\": { \"type\": \"text\" },\n                  \"period\": { \"type\": \"integer\" },\n                  \"value\": { \"type\": \"long\" },\n                  \"flag\": { \"type\": \"text\" },\n                  \"descriptionFlag\": { \"type\": \"text\" },\n                  \"ID_station\": { \"type\": \"integer\" },\n                  \"description_ID_station\": { \"type\": \"text\" },\n                  \"IID\": { \"type\": \"integer\" },\n                  \"description_IID\": { \"type\": \"text\" },\n                  \"CodeMinistry\": { \"type\": \"integer\" },\n                  \"description_CodeMinistry\": { \"type\": \"text\" },\n                  \"CodeTechMinistry\": { \"type\": \"integer\" },\n                  \"description_CodeTechMinistry\": { \"type\": \"text\" },\n            }\n        //}\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 280,
+        "wires": [
+            [
+                "c6b80c4e.b9ed7"
+            ]
+        ]
+    },
+    {
+        "id": "71809884.f31308",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Payload for index",
+        "func": "msg.payload ={\n  \"settings\": {\n    \"index\": {\n      \"number_of_shards\": 1,\n      \"number_of_replicas\": 1\n    }\n  },\n  \"mappings\":{\n        //\"_doc\": {\n            \"properties\": {\n                  \"stationName\": { \"type\": \"text\" },\n                  \"parameter\": { \"type\": \"text\" },\n                  \"descParameter\": { \"type\": \"text\" },\n                  \"date\": { \"type\": \"text\" },\n                  \"dateAndPeriod\": { \"type\": \"text\" },\n                  \"period\": { \"type\": \"integer\" },\n                  \"value\": { \"type\": \"long\" },\n                  \"flag\": { \"type\": \"text\" },\n                  \"descriptionFlag\": { \"type\": \"text\" },\n                  \"ID_station\": { \"type\": \"integer\" },\n                  \"description_ID_station\": { \"type\": \"text\" },\n                  \"IID\": { \"type\": \"integer\" },\n                  \"description_IID\": { \"type\": \"text\" },\n                  \"CodeMinistry\": { \"type\": \"integer\" },\n                  \"description_CodeMinistry\": { \"type\": \"text\" },\n                  \"CodeTechMinistry\": { \"type\": \"integer\" },\n                  \"description_CodeTechMinistry\": { \"type\": \"text\" },\n            }\n        //}\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 320,
+        "wires": [
+            [
+                "942fdf86.4a6cb"
+            ]
+        ]
+    },
+    {
+        "id": "9078b6d8.44e598",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Payload for index",
+        "func": "msg.payload ={\n  \"settings\": {\n    \"index\": {\n      \"number_of_shards\": 1,\n      \"number_of_replicas\": 1\n    }\n  },\n  \"mappings\":{\n        //\"_doc\": {\n            \"properties\": {\n                  \"stationName\": { \"type\": \"text\" },\n                  \"parameter\": { \"type\": \"text\" },\n                  \"descParameter\": { \"type\": \"text\" },\n                  \"date\": { \"type\": \"text\" },\n                  \"dateAndPeriod\": { \"type\": \"text\" },\n                  \"period\": { \"type\": \"integer\" },\n                  \"value\": { \"type\": \"long\" },\n                  \"flag\": { \"type\": \"text\" },\n                  \"descriptionFlag\": { \"type\": \"text\" },\n                  \"ID_station\": { \"type\": \"integer\" },\n                  \"description_ID_station\": { \"type\": \"text\" },\n                  \"IID\": { \"type\": \"integer\" },\n                  \"description_IID\": { \"type\": \"text\" },\n                  \"CodeMinistry\": { \"type\": \"integer\" },\n                  \"description_CodeMinistry\": { \"type\": \"text\" },\n                  \"CodeTechMinistry\": { \"type\": \"integer\" },\n                  \"description_CodeTechMinistry\": { \"type\": \"text\" },\n            }\n        //}\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 360,
+        "wires": [
+            [
+                "93b34b8.5060eb8"
+            ]
+        ]
+    },
+    {
+        "id": "c6b80c4e.b9ed7",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Creating index pm10_validated",
+        "method": "PUT",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/pm10_validated",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 670,
+        "y": 280,
+        "wires": [
+            [
+                "7780edd5.b10fe4"
+            ]
+        ]
+    },
+    {
+        "id": "942fdf86.4a6cb",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Creating index wind_speed_validated",
+        "method": "PUT",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/wind_speed_validated",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 690,
+        "y": 320,
+        "wires": [
+            [
+                "c03df57d.4be8b8"
+            ]
+        ]
+    },
+    {
+        "id": "93b34b8.5060eb8",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Creating index wind_direction_validated",
+        "method": "PUT",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/wind_direction_validated",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 700,
+        "y": 360,
+        "wires": [
+            [
+                "a0b777c.625cf88"
+            ]
+        ]
+    },
+    {
+        "id": "7780edd5.b10fe4",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Result pm10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1010,
         "y": 280,
         "wires": []
     },
     {
-        "id": "f0c6c10c187b4537",
-        "type": "link in",
-        "z": "9b34c3ef5f307a0b",
-        "g": "090a9240efbb2098",
-        "name": "lnkOrionSensorY",
-        "links": [
-            "ce8c705996b0c116"
-        ],
-        "x": 135,
-        "y": 740,
-        "wires": [
-            [
-                "7cb16cc31d4a944d"
-            ]
-        ]
-    },
-    {
-        "id": "7cb16cc31d4a944d",
-        "type": "function",
-        "z": "9b34c3ef5f307a0b",
-        "g": "090a9240efbb2098",
-        "name": "Add headers",
-        "func": "msg.headers = {\n    \"Content-Type\": \"application/json\"\n};\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 700,
-        "wires": [
-            [
-                "8e27854a7595438f",
-                "852a455695492938"
-            ]
-        ]
-    },
-    {
-        "id": "8e27854a7595438f",
+        "id": "c03df57d.4be8b8",
         "type": "debug",
-        "z": "9b34c3ef5f307a0b",
-        "g": "090a9240efbb2098",
-        "name": "debug 10",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 460,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "852a455695492938",
-        "type": "http request",
-        "z": "9b34c3ef5f307a0b",
-        "g": "090a9240efbb2098",
-        "name": "Create Entity",
-        "method": "POST",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://host.docker.internal:1030/v2/entities?options=keyValues",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 470,
-        "y": 700,
-        "wires": [
-            [
-                "1aa2a359f374daa9"
-            ]
-        ]
-    },
-    {
-        "id": "1aa2a359f374daa9",
-        "type": "debug",
-        "z": "9b34c3ef5f307a0b",
-        "g": "090a9240efbb2098",
-        "name": "Response",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Result windSpeed",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 700,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1030,
+        "y": 320,
         "wires": []
     },
     {
-        "id": "f88545a97dea08e9",
-        "type": "http request",
-        "z": "9b34c3ef5f307a0b",
-        "g": "d9749c3376583b4d",
-        "name": "Create Subscription",
-        "method": "POST",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://host.docker.internal:1030/v2/subscriptions",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [
-            {
-                "keyType": "other",
-                "keyValue": "",
-                "valueType": "other",
-                "valueValue": ""
-            }
-        ],
-        "x": 630,
-        "y": 1340,
-        "wires": [
-            [
-                "e01663856debce9c"
-            ]
-        ]
-    },
-    {
-        "id": "e01663856debce9c",
+        "id": "a0b777c.625cf88",
         "type": "debug",
-        "z": "9b34c3ef5f307a0b",
-        "g": "d9749c3376583b4d",
-        "name": "debug 11",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Result windDirection",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 880,
-        "y": 1340,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1040,
+        "y": 360,
         "wires": []
     },
     {
-        "id": "b4b5228b5635161d",
-        "type": "http in",
-        "z": "9b34c3ef5f307a0b",
-        "g": "9c08220da1100eb3",
-        "name": "Notify Endpoint (Sensor Y)",
-        "url": "/notify_sensorY",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 230,
-        "y": 1560,
-        "wires": [
-            [
-                "a72fc21dc29a71ac",
-                "0513542da6b48d53"
-            ]
-        ]
-    },
-    {
-        "id": "a72fc21dc29a71ac",
-        "type": "debug",
-        "z": "9b34c3ef5f307a0b",
-        "g": "9c08220da1100eb3",
-        "name": "debug 12",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 620,
-        "y": 1560,
-        "wires": []
-    },
-    {
-        "id": "b80d0f6e779cc07c",
-        "type": "function",
-        "z": "9b34c3ef5f307a0b",
-        "g": "d9749c3376583b4d",
-        "name": "Create Subscription Sensor Y",
-        "func": "msg.payload = {\n    \"description\": \"Notify when PM2.5 greater than 35\",\n    \"subject\": {\n        \"entities\": [\n            { \"idPattern\": \"SensorY.*\", \"type\": \"AirQualityObserved\" }\n        ],\n        \"condition\": {\n            \"attrs\": [\"pm25\"],\n            \"expression\": {\n                \"q\": \"pm25>35\"\n            }\n        }\n    },\n    \"notification\": {\n        \"http\": {\n            \"url\": \"http://host.docker.internal:1895/notify_sensorY\"\n        },\n        \"attrs\": [\"pm25\", \"pm10\", \"o3\", \"co2\"]\n    }\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 1340,
-        "wires": [
-            [
-                "f88545a97dea08e9"
-            ]
-        ]
-    },
-    {
-        "id": "e493af805cb6ba46",
-        "type": "function",
-        "z": "9b34c3ef5f307a0b",
-        "g": "d9749c3376583b4d",
-        "name": "Create Subscription Sensor Y",
-        "func": "msg.payload = {\n    \"description\": \"Notify when PM10 greater than 70\",\n    \"subject\": {\n        \"entities\": [\n            { \"idPattern\": \"SensorY.*\", \"type\": \"AirQualityObserved\" }\n        ],\n        \"condition\": {\n            \"attrs\": [\"pm10\"],\n            \"expression\": {\n                \"q\": \"pm10>70\"\n            }\n        }\n    },\n    \"notification\": {\n        \"http\": {\n            \"url\": \"http://host.docker.internal:1895/notify_sensorY\"\n        },\n        \"attrs\": [\"pm25\", \"pm10\", \"o3\", \"co2\"]\n    }\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 1380,
-        "wires": [
-            [
-                "f88545a97dea08e9"
-            ]
-        ]
-    },
-    {
-        "id": "9860389ef8b563e3",
-        "type": "function",
-        "z": "9b34c3ef5f307a0b",
-        "g": "b8f8f85fd330e00c",
-        "name": "function 1",
-        "func": "var data = msg.payload.data;\n\nmsg.payload = data;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 460,
-        "y": 1700,
-        "wires": [
-            [
-                "d1daf0a250c5c2af"
-            ]
-        ]
-    },
-    {
-        "id": "d1daf0a250c5c2af",
-        "type": "function",
-        "z": "9b34c3ef5f307a0b",
-        "g": "b8f8f85fd330e00c",
-        "name": "Acumular datos en un array",
-        "func": "// Obtener el array acumulado del contexto\nlet dataArray = flow.get('alertsX') || [];\n\n// Agregar el nuevo dato al array\ndataArray.push(msg.payload);\n\n// Guardar el array actualizado en el contexto\nflow.set('alertsX', dataArray);\n\n// Enviar el array completo al siguiente nodo\nmsg.payload = dataArray;\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 700,
-        "y": 1700,
-        "wires": [
-            [
-                "6891663ea34d1481"
-            ]
-        ]
-    },
-    {
-        "id": "34d25e1d7fa2179e",
-        "type": "function",
-        "z": "9b34c3ef5f307a0b",
-        "g": "b8f8f85fd330e00c",
-        "name": "Acumular datos en un array",
-        "func": "// Obtener el array acumulado del contexto\nlet dataArray = flow.get('alertsY') || [];\n\n// Agregar el nuevo dato al array\ndataArray.push(msg.payload);\n\n// Guardar el array actualizado en el contexto\nflow.set('alertsY', dataArray);\n\n// Enviar el array completo al siguiente nodo\nmsg.payload = dataArray;\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 700,
-        "y": 1760,
-        "wires": [
-            [
-                "62c5f27ea2f3e82a"
-            ]
-        ]
-    },
-    {
-        "id": "0513542da6b48d53",
-        "type": "function",
-        "z": "9b34c3ef5f307a0b",
-        "g": "b8f8f85fd330e00c",
-        "name": "function 2",
-        "func": "var data = msg.payload.data;\n\nmsg.payload = data;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 1760,
-        "wires": [
-            [
-                "34d25e1d7fa2179e"
-            ]
-        ]
-    },
-    {
-        "id": "6891663ea34d1481",
-        "type": "file",
-        "z": "9b34c3ef5f307a0b",
-        "g": "b8f8f85fd330e00c",
-        "name": "Escribir alertas (Sensor X)",
-        "filename": "/data/alertsX.json",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "utf8",
-        "x": 990,
-        "y": 1700,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "62c5f27ea2f3e82a",
-        "type": "file",
-        "z": "9b34c3ef5f307a0b",
-        "g": "b8f8f85fd330e00c",
-        "name": "Escribir alertas (Sensor y)",
-        "filename": "/data/alertsY.json",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "utf8",
-        "x": 990,
-        "y": 1760,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0be002c120456568",
-        "type": "mongodb out",
-        "z": "9b34c3ef5f307a0b",
-        "g": "8f0d93017ce70716",
-        "mongodb": "dffe17047348ca55",
-        "name": "insert json to mongdb",
-        "collection": "sensor",
-        "payonly": true,
-        "upsert": false,
-        "multi": false,
-        "operation": "store",
-        "x": 460,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "1d89c7fc897b7005",
+        "id": "6090d07a.3e0b4",
         "type": "inject",
-        "z": "9b34c3ef5f307a0b",
-        "g": "8f0d93017ce70716",
-        "name": "trigger json trigger",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "Call API REST",
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
-        "payloadType": "json",
-        "x": 230,
-        "y": 500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f1e2b5eac6224d13",
-        "type": "function",
-        "z": "9764365797544665",
-        "g": "4e20c1977dbac247",
-        "name": "getDate for id and dateObserved",
-        "func": "// Capturar el instante de tiempo actual\nlet dateObserved = new Date().toISOString(); // Formato estándar ISO 8601\nlet date = new Date();\nlet dateObserved_timestamp = date.getTime();\n\nmsg.payload = dateObserved_timestamp;\nmsg.dateObserved = dateObserved;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 490,
-        "y": 80,
+        "payloadType": "date",
+        "x": 140,
+        "y": 460,
         "wires": [
             [
-                "06682f66864595c2"
+                "bacc8f5e.f4b7e"
             ]
         ]
     },
     {
-        "id": "e0490b2596650bd2",
-        "type": "data-generator",
-        "z": "9764365797544665",
-        "g": "4e20c1977dbac247",
-        "name": "Sensor 5m",
-        "field": "payload",
-        "fieldType": "msg",
-        "syntax": "json",
-        "template": "{\n    \"type\": \"AirQualityObserved\",\n    \"relativeHumidity\": {{float 50 360}},\n    \"temperature\": {{float 30 80}},\n    \"dateObserved\": \"{{dateObserved}}\",\n    \"dateObserved_timestamp\": {{payload}}\n}\n",
-        "x": 250,
-        "y": 200,
-        "wires": [
-            [
-                "4356628af3507c38"
-            ]
-        ]
-    },
-    {
-        "id": "5ffaad14519c4870",
+        "id": "3007b47.50b4d4c",
         "type": "inject",
-        "z": "9764365797544665",
-        "g": "4e20c1977dbac247",
-        "name": "Parametros 5 minutos",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "300",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "Call API REST",
+        "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
-        "y": 80,
+        "x": 140,
+        "y": 520,
         "wires": [
             [
-                "f1e2b5eac6224d13"
+                "adb9fc04.2e796"
             ]
         ]
     },
     {
-        "id": "dfcc76e15c932f8a",
-        "type": "data-generator",
-        "z": "9764365797544665",
-        "g": "4e20c1977dbac247",
-        "name": "Sensor 20m",
-        "field": "payload",
-        "fieldType": "msg",
-        "syntax": "json",
-        "template": "{\n    \"type\": \"AirQualityObserved\",\n    \"pm25\": {{float 1 200}},\n    \"co2\": {{float 1 100}},\n    \"dateObserved\": \"{{dateObserved}}\",\n    \"dateObserved_timestamp\": {{payload}}\n}\n",
-        "x": 250,
-        "y": 260,
+        "id": "169b3ceb.00b0f3",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 580,
         "wires": [
             [
-                "4356628af3507c38"
+                "e14aafec.9e639"
             ]
         ]
     },
     {
-        "id": "8d069727217e29e3",
+        "id": "bacc8f5e.f4b7e",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "add content-type header needed for DELETE",
+        "func": "msg.headers = {};\nmsg.headers['Content-Type'] = 'application/json';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 460,
+        "wires": [
+            [
+                "e510c553.e25128"
+            ]
+        ]
+    },
+    {
+        "id": "adb9fc04.2e796",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "add content-type header needed for DELETE",
+        "func": "msg.headers = {};\nmsg.headers['Content-Type'] = 'application/json';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450,
+        "y": 520,
+        "wires": [
+            [
+                "933e7d2f.34ec8"
+            ]
+        ]
+    },
+    {
+        "id": "e14aafec.9e639",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "add content-type header needed for DELETE",
+        "func": "msg.headers = {};\nmsg.headers['Content-Type'] = 'application/json';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450,
+        "y": 580,
+        "wires": [
+            [
+                "6feafa34.1907f4"
+            ]
+        ]
+    },
+    {
+        "id": "e510c553.e25128",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "DELETE INDEX pm10",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/pm10_validated",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 780,
+        "y": 460,
+        "wires": [
+            [
+                "d5191e3.fd7f7e"
+            ]
+        ]
+    },
+    {
+        "id": "933e7d2f.34ec8",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "DELETE INDEX wind_speed",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/wind_speed_validated",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 800,
+        "y": 520,
+        "wires": [
+            [
+                "db49adf.11cc05"
+            ]
+        ]
+    },
+    {
+        "id": "6feafa34.1907f4",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "DELETE INDEX wind_direction",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/wind_direction_validated",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 810,
+        "y": 580,
+        "wires": [
+            [
+                "fb1463f7.e7bd1"
+            ]
+        ]
+    },
+    {
+        "id": "d5191e3.fd7f7e",
         "type": "debug",
-        "z": "9764365797544665",
-        "g": "4e20c1977dbac247",
-        "name": "debug 16",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "4356628af3507c38",
-        "type": "function",
-        "z": "9764365797544665",
-        "g": "4e20c1977dbac247",
-        "name": "Add id",
-        "func": "// Verifica que msg.payload sea un objeto\nif (msg.payload && msg.payload.dateObserved_timestamp) {\n    // Agrega la propiedad 'id'\n    msg.payload.id = `Sensor_${msg.payload.dateObserved_timestamp}`;\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 430,
-        "y": 220,
-        "wires": [
-            [
-                "8d069727217e29e3",
-                "f2491d82c631df3d"
-            ]
-        ]
-    },
-    {
-        "id": "06682f66864595c2",
-        "type": "link out",
-        "z": "9764365797544665",
-        "g": "4e20c1977dbac247",
-        "name": "lnkSensor_5",
-        "mode": "link",
-        "links": [
-            "f137448573435e67"
-        ],
-        "x": 715,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "f137448573435e67",
-        "type": "link in",
-        "z": "9764365797544665",
-        "g": "4e20c1977dbac247",
-        "name": "lnkSensor_5",
-        "links": [
-            "06682f66864595c2"
-        ],
-        "x": 95,
-        "y": 200,
-        "wires": [
-            [
-                "e0490b2596650bd2"
-            ]
-        ]
-    },
-    {
-        "id": "ec24de0e7b1fe224",
-        "type": "inject",
-        "z": "9764365797544665",
-        "g": "4e20c1977dbac247",
-        "name": "Parámetros 20 minutos",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "900",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 210,
-        "y": 140,
-        "wires": [
-            [
-                "ff27d45b480eba18"
-            ]
-        ]
-    },
-    {
-        "id": "ff27d45b480eba18",
-        "type": "function",
-        "z": "9764365797544665",
-        "g": "4e20c1977dbac247",
-        "name": "getDate for id and dateObserved",
-        "func": "// Capturar el instante de tiempo actual\nlet dateObserved = new Date().toISOString(); // Formato estándar ISO 8601\nlet date = new Date();\nlet dateObserved_timestamp = date.getTime();\n\nmsg.payload = dateObserved_timestamp;\nmsg.dateObserved = dateObserved;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 490,
-        "y": 140,
-        "wires": [
-            [
-                "7413c4398a9f5849"
-            ]
-        ]
-    },
-    {
-        "id": "7413c4398a9f5849",
-        "type": "link out",
-        "z": "9764365797544665",
-        "g": "4e20c1977dbac247",
-        "name": "lnkSensor_20",
-        "mode": "link",
-        "links": [
-            "ba76245eb21c7e3e"
-        ],
-        "x": 715,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "ba76245eb21c7e3e",
-        "type": "link in",
-        "z": "9764365797544665",
-        "g": "4e20c1977dbac247",
-        "name": "lnkSensor_20",
-        "links": [
-            "7413c4398a9f5849"
-        ],
-        "x": 95,
-        "y": 260,
-        "wires": [
-            [
-                "dfcc76e15c932f8a"
-            ]
-        ]
-    },
-    {
-        "id": "48df3ce9f81f385b",
-        "type": "file",
-        "z": "9764365797544665",
-        "g": "8c2baff7f9275e7b",
-        "name": "Escribir Log",
-        "filename": "/data/sensor_ex3.json",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "utf8",
-        "x": 870,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f2491d82c631df3d",
-        "type": "function",
-        "z": "9764365797544665",
-        "g": "8c2baff7f9275e7b",
-        "name": "Acumular datos en un array",
-        "func": "// Obtener el array acumulado del contexto\nlet dataArray = flow.get('dataSensor') || [];\n\n// Agregar el nuevo dato al array\ndataArray.push(msg.payload);\n\n// Guardar el array actualizado en el contexto\nflow.set('dataSensor', dataArray);\n\n// Enviar el array completo al siguiente nodo\nmsg.payload = dataArray;\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 640,
-        "y": 400,
-        "wires": [
-            [
-                "48df3ce9f81f385b"
-            ]
-        ]
-    },
-    {
-        "id": "18d5bb4abf56fa0b",
-        "type": "comment",
-        "z": "9764365797544665",
-        "g": "8c2baff7f9275e7b",
-        "name": "MongoImport",
-        "info": "mongoimport --db miBaseDeDatos --collection miColección --file /data/sensors.json --jsonArray\n",
-        "x": 790,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1070,
         "y": 460,
+        "wires": []
+    },
+    {
+        "id": "db49adf.11cc05",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1070,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "fb1463f7.e7bd1",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1070,
+        "y": 580,
         "wires": []
     }
 ]

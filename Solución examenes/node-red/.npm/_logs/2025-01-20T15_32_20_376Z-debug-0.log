@@ -1,0 +1,63 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.18.1
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/.npmrc
+5 silly config load:file:/usr/src/node-red/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install node-red-contrib-ccs811-airquality-sensor@1.0.3
+8 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--omit" "dev" "--engine-strict" "node-red-contrib-ccs811-airquality-sensor@1.0.3"
+9 verbose logfile logs-max:10 dir:/data/.npm/_logs/2025-01-20T15_32_20_376Z-
+10 verbose logfile /data/.npm/_logs/2025-01-20T15_32_20_376Z-debug-0.log
+11 silly packumentCache heap:2023227392 maxSize:505806848 maxEntrySize:252903424
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest node-red-contrib-ccs811-airquality-sensor@1.0.3
+15 silly packumentCache full:https://registry.npmjs.org/node-red-contrib-ccs811-airquality-sensor cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-ccs811-airquality-sensor 799ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/node-red-contrib-ccs811-airquality-sensor set size:undefined disposed:false
+18 silly placeDep ROOT node-red-contrib-ccs811-airquality-sensor@1.0.3 OK for: node-red-project@0.0.1 want: 1.0.3
+19 silly fetch manifest i2c-bus@^5.2.1
+20 silly packumentCache full:https://registry.npmjs.org/i2c-bus cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/i2c-bus 575ms (cache miss)
+22 silly packumentCache full:https://registry.npmjs.org/i2c-bus set size:undefined disposed:false
+23 silly placeDep ROOT i2c-bus@5.2.3 OK for: node-red-contrib-ccs811-airquality-sensor@1.0.3 want: ^5.2.1
+24 silly fetch manifest bindings@^1.5.0
+25 silly packumentCache full:https://registry.npmjs.org/bindings cache-miss
+26 silly fetch manifest nan@^2.17.0
+27 silly packumentCache full:https://registry.npmjs.org/nan cache-miss
+28 http fetch GET 200 https://registry.npmjs.org/bindings 92ms (cache miss)
+29 silly packumentCache full:https://registry.npmjs.org/bindings set size:undefined disposed:false
+30 http fetch GET 200 https://registry.npmjs.org/nan 129ms (cache miss)
+31 silly packumentCache full:https://registry.npmjs.org/nan set size:undefined disposed:false
+32 silly placeDep ROOT bindings@1.5.0 OK for: i2c-bus@5.2.3 want: ^1.5.0
+33 silly placeDep ROOT nan@2.22.0 OK for: i2c-bus@5.2.3 want: ^2.17.0
+34 silly fetch manifest file-uri-to-path@1.0.0
+35 silly packumentCache full:https://registry.npmjs.org/file-uri-to-path cache-miss
+36 http fetch GET 200 https://registry.npmjs.org/file-uri-to-path 108ms (cache miss)
+37 silly packumentCache full:https://registry.npmjs.org/file-uri-to-path set size:undefined disposed:false
+38 silly placeDep ROOT file-uri-to-path@1.0.0 OK for: bindings@1.5.0 want: 1.0.0
+39 silly reify moves {}
+40 silly tarball no local data for bindings@https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz. Extracting by manifest.
+41 silly tarball no local data for file-uri-to-path@https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz. Extracting by manifest.
+42 silly tarball no local data for nan@https://registry.npmjs.org/nan/-/nan-2.22.0.tgz. Extracting by manifest.
+43 silly tarball no local data for i2c-bus@https://registry.npmjs.org/i2c-bus/-/i2c-bus-5.2.3.tgz. Extracting by manifest.
+44 silly tarball no local data for node-red-contrib-ccs811-airquality-sensor@https://registry.npmjs.org/node-red-contrib-ccs811-airquality-sensor/-/node-red-contrib-ccs811-airquality-sensor-1.0.3.tgz. Extracting by manifest.
+45 http fetch GET 200 https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz 78ms (cache miss)
+46 http fetch GET 200 https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz 78ms (cache miss)
+47 http fetch GET 200 https://registry.npmjs.org/i2c-bus/-/i2c-bus-5.2.3.tgz 256ms (cache miss)
+48 http fetch GET 200 https://registry.npmjs.org/nan/-/nan-2.22.0.tgz 270ms (cache miss)
+49 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-ccs811-airquality-sensor/-/node-red-contrib-ccs811-airquality-sensor-1.0.3.tgz 603ms (cache miss)
+50 info run i2c-bus@5.2.3 install node_modules/i2c-bus node-gyp rebuild
+51 info run i2c-bus@5.2.3 install { code: 0, signal: null }
+52 silly ADD node_modules/file-uri-to-path
+53 silly ADD node_modules/nan
+54 silly ADD node_modules/bindings
+55 silly ADD node_modules/i2c-bus
+56 silly ADD node_modules/node-red-contrib-ccs811-airquality-sensor
+57 verbose cwd /data
+58 verbose os Linux 6.10.14-linuxkit
+59 verbose node v20.18.1
+60 verbose npm  v10.8.2
+61 verbose exit 0
+62 info ok

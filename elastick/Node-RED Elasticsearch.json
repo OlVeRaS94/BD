@@ -1,0 +1,1237 @@
+[
+    {
+        "id": "73f15769.b43868",
+        "type": "tab",
+        "label": "Work with elasticsearch",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "215a9d76.e345d2",
+        "type": "group",
+        "z": "73f15769.b43868",
+        "name": "Recover data filtering",
+        "style": {
+            "fill": "#dbcbe7",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "3703ef99.9900b",
+            "1fd7d845.bfa288",
+            "f8478ba1.2f0898",
+            "ba3a40bb.9a871"
+        ],
+        "x": 14,
+        "y": 1039,
+        "w": 1192,
+        "h": 82
+    },
+    {
+        "id": "310b1502.7049ba",
+        "type": "group",
+        "z": "73f15769.b43868",
+        "name": "Count items in a specific index",
+        "style": {
+            "fill": "#dbcbe7",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "3524f48e.e2f1cc",
+            "e48fc5c7.a3ff28",
+            "f1d00441.04ebb8",
+            "abb9440.be02bc"
+        ],
+        "x": 14,
+        "y": 839,
+        "w": 1032,
+        "h": 82
+    },
+    {
+        "id": "384ad95f.68d3c6",
+        "type": "group",
+        "z": "73f15769.b43868",
+        "name": "Create indexes for Envira's data",
+        "style": {
+            "label": true,
+            "label-position": "n",
+            "color": "#000000",
+            "fill": "#dbcbe7"
+        },
+        "nodes": [
+            "dc820dfa.0eea3",
+            "66616c28.149bf4",
+            "b9a03406.cc7128",
+            "8a12fcac.1d838",
+            "71809884.f31308",
+            "9078b6d8.44e598",
+            "c6b80c4e.b9ed7",
+            "942fdf86.4a6cb",
+            "93b34b8.5060eb8",
+            "7780edd5.b10fe4",
+            "c03df57d.4be8b8",
+            "a0b777c.625cf88"
+        ],
+        "x": 14,
+        "y": 239,
+        "w": 1172,
+        "h": 162
+    },
+    {
+        "id": "84459954.14e238",
+        "type": "group",
+        "z": "73f15769.b43868",
+        "name": "Delete indexes related to Envira's data",
+        "style": {
+            "fill": "#dbcbe7",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "6090d07a.3e0b4",
+            "3007b47.50b4d4c",
+            "169b3ceb.00b0f3",
+            "bacc8f5e.f4b7e",
+            "adb9fc04.2e796",
+            "e14aafec.9e639",
+            "e510c553.e25128",
+            "933e7d2f.34ec8",
+            "6feafa34.1907f4",
+            "d5191e3.fd7f7e",
+            "db49adf.11cc05",
+            "fb1463f7.e7bd1"
+        ],
+        "x": 14,
+        "y": 419,
+        "w": 1172,
+        "h": 202
+    },
+    {
+        "id": "ac6c313a.24b3d",
+        "type": "group",
+        "z": "73f15769.b43868",
+        "name": "Status of an index",
+        "style": {
+            "fill": "#dbcbe7",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "a1d00b78.31dd28",
+            "2212f53b.80433a",
+            "54e935af.022adc",
+            "dd920356.f65f5"
+        ],
+        "x": 14,
+        "y": 639,
+        "w": 1052,
+        "h": 82
+    },
+    {
+        "id": "cfc821cb.39bbe",
+        "type": "group",
+        "z": "73f15769.b43868",
+        "name": "Recover indexes",
+        "style": {
+            "fill": "#dbcbe7",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "67ec26ca.c74888",
+            "74f99cc2.54d544",
+            "4aa5a30.7b2905c",
+            "1e938ade.6254a5"
+        ],
+        "x": 14,
+        "y": 39,
+        "w": 852,
+        "h": 82
+    },
+    {
+        "id": "d326b21.2a1e55",
+        "type": "group",
+        "z": "73f15769.b43868",
+        "name": "View Mapping of an index",
+        "style": {
+            "fill": "#dbcbe7",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "ad84ef15.7d6f",
+            "812987a7.599dc8",
+            "bf8ae526.8facd8",
+            "6dee66a7.2c4848"
+        ],
+        "x": 14,
+        "y": 739,
+        "w": 1032,
+        "h": 82
+    },
+    {
+        "id": "f621b7d7.5a1208",
+        "type": "group",
+        "z": "73f15769.b43868",
+        "name": "Retrieving data of an index",
+        "style": {
+            "fill": "#dbcbe7",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "8a15ccb1.58366",
+            "4af5af5a.d1f77",
+            "bc3b44f9.fa5398",
+            "4047b36d.d1ff4c",
+            "326f759c.f588ca"
+        ],
+        "x": 14,
+        "y": 939,
+        "w": 1052,
+        "h": 82
+    },
+    {
+        "id": "67ec26ca.c74888",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "cfc821cb.39bbe",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "74f99cc2.54d544"
+            ]
+        ]
+    },
+    {
+        "id": "74f99cc2.54d544",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "cfc821cb.39bbe",
+        "name": "GET _cat/indices",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/_cat/indices",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 410,
+        "y": 80,
+        "wires": [
+            [
+                "1e938ade.6254a5"
+            ]
+        ]
+    },
+    {
+        "id": "4aa5a30.7b2905c",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "cfc821cb.39bbe",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "1e938ade.6254a5",
+        "type": "json",
+        "z": "73f15769.b43868",
+        "g": "cfc821cb.39bbe",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": true,
+        "x": 610,
+        "y": 80,
+        "wires": [
+            [
+                "4aa5a30.7b2905c"
+            ]
+        ]
+    },
+    {
+        "id": "a1d00b78.31dd28",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "ac6c313a.24b3d",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 680,
+        "wires": [
+            [
+                "2212f53b.80433a"
+            ]
+        ]
+    },
+    {
+        "id": "2212f53b.80433a",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "ac6c313a.24b3d",
+        "name": "Recover status of index pm10",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/pm10_validated?pretty",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 430,
+        "y": 680,
+        "wires": [
+            [
+                "dd920356.f65f5"
+            ]
+        ]
+    },
+    {
+        "id": "54e935af.022adc",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "ac6c313a.24b3d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 950,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "dd920356.f65f5",
+        "type": "json",
+        "z": "73f15769.b43868",
+        "g": "ac6c313a.24b3d",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": true,
+        "x": 710,
+        "y": 680,
+        "wires": [
+            [
+                "54e935af.022adc"
+            ]
+        ]
+    },
+    {
+        "id": "6891b94d.bc3638",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "bdab0a2f.1bfa88"
+            ]
+        ]
+    },
+    {
+        "id": "128cc06e.a3ee8",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "name": "Creating index",
+        "method": "PUT",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/school",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 540,
+        "y": 200,
+        "wires": [
+            [
+                "bc154570.da8a88"
+            ]
+        ]
+    },
+    {
+        "id": "16d2c8da.884717",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 950,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "bc154570.da8a88",
+        "type": "json",
+        "z": "73f15769.b43868",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": true,
+        "x": 710,
+        "y": 200,
+        "wires": [
+            [
+                "16d2c8da.884717"
+            ]
+        ]
+    },
+    {
+        "id": "bdab0a2f.1bfa88",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "name": "append payload",
+        "func": "msg.payload ={\n  \"settings\": {\n    \"index\": {\n      \"number_of_shards\": 1,\n      \"number_of_replicas\": 1\n    }\n  },\n  \"mappings\":{\n    \"properties\": {\n      \"age\": { \"type\": \"long\" },\n      \"experienceInYears\": { \"type\": \"long\" },\n      \"name\": { \"type\": \"text\" }\n    }\n  }\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 200,
+        "wires": [
+            [
+                "128cc06e.a3ee8"
+            ]
+        ]
+    },
+    {
+        "id": "4f9c2209.f815cc",
+        "type": "comment",
+        "z": "73f15769.b43868",
+        "name": "Ejemplo create index",
+        "info": "",
+        "x": 380,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ad84ef15.7d6f",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "d326b21.2a1e55",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 780,
+        "wires": [
+            [
+                "812987a7.599dc8"
+            ]
+        ]
+    },
+    {
+        "id": "812987a7.599dc8",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "d326b21.2a1e55",
+        "name": "View the mapping of an index (pm10)",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/pm10_validated/_mapping",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 470,
+        "y": 780,
+        "wires": [
+            [
+                "6dee66a7.2c4848"
+            ]
+        ]
+    },
+    {
+        "id": "bf8ae526.8facd8",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "d326b21.2a1e55",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 930,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "6dee66a7.2c4848",
+        "type": "json",
+        "z": "73f15769.b43868",
+        "g": "d326b21.2a1e55",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 720,
+        "y": 780,
+        "wires": [
+            [
+                "bf8ae526.8facd8"
+            ]
+        ]
+    },
+    {
+        "id": "8a15ccb1.58366",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "f621b7d7.5a1208",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 980,
+        "wires": [
+            [
+                "4047b36d.d1ff4c"
+            ]
+        ]
+    },
+    {
+        "id": "4af5af5a.d1f77",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "f621b7d7.5a1208",
+        "name": "retrieving data",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/pm10_validated/_doc/_search?pretty",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 580,
+        "y": 980,
+        "wires": [
+            [
+                "326f759c.f588ca"
+            ]
+        ]
+    },
+    {
+        "id": "bc3b44f9.fa5398",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "f621b7d7.5a1208",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 950,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "4047b36d.d1ff4c",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "g": "f621b7d7.5a1208",
+        "name": "",
+        "func": "msg.payload = {\n    \"query\": {\n        \"exists\": {\n            \"field\": \"inStock\"\n        }\n    }\n}\n\nmsg.headers = {};\nmsg.headers['Content-Type'] = 'application/json';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 330,
+        "y": 980,
+        "wires": [
+            [
+                "4af5af5a.d1f77"
+            ]
+        ]
+    },
+    {
+        "id": "326f759c.f588ca",
+        "type": "json",
+        "z": "73f15769.b43868",
+        "g": "f621b7d7.5a1208",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 750,
+        "y": 980,
+        "wires": [
+            [
+                "bc3b44f9.fa5398"
+            ]
+        ]
+    },
+    {
+        "id": "3524f48e.e2f1cc",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "310b1502.7049ba",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 880,
+        "wires": [
+            [
+                "e48fc5c7.a3ff28"
+            ]
+        ]
+    },
+    {
+        "id": "e48fc5c7.a3ff28",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "310b1502.7049ba",
+        "name": "Count of elements in a specific index (pm10)",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/pm10_validated/_count",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 430,
+        "y": 880,
+        "wires": [
+            [
+                "abb9440.be02bc"
+            ]
+        ]
+    },
+    {
+        "id": "f1d00441.04ebb8",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "310b1502.7049ba",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 930,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "abb9440.be02bc",
+        "type": "json",
+        "z": "73f15769.b43868",
+        "g": "310b1502.7049ba",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 720,
+        "y": 880,
+        "wires": [
+            [
+                "f1d00441.04ebb8"
+            ]
+        ]
+    },
+    {
+        "id": "3703ef99.9900b",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "215a9d76.e345d2",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 1080,
+        "wires": [
+            [
+                "1fd7d845.bfa288"
+            ]
+        ]
+    },
+    {
+        "id": "1fd7d845.bfa288",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "215a9d76.e345d2",
+        "name": "Recover document filtering specific parameter and value",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/pm10_validated/_doc/_search?q=period:22",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 470,
+        "y": 1080,
+        "wires": [
+            [
+                "ba3a40bb.9a871"
+            ]
+        ]
+    },
+    {
+        "id": "f8478ba1.2f0898",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "215a9d76.e345d2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1090,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "ba3a40bb.9a871",
+        "type": "json",
+        "z": "73f15769.b43868",
+        "g": "215a9d76.e345d2",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 850,
+        "y": 1080,
+        "wires": [
+            [
+                "f8478ba1.2f0898"
+            ]
+        ]
+    },
+    {
+        "id": "dc820dfa.0eea3",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "pm10",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "8a12fcac.1d838"
+            ]
+        ]
+    },
+    {
+        "id": "66616c28.149bf4",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "wind_speed",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "71809884.f31308"
+            ]
+        ]
+    },
+    {
+        "id": "b9a03406.cc7128",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "wind_direction",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "9078b6d8.44e598"
+            ]
+        ]
+    },
+    {
+        "id": "8a12fcac.1d838",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Payload for index",
+        "func": "msg.payload ={\n  \"settings\": {\n    \"index\": {\n      \"number_of_shards\": 1,\n      \"number_of_replicas\": 1\n    }\n  },\n  \"mappings\":{\n        //\"_doc\": {\n            \"properties\": {\n                  \"stationName\": { \"type\": \"text\" },\n                  \"parameter\": { \"type\": \"text\" },\n                  \"descParameter\": { \"type\": \"text\" },\n                  \"date\": { \"type\": \"text\" },\n                  \"dateAndPeriod\": { \"type\": \"text\" },\n                  \"period\": { \"type\": \"integer\" },\n                  \"value\": { \"type\": \"long\" },\n                  \"flag\": { \"type\": \"text\" },\n                  \"descriptionFlag\": { \"type\": \"text\" },\n                  \"ID_station\": { \"type\": \"integer\" },\n                  \"description_ID_station\": { \"type\": \"text\" },\n                  \"IID\": { \"type\": \"integer\" },\n                  \"description_IID\": { \"type\": \"text\" },\n                  \"CodeMinistry\": { \"type\": \"integer\" },\n                  \"description_CodeMinistry\": { \"type\": \"text\" },\n                  \"CodeTechMinistry\": { \"type\": \"integer\" },\n                  \"description_CodeTechMinistry\": { \"type\": \"text\" },\n            }\n        //}\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 280,
+        "wires": [
+            [
+                "c6b80c4e.b9ed7"
+            ]
+        ]
+    },
+    {
+        "id": "71809884.f31308",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Payload for index",
+        "func": "msg.payload ={\n  \"settings\": {\n    \"index\": {\n      \"number_of_shards\": 1,\n      \"number_of_replicas\": 1\n    }\n  },\n  \"mappings\":{\n        //\"_doc\": {\n            \"properties\": {\n                  \"stationName\": { \"type\": \"text\" },\n                  \"parameter\": { \"type\": \"text\" },\n                  \"descParameter\": { \"type\": \"text\" },\n                  \"date\": { \"type\": \"text\" },\n                  \"dateAndPeriod\": { \"type\": \"text\" },\n                  \"period\": { \"type\": \"integer\" },\n                  \"value\": { \"type\": \"long\" },\n                  \"flag\": { \"type\": \"text\" },\n                  \"descriptionFlag\": { \"type\": \"text\" },\n                  \"ID_station\": { \"type\": \"integer\" },\n                  \"description_ID_station\": { \"type\": \"text\" },\n                  \"IID\": { \"type\": \"integer\" },\n                  \"description_IID\": { \"type\": \"text\" },\n                  \"CodeMinistry\": { \"type\": \"integer\" },\n                  \"description_CodeMinistry\": { \"type\": \"text\" },\n                  \"CodeTechMinistry\": { \"type\": \"integer\" },\n                  \"description_CodeTechMinistry\": { \"type\": \"text\" },\n            }\n        //}\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 320,
+        "wires": [
+            [
+                "942fdf86.4a6cb"
+            ]
+        ]
+    },
+    {
+        "id": "9078b6d8.44e598",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Payload for index",
+        "func": "msg.payload ={\n  \"settings\": {\n    \"index\": {\n      \"number_of_shards\": 1,\n      \"number_of_replicas\": 1\n    }\n  },\n  \"mappings\":{\n        //\"_doc\": {\n            \"properties\": {\n                  \"stationName\": { \"type\": \"text\" },\n                  \"parameter\": { \"type\": \"text\" },\n                  \"descParameter\": { \"type\": \"text\" },\n                  \"date\": { \"type\": \"text\" },\n                  \"dateAndPeriod\": { \"type\": \"text\" },\n                  \"period\": { \"type\": \"integer\" },\n                  \"value\": { \"type\": \"long\" },\n                  \"flag\": { \"type\": \"text\" },\n                  \"descriptionFlag\": { \"type\": \"text\" },\n                  \"ID_station\": { \"type\": \"integer\" },\n                  \"description_ID_station\": { \"type\": \"text\" },\n                  \"IID\": { \"type\": \"integer\" },\n                  \"description_IID\": { \"type\": \"text\" },\n                  \"CodeMinistry\": { \"type\": \"integer\" },\n                  \"description_CodeMinistry\": { \"type\": \"text\" },\n                  \"CodeTechMinistry\": { \"type\": \"integer\" },\n                  \"description_CodeTechMinistry\": { \"type\": \"text\" },\n            }\n        //}\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 360,
+        "wires": [
+            [
+                "93b34b8.5060eb8"
+            ]
+        ]
+    },
+    {
+        "id": "c6b80c4e.b9ed7",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Creating index pm10_validated",
+        "method": "PUT",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/pm10_validated",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 670,
+        "y": 280,
+        "wires": [
+            [
+                "7780edd5.b10fe4"
+            ]
+        ]
+    },
+    {
+        "id": "942fdf86.4a6cb",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Creating index wind_speed_validated",
+        "method": "PUT",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/wind_speed_validated",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 690,
+        "y": 320,
+        "wires": [
+            [
+                "c03df57d.4be8b8"
+            ]
+        ]
+    },
+    {
+        "id": "93b34b8.5060eb8",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Creating index wind_direction_validated",
+        "method": "PUT",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/wind_direction_validated",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 700,
+        "y": 360,
+        "wires": [
+            [
+                "a0b777c.625cf88"
+            ]
+        ]
+    },
+    {
+        "id": "7780edd5.b10fe4",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Result pm10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1010,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c03df57d.4be8b8",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Result windSpeed",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1030,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "a0b777c.625cf88",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "384ad95f.68d3c6",
+        "name": "Result windDirection",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1040,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "6090d07a.3e0b4",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 460,
+        "wires": [
+            [
+                "bacc8f5e.f4b7e"
+            ]
+        ]
+    },
+    {
+        "id": "3007b47.50b4d4c",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 520,
+        "wires": [
+            [
+                "adb9fc04.2e796"
+            ]
+        ]
+    },
+    {
+        "id": "169b3ceb.00b0f3",
+        "type": "inject",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "Call API REST",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 580,
+        "wires": [
+            [
+                "e14aafec.9e639"
+            ]
+        ]
+    },
+    {
+        "id": "bacc8f5e.f4b7e",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "add content-type header needed for DELETE",
+        "func": "msg.headers = {};\nmsg.headers['Content-Type'] = 'application/json';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 460,
+        "wires": [
+            [
+                "e510c553.e25128"
+            ]
+        ]
+    },
+    {
+        "id": "adb9fc04.2e796",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "add content-type header needed for DELETE",
+        "func": "msg.headers = {};\nmsg.headers['Content-Type'] = 'application/json';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450,
+        "y": 520,
+        "wires": [
+            [
+                "933e7d2f.34ec8"
+            ]
+        ]
+    },
+    {
+        "id": "e14aafec.9e639",
+        "type": "function",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "add content-type header needed for DELETE",
+        "func": "msg.headers = {};\nmsg.headers['Content-Type'] = 'application/json';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450,
+        "y": 580,
+        "wires": [
+            [
+                "6feafa34.1907f4"
+            ]
+        ]
+    },
+    {
+        "id": "e510c553.e25128",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "DELETE INDEX pm10",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/pm10_validated",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 780,
+        "y": 460,
+        "wires": [
+            [
+                "d5191e3.fd7f7e"
+            ]
+        ]
+    },
+    {
+        "id": "933e7d2f.34ec8",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "DELETE INDEX wind_speed",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/wind_speed_validated",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 800,
+        "y": 520,
+        "wires": [
+            [
+                "db49adf.11cc05"
+            ]
+        ]
+    },
+    {
+        "id": "6feafa34.1907f4",
+        "type": "http request",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "DELETE INDEX wind_direction",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://elasticsearch:9200/wind_direction_validated",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 810,
+        "y": 580,
+        "wires": [
+            [
+                "fb1463f7.e7bd1"
+            ]
+        ]
+    },
+    {
+        "id": "d5191e3.fd7f7e",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1070,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "db49adf.11cc05",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1070,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "fb1463f7.e7bd1",
+        "type": "debug",
+        "z": "73f15769.b43868",
+        "g": "84459954.14e238",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1070,
+        "y": 580,
+        "wires": []
+    }
+]

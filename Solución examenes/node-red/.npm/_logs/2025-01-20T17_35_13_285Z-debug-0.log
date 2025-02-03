@@ -1,0 +1,895 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.18.1
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/.npmrc
+5 silly config load:file:/usr/src/node-red/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm remove @softwaredevelopment/node-red-contrib-bodhi-device-water-sensor
+8 verbose argv "remove" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "@softwaredevelopment/node-red-contrib-bodhi-device-water-sensor"
+9 verbose logfile logs-max:10 dir:/data/.npm/_logs/2025-01-20T17_35_13_285Z-
+10 verbose logfile /data/.npm/_logs/2025-01-20T17_35_13_285Z-debug-0.log
+11 silly packumentCache heap:2023227392 maxSize:505806848 maxEntrySize:252903424
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 verbose shrinkwrap failed to load node_modules/.package-lock.json missing from node_modules: node_modules/@softwaredevelopment/node-red-contrib-bodhi-device-water-sensor/src/lib
+15 silly reify mark retired [ '/data/node_modules/node-red-contrib-bodhi-device-base' ]
+16 silly reify mark retired [ '/data/node_modules/acorn', '/data/node_modules/.bin/acorn' ]
+17 silly reify mark retired [ '/data/node_modules/abbrev' ]
+18 silly reify mark retired [ '/data/node_modules/agent-base' ]
+19 silly reify mark retired [ '/data/node_modules/ansi-regex' ]
+20 silly reify mark retired [ '/data/node_modules/acorn-walk' ]
+21 silly reify mark retired [ '/data/node_modules/aproba' ]
+22 silly reify mark retired [ '/data/node_modules/ajv' ]
+23 silly reify mark retired [ '/data/node_modules/ansi-styles' ]
+24 silly reify mark retired [ '/data/node_modules/append-field' ]
+25 silly reify mark retired [ '/data/node_modules/argparse' ]
+26 silly reify mark retired [ '/data/node_modules/array-flatten' ]
+27 silly reify mark retired [ '/data/node_modules/are-we-there-yet' ]
+28 silly reify mark retired [ '/data/node_modules/async' ]
+29 silly reify mark retired [ '/data/node_modules/async-mutex' ]
+30 silly reify mark retired [ '/data/node_modules/base64-js' ]
+31 silly reify mark retired [ '/data/node_modules/asynckit' ]
+32 silly reify mark retired [ '/data/node_modules/basic-auth' ]
+33 silly reify mark retired [ '/data/node_modules/axios' ]
+34 silly reify mark retired [ '/data/node_modules/balanced-match' ]
+35 silly reify mark retired [ '/data/node_modules/bcrypt' ]
+36 silly reify mark retired [ '/data/node_modules/bcryptjs' ]
+37 silly reify mark retired [ '/data/node_modules/body-parser' ]
+38 silly reify mark retired [ '/data/node_modules/boolbase' ]
+39 silly reify mark retired [ '/data/node_modules/brace-expansion' ]
+40 silly reify mark retired [ '/data/node_modules/buffer' ]
+41 silly reify mark retired [ '/data/node_modules/cacheable-lookup' ]
+42 silly reify mark retired [ '/data/node_modules/chownr' ]
+43 silly reify mark retired [ '/data/node_modules/cacheable-request' ]
+44 silly reify mark retired [ '/data/node_modules/busboy' ]
+45 silly reify mark retired [ '/data/node_modules/cheerio-select' ]
+46 silly reify mark retired [ '/data/node_modules/cheerio' ]
+47 silly reify mark retired [ '/data/node_modules/cliui' ]
+48 silly reify mark retired [ '/data/node_modules/color' ]
+49 silly reify mark retired [ '/data/node_modules/cli-table' ]
+50 silly reify mark retired [ '/data/node_modules/clone' ]
+51 silly reify mark retired [ '/data/node_modules/clone-response' ]
+52 silly reify mark retired [ '/data/node_modules/color-convert' ]
+53 silly reify mark retired [
+53 silly reify   '/data/node_modules/color-support',
+53 silly reify   '/data/node_modules/.bin/color-support'
+53 silly reify ]
+54 silly reify mark retired [ '/data/node_modules/color-string' ]
+55 silly reify mark retired [ '/data/node_modules/color-name' ]
+56 silly reify mark retired [ '/data/node_modules/colorspace' ]
+57 silly reify mark retired [ '/data/node_modules/commist' ]
+58 silly reify mark retired [ '/data/node_modules/combined-stream' ]
+59 silly reify mark retired [ '/data/node_modules/colors' ]
+60 silly reify mark retired [ '/data/node_modules/console-control-strings' ]
+61 silly reify mark retired [ '/data/node_modules/content-disposition' ]
+62 silly reify mark retired [ '/data/node_modules/concat-map' ]
+63 silly reify mark retired [ '/data/node_modules/cookie-parser' ]
+64 silly reify mark retired [ '/data/node_modules/cookie-signature' ]
+65 silly reify mark retired [ '/data/node_modules/ansi-colors' ]
+66 silly reify mark retired [ '/data/node_modules/buffer-from' ]
+67 silly reify mark retired [ '/data/node_modules/concat-stream' ]
+68 silly reify mark retired [
+68 silly reify   '/data/node_modules/copyfiles',
+68 silly reify   '/data/node_modules/.bin/copyfiles',
+68 silly reify   '/data/node_modules/.bin/copyup'
+68 silly reify ]
+69 silly reify mark retired [ '/data/node_modules/css-select' ]
+70 silly reify mark retired [ '/data/node_modules/cronosjs' ]
+71 silly reify mark retired [ '/data/node_modules/css-what' ]
+72 silly reify mark retired [ '/data/node_modules/defer-to-connect' ]
+73 silly reify mark retired [ '/data/node_modules/delegates' ]
+74 silly reify mark retired [ '/data/node_modules/delayed-stream' ]
+75 silly reify mark retired [ '/data/node_modules/dom-serializer' ]
+76 silly reify mark retired [ '/data/node_modules/detect-libc' ]
+77 silly reify mark retired [ '/data/node_modules/dicer' ]
+78 silly reify mark retired [ '/data/node_modules/domelementtype' ]
+79 silly reify mark retired [ '/data/node_modules/duplexify' ]
+80 silly reify mark retired [ '/data/node_modules/domhandler' ]
+81 silly reify mark retired [ '/data/node_modules/domutils' ]
+82 silly reify mark retired [ '/data/node_modules/content-type' ]
+83 silly reify mark retired [ '/data/node_modules/emoji-regex' ]
+84 silly reify mark retired [ '/data/node_modules/entities' ]
+85 silly reify mark retired [ '/data/node_modules/end-of-stream' ]
+86 silly reify mark retired [ '/data/node_modules/enquirer' ]
+87 silly reify mark retired [ '/data/node_modules/escalade' ]
+88 silly reify mark retired [ '/data/node_modules/express' ]
+89 silly reify mark retired [ '/data/node_modules/fast-deep-equal' ]
+90 silly reify mark retired [
+90 silly reify   '/data/node_modules/esprima',
+90 silly reify   '/data/node_modules/.bin/esparse',
+90 silly reify   '/data/node_modules/.bin/esvalidate'
+90 silly reify ]
+91 silly reify mark retired [ '/data/node_modules/enabled' ]
+92 silly reify mark retired [ '/data/node_modules/express-session' ]
+93 silly reify mark retired [ '/data/node_modules/fn.name' ]
+94 silly reify mark retired [ '/data/node_modules/finalhandler' ]
+95 silly reify mark retired [ '/data/node_modules/form-data' ]
+96 silly reify mark retired [ '/data/node_modules/follow-redirects' ]
+97 silly reify mark retired [ '/data/node_modules/fs-minipass' ]
+98 silly reify mark retired [ '/data/node_modules/forwarded' ]
+99 silly reify mark retired [ '/data/node_modules/fs.notify' ]
+100 silly reify mark retired [ '/data/node_modules/gauge' ]
+101 silly reify mark retired [ '/data/node_modules/fs.realpath' ]
+102 silly reify mark retired [ '/data/node_modules/glob' ]
+103 silly reify mark retired [ '/data/node_modules/get-stream' ]
+104 silly reify mark retired [ '/data/node_modules/fs-extra' ]
+105 silly reify mark retired [ '/data/node_modules/got' ]
+106 silly reify mark retired [ '/data/node_modules/get-caller-file' ]
+107 silly reify mark retired [ '/data/node_modules/has-unicode' ]
+108 silly reify mark retired [ '/data/node_modules/graceful-fs' ]
+109 silly reify mark retired [ '/data/node_modules/hash-sum' ]
+110 silly reify mark retired [ '/data/node_modules/help-me' ]
+111 silly reify mark retired [ '/data/node_modules/http-cache-semantics' ]
+112 silly reify mark retired [ '/data/node_modules/htmlparser2' ]
+113 silly reify mark retired [ '/data/node_modules/hpagent' ]
+114 silly reify mark retired [ '/data/node_modules/http2-wrapper' ]
+115 silly reify mark retired [ '/data/node_modules/ieee754' ]
+116 silly reify mark retired [ '/data/node_modules/iconv-lite' ]
+117 silly reify mark retired [ '/data/node_modules/https-proxy-agent' ]
+118 silly reify mark retired [ '/data/node_modules/i18next' ]
+119 silly reify mark retired [ '/data/node_modules/inflight' ]
+120 silly reify mark retired [ '/data/node_modules/is-stream' ]
+121 silly reify mark retired [ '/data/node_modules/is-utf8' ]
+122 silly reify mark retired [ '/data/node_modules/ipaddr.js' ]
+123 silly reify mark retired [ '/data/node_modules/is-arrayish' ]
+124 silly reify mark retired [ '/data/node_modules/is-fullwidth-code-point' ]
+125 silly reify mark retired [ '/data/node_modules/json-buffer' ]
+126 silly reify mark retired [ '/data/node_modules/js-yaml', '/data/node_modules/.bin/js-yaml' ]
+127 silly reify mark retired [ '/data/node_modules/js-sdsl' ]
+128 silly reify mark retired [ '/data/node_modules/json-schema-traverse' ]
+129 silly reify mark retired [ '/data/node_modules/jsonfile' ]
+130 silly reify mark retired [ '/data/node_modules/keyv' ]
+131 silly reify mark retired [ '/data/node_modules/json-stringify-safe' ]
+132 silly reify mark retired [ '/data/node_modules/leven' ]
+133 silly reify mark retired [ '/data/node_modules/logform' ]
+134 silly reify mark retired [ '/data/node_modules/kuler' ]
+135 silly reify mark retired [ '/data/node_modules/jsonata' ]
+136 silly reify mark retired [ '/data/node_modules/lodash.clonedeep' ]
+137 silly reify mark retired [ '/data/node_modules/make-dir' ]
+138 silly reify mark retired [ '/data/node_modules/lru-cache' ]
+139 silly reify mark retired [ '/data/node_modules/media-typer' ]
+140 silly reify mark retired [ '/data/node_modules/memorystore' ]
+141 silly reify mark retired [ '/data/node_modules/methods' ]
+142 silly reify mark retired [ '/data/node_modules/merge-descriptors' ]
+143 silly reify mark retired [ '/data/node_modules/minimatch' ]
+144 silly reify mark retired [ '/data/node_modules/minipass' ]
+145 silly reify mark retired [ '/data/node_modules/mimic-response' ]
+146 silly reify mark retired [ '/data/node_modules/mkdirp', '/data/node_modules/.bin/mkdirp' ]
+147 silly reify mark retired [ '/data/node_modules/minizlib' ]
+148 silly reify mark retired [ '/data/node_modules/moment-timezone' ]
+149 silly reify mark retired [ '/data/node_modules/lowercase-keys' ]
+150 silly reify mark retired [
+150 silly reify   '/data/node_modules/mqtt',
+150 silly reify   '/data/node_modules/.bin/mqtt_pub',
+150 silly reify   '/data/node_modules/.bin/mqtt_sub',
+150 silly reify   '/data/node_modules/.bin/mqtt'
+150 silly reify ]
+151 silly reify mark retired [ '/data/node_modules/multer' ]
+152 silly reify mark retired [ '/data/node_modules/moment' ]
+153 silly reify mark retired [ '/data/node_modules/mqtt-packet' ]
+154 silly reify mark retired [ '/data/node_modules/mustache', '/data/node_modules/.bin/mustache' ]
+155 silly reify mark retired [ '/data/node_modules/node-fetch' ]
+156 silly reify mark retired [ '/data/node_modules/node-addon-api' ]
+157 silly reify mark retired [
+157 silly reify   '/data/node_modules/node-red',
+157 silly reify   '/data/node_modules/.bin/node-red',
+157 silly reify   '/data/node_modules/.bin/node-red-pi'
+157 silly reify ]
+158 silly reify mark retired [ '/data/node_modules/mute-stream' ]
+159 silly reify mark retired [
+159 silly reify   '/data/node_modules/node-red-admin',
+159 silly reify   '/data/node_modules/.bin/node-red-admin'
+159 silly reify ]
+160 silly reify mark retired [ '/data/node_modules/normalize-url' ]
+161 silly reify mark retired [ '/data/node_modules/nopt', '/data/node_modules/.bin/nopt' ]
+162 silly reify mark retired [ '/data/node_modules/noms' ]
+163 silly reify mark retired [ '/data/node_modules/npmlog' ]
+164 silly reify mark retired [ '/data/node_modules/oauth2orize' ]
+165 silly reify mark retired [ '/data/node_modules/number-allocator' ]
+166 silly reify mark retired [ '/data/node_modules/nth-check' ]
+167 silly reify mark retired [ '/data/node_modules/once' ]
+168 silly reify mark retired [ '/data/node_modules/one-time' ]
+169 silly reify mark retired [ '/data/node_modules/p-cancelable' ]
+170 silly reify mark retired [ '/data/node_modules/parse5' ]
+171 silly reify mark retired [ '/data/node_modules/parse5-htmlparser2-tree-adapter' ]
+172 silly reify mark retired [ '/data/node_modules/passport-http-bearer' ]
+173 silly reify mark retired [ '/data/node_modules/passport-oauth2-client-password' ]
+174 silly reify mark retired [ '/data/node_modules/passport-strategy' ]
+175 silly reify mark retired [ '/data/node_modules/path-is-absolute' ]
+176 silly reify mark retired [ '/data/node_modules/path-to-regexp' ]
+177 silly reify mark retired [ '/data/node_modules/passport' ]
+178 silly reify mark retired [ '/data/node_modules/proxy-addr' ]
+179 silly reify mark retired [ '/data/node_modules/pause' ]
+180 silly reify mark retired [ '/data/node_modules/pseudomap' ]
+181 silly reify mark retired [ '/data/node_modules/punycode' ]
+182 silly reify mark retired [ '/data/node_modules/psl' ]
+183 silly reify mark retired [ '/data/node_modules/qs' ]
+184 silly reify mark retired [ '/data/node_modules/pump' ]
+185 silly reify mark retired [ '/data/node_modules/quick-lru' ]
+186 silly reify mark retired [ '/data/node_modules/random-bytes' ]
+187 silly reify mark retired [ '/data/node_modules/raw-body' ]
+188 silly reify mark retired [ '/data/node_modules/read' ]
+189 silly reify mark retired [ '/data/node_modules/regenerator-runtime' ]
+190 silly reify mark retired [ '/data/node_modules/require-directory' ]
+191 silly reify mark retired [ '/data/node_modules/reinterval' ]
+192 silly reify mark retired [ '/data/node_modules/resolve-alpn' ]
+193 silly reify mark retired [ '/data/node_modules/responselike' ]
+194 silly reify mark retired [ '/data/node_modules/require-from-string' ]
+195 silly reify mark retired [ '/data/node_modules/rimraf', '/data/node_modules/.bin/rimraf' ]
+196 silly reify mark retired [ '/data/node_modules/rfdc' ]
+197 silly reify mark retired [ '/data/node_modules/retry' ]
+198 silly reify mark retired [ '/data/node_modules/safe-stable-stringify' ]
+199 silly reify mark retired [ '/data/node_modules/safer-buffer' ]
+200 silly reify mark retired [ '/data/node_modules/sax' ]
+201 silly reify mark retired [ '/data/node_modules/semver', '/data/node_modules/.bin/semver' ]
+202 silly reify mark retired [ '/data/node_modules/set-blocking' ]
+203 silly reify mark retired [ '/data/node_modules/signal-exit' ]
+204 silly reify mark retired [ '/data/node_modules/simple-swizzle' ]
+205 silly reify mark retired [ '/data/node_modules/split2' ]
+206 silly reify mark retired [ '/data/node_modules/sprintf-js' ]
+207 silly reify mark retired [ '/data/node_modules/stack-trace' ]
+208 silly reify mark retired [ '/data/node_modules/stream-shift' ]
+209 silly reify mark retired [ '/data/node_modules/streamsearch' ]
+210 silly reify mark retired [ '/data/node_modules/strip-ansi' ]
+211 silly reify mark retired [ '/data/node_modules/string-width' ]
+212 silly reify mark retired [ '/data/node_modules/tar' ]
+213 silly reify mark retired [ '/data/node_modules/text-hex' ]
+214 silly reify mark retired [ '/data/node_modules/tr46' ]
+215 silly reify mark retired [ '/data/node_modules/tough-cookie' ]
+216 silly reify mark retired [ '/data/node_modules/through2' ]
+217 silly reify mark retired [ '/data/node_modules/triple-beam' ]
+218 silly reify mark retired [ '/data/node_modules/type-is' ]
+219 silly reify mark retired [ '/data/node_modules/uid-safe' ]
+220 silly reify mark retired [ '/data/node_modules/tslib' ]
+221 silly reify mark retired [ '/data/node_modules/typedarray' ]
+222 silly reify mark retired [ '/data/node_modules/uid2' ]
+223 silly reify mark retired [ '/data/node_modules/unpipe' ]
+224 silly reify mark retired [ '/data/node_modules/untildify' ]
+225 silly reify mark retired [ '/data/node_modules/universalify' ]
+226 silly reify mark retired [ '/data/node_modules/utils-merge' ]
+227 silly reify mark retired [ '/data/node_modules/webidl-conversions' ]
+228 silly reify mark retired [ '/data/node_modules/uri-js' ]
+229 silly reify mark retired [ '/data/node_modules/winston' ]
+230 silly reify mark retired [ '/data/node_modules/whatwg-url' ]
+231 silly reify mark retired [ '/data/node_modules/wide-align' ]
+232 silly reify mark retired [ '/data/node_modules/uuid', '/data/node_modules/.bin/uuid' ]
+233 silly reify mark retired [ '/data/node_modules/winston-transport' ]
+234 silly reify mark retired [ '/data/node_modules/wrappy' ]
+235 silly reify mark retired [ '/data/node_modules/wrap-ansi' ]
+236 silly reify mark retired [ '/data/node_modules/xml2js' ]
+237 silly reify mark retired [ '/data/node_modules/y18n' ]
+238 silly reify mark retired [ '/data/node_modules/yallist' ]
+239 silly reify mark retired [ '/data/node_modules/xmlbuilder' ]
+240 silly reify mark retired [ '/data/node_modules/xtend' ]
+241 silly reify mark retired [ '/data/node_modules/yargs' ]
+242 silly reify mark retired [ '/data/node_modules/@dabh/diagnostics' ]
+243 silly reify mark retired [ '/data/node_modules/yargs-parser' ]
+244 silly reify mark retired [ '/data/node_modules/@babel/runtime' ]
+245 silly reify mark retired [ '/data/node_modules/@colors/colors' ]
+246 silly reify mark retired [ '/data/node_modules/@node-red/editor-api' ]
+247 silly reify mark retired [
+247 silly reify   '/data/node_modules/@mapbox/node-pre-gyp',
+247 silly reify   '/data/node_modules/.bin/node-pre-gyp'
+247 silly reify ]
+248 silly reify mark retired [ '/data/node_modules/@node-red/editor-client' ]
+249 silly reify mark retired [ '/data/node_modules/@node-red/nodes' ]
+250 silly reify mark retired [ '/data/node_modules/@node-red/runtime' ]
+251 silly reify mark retired [ '/data/node_modules/@node-red/util' ]
+252 silly reify mark retired [ '/data/node_modules/@node-red/registry' ]
+253 silly reify mark retired [ '/data/node_modules/@sindresorhus/is' ]
+254 silly reify mark retired [
+254 silly reify   '/data/node_modules/@softwaredevelopment/node-red-contrib-bodhi-device-water-sensor'
+254 silly reify ]
+255 silly reify mark retired [ '/data/node_modules/@szmarczak/http-timer' ]
+256 silly reify mark retired [ '/data/node_modules/@types/keyv' ]
+257 silly reify mark retired [ '/data/node_modules/@types/cacheable-request' ]
+258 silly reify mark retired [ '/data/node_modules/@types/http-cache-semantics' ]
+259 silly reify mark retired [ '/data/node_modules/@types/triple-beam' ]
+260 silly reify mark retired [ '/data/node_modules/@types/responselike' ]
+261 silly reify mark retired [ '/data/node_modules/decompress-response' ]
+262 silly reify moves {
+262 silly reify   '/data/node_modules/node-red-contrib-bodhi-device-base': '/data/node_modules/.node-red-contrib-bodhi-device-base-DFHo7VvJ',
+262 silly reify   '/data/node_modules/acorn': '/data/node_modules/.acorn-cD9ZHKC5',
+262 silly reify   '/data/node_modules/.bin/acorn': '/data/node_modules/.bin/.acorn-IivZOz2L',
+262 silly reify   '/data/node_modules/abbrev': '/data/node_modules/.abbrev-lw8Uxh8e',
+262 silly reify   '/data/node_modules/agent-base': '/data/node_modules/.agent-base-YVqTSI8f',
+262 silly reify   '/data/node_modules/ansi-regex': '/data/node_modules/.ansi-regex-UnXQL7ut',
+262 silly reify   '/data/node_modules/acorn-walk': '/data/node_modules/.acorn-walk-ANFhhcZd',
+262 silly reify   '/data/node_modules/aproba': '/data/node_modules/.aproba-CckTnPjK',
+262 silly reify   '/data/node_modules/ajv': '/data/node_modules/.ajv-jzyQZzDM',
+262 silly reify   '/data/node_modules/ansi-styles': '/data/node_modules/.ansi-styles-2kNSBsZO',
+262 silly reify   '/data/node_modules/append-field': '/data/node_modules/.append-field-msWLvZys',
+262 silly reify   '/data/node_modules/argparse': '/data/node_modules/.argparse-Lg025Jrn',
+262 silly reify   '/data/node_modules/array-flatten': '/data/node_modules/.array-flatten-jRT3Ov0V',
+262 silly reify   '/data/node_modules/are-we-there-yet': '/data/node_modules/.are-we-there-yet-TDjeH5Z7',
+262 silly reify   '/data/node_modules/async': '/data/node_modules/.async-qAJ6YcT9',
+262 silly reify   '/data/node_modules/async-mutex': '/data/node_modules/.async-mutex-MMhEwngq',
+262 silly reify   '/data/node_modules/base64-js': '/data/node_modules/.base64-js-fM7Z0tn1',
+262 silly reify   '/data/node_modules/asynckit': '/data/node_modules/.asynckit-fWfEfcP5',
+262 silly reify   '/data/node_modules/basic-auth': '/data/node_modules/.basic-auth-tvYddoc6',
+262 silly reify   '/data/node_modules/axios': '/data/node_modules/.axios-zQJ0VzMj',
+262 silly reify   '/data/node_modules/balanced-match': '/data/node_modules/.balanced-match-cZVSkmYR',
+262 silly reify   '/data/node_modules/bcrypt': '/data/node_modules/.bcrypt-S4vlbvHt',
+262 silly reify   '/data/node_modules/bcryptjs': '/data/node_modules/.bcryptjs-meI0ieju',
+262 silly reify   '/data/node_modules/body-parser': '/data/node_modules/.body-parser-1dal0C7Q',
+262 silly reify   '/data/node_modules/boolbase': '/data/node_modules/.boolbase-AWAXtpzZ',
+262 silly reify   '/data/node_modules/brace-expansion': '/data/node_modules/.brace-expansion-yRGPppFz',
+262 silly reify   '/data/node_modules/buffer': '/data/node_modules/.buffer-PnI8qWnd',
+262 silly reify   '/data/node_modules/cacheable-lookup': '/data/node_modules/.cacheable-lookup-Go4Hb6Ta',
+262 silly reify   '/data/node_modules/chownr': '/data/node_modules/.chownr-07v3qbUi',
+262 silly reify   '/data/node_modules/cacheable-request': '/data/node_modules/.cacheable-request-G7QxEDu4',
+262 silly reify   '/data/node_modules/busboy': '/data/node_modules/.busboy-uGC4v2gB',
+262 silly reify   '/data/node_modules/cheerio-select': '/data/node_modules/.cheerio-select-FySPZT1K',
+262 silly reify   '/data/node_modules/cheerio': '/data/node_modules/.cheerio-xHJvByxd',
+262 silly reify   '/data/node_modules/cliui': '/data/node_modules/.cliui-yxzVXKWS',
+262 silly reify   '/data/node_modules/color': '/data/node_modules/.color-Kh3harum',
+262 silly reify   '/data/node_modules/cli-table': '/data/node_modules/.cli-table-B1B597es',
+262 silly reify   '/data/node_modules/clone': '/data/node_modules/.clone-eFAFUQfl',
+262 silly reify   '/data/node_modules/clone-response': '/data/node_modules/.clone-response-dBpEdJje',
+262 silly reify   '/data/node_modules/color-convert': '/data/node_modules/.color-convert-CyDcREMC',
+262 silly reify   '/data/node_modules/color-support': '/data/node_modules/.color-support-KE9n8sKl',
+262 silly reify   '/data/node_modules/.bin/color-support': '/data/node_modules/.bin/.color-support-9HI2Y1W2',
+262 silly reify   '/data/node_modules/color-string': '/data/node_modules/.color-string-zNT8iAWC',
+262 silly reify   '/data/node_modules/color-name': '/data/node_modules/.color-name-VkBrgzKr',
+262 silly reify   '/data/node_modules/colorspace': '/data/node_modules/.colorspace-m3zEcLQZ',
+262 silly reify   '/data/node_modules/commist': '/data/node_modules/.commist-AQIXAbW0',
+262 silly reify   '/data/node_modules/combined-stream': '/data/node_modules/.combined-stream-0zmoVf8j',
+262 silly reify   '/data/node_modules/colors': '/data/node_modules/.colors-WW5MPfNG',
+262 silly reify   '/data/node_modules/console-control-strings': '/data/node_modules/.console-control-strings-mTLyQTQn',
+262 silly reify   '/data/node_modules/content-disposition': '/data/node_modules/.content-disposition-cjaFwGrN',
+262 silly reify   '/data/node_modules/concat-map': '/data/node_modules/.concat-map-gcGcnca7',
+262 silly reify   '/data/node_modules/cookie-parser': '/data/node_modules/.cookie-parser-WSlplMiD',
+262 silly reify   '/data/node_modules/cookie-signature': '/data/node_modules/.cookie-signature-6Ic0u8tq',
+262 silly reify   '/data/node_modules/ansi-colors': '/data/node_modules/.ansi-colors-pRV2I9YF',
+262 silly reify   '/data/node_modules/buffer-from': '/data/node_modules/.buffer-from-IwFPuzJz',
+262 silly reify   '/data/node_modules/concat-stream': '/data/node_modules/.concat-stream-4mh2UBFU',
+262 silly reify   '/data/node_modules/copyfiles': '/data/node_modules/.copyfiles-P87bBQOE',
+262 silly reify   '/data/node_modules/.bin/copyfiles': '/data/node_modules/.bin/.copyfiles-vjkdm6O4',
+262 silly reify   '/data/node_modules/.bin/copyup': '/data/node_modules/.bin/.copyup-LqAmoqEp',
+262 silly reify   '/data/node_modules/css-select': '/data/node_modules/.css-select-51LatOFy',
+262 silly reify   '/data/node_modules/cronosjs': '/data/node_modules/.cronosjs-TFp20zWi',
+262 silly reify   '/data/node_modules/css-what': '/data/node_modules/.css-what-7TE86Unh',
+262 silly reify   '/data/node_modules/defer-to-connect': '/data/node_modules/.defer-to-connect-IfrGh2ME',
+262 silly reify   '/data/node_modules/delegates': '/data/node_modules/.delegates-RnaTEBph',
+262 silly reify   '/data/node_modules/delayed-stream': '/data/node_modules/.delayed-stream-RwPyxr6p',
+262 silly reify   '/data/node_modules/dom-serializer': '/data/node_modules/.dom-serializer-bAbxsSyG',
+262 silly reify   '/data/node_modules/detect-libc': '/data/node_modules/.detect-libc-TCSFCEdZ',
+262 silly reify   '/data/node_modules/dicer': '/data/node_modules/.dicer-MvDlXpYr',
+262 silly reify   '/data/node_modules/domelementtype': '/data/node_modules/.domelementtype-fJETCDkc',
+262 silly reify   '/data/node_modules/duplexify': '/data/node_modules/.duplexify-M4CquvRE',
+262 silly reify   '/data/node_modules/domhandler': '/data/node_modules/.domhandler-x1Ot3gND',
+262 silly reify   '/data/node_modules/domutils': '/data/node_modules/.domutils-yxIO2HWh',
+262 silly reify   '/data/node_modules/content-type': '/data/node_modules/.content-type-Z4IPiXBU',
+262 silly reify   '/data/node_modules/emoji-regex': '/data/node_modules/.emoji-regex-3DE4Hvsb',
+262 silly reify   '/data/node_modules/entities': '/data/node_modules/.entities-3aUmZoHF',
+262 silly reify   '/data/node_modules/end-of-stream': '/data/node_modules/.end-of-stream-D9qGZpUB',
+262 silly reify   '/data/node_modules/enquirer': '/data/node_modules/.enquirer-toE4YsJ5',
+262 silly reify   '/data/node_modules/escalade': '/data/node_modules/.escalade-c0bvgGn7',
+262 silly reify   '/data/node_modules/express': '/data/node_modules/.express-RyDi9jNn',
+262 silly reify   '/data/node_modules/fast-deep-equal': '/data/node_modules/.fast-deep-equal-zliBd0dy',
+262 silly reify   '/data/node_modules/esprima': '/data/node_modules/.esprima-L6qq6aLG',
+262 silly reify   '/data/node_modules/.bin/esparse': '/data/node_modules/.bin/.esparse-ezVhmHLC',
+262 silly reify   '/data/node_modules/.bin/esvalidate': '/data/node_modules/.bin/.esvalidate-keH9Df9E',
+262 silly reify   '/data/node_modules/enabled': '/data/node_modules/.enabled-oXNUJo9w',
+262 silly reify   '/data/node_modules/express-session': '/data/node_modules/.express-session-0gFtHMfa',
+262 silly reify   '/data/node_modules/fn.name': '/data/node_modules/.fn.name-m0IuwxO2',
+262 silly reify   '/data/node_modules/finalhandler': '/data/node_modules/.finalhandler-yKd9FddX',
+262 silly reify   '/data/node_modules/form-data': '/data/node_modules/.form-data-VxlkrdGS',
+262 silly reify   '/data/node_modules/follow-redirects': '/data/node_modules/.follow-redirects-A0Z0RHjx',
+262 silly reify   '/data/node_modules/fs-minipass': '/data/node_modules/.fs-minipass-yjOoH6Uz',
+262 silly reify   '/data/node_modules/forwarded': '/data/node_modules/.forwarded-Ou3CwnRK',
+262 silly reify   '/data/node_modules/fs.notify': '/data/node_modules/.fs.notify-EnzkKUdR',
+262 silly reify   '/data/node_modules/gauge': '/data/node_modules/.gauge-rdcHSHqa',
+262 silly reify   '/data/node_modules/fs.realpath': '/data/node_modules/.fs.realpath-fYeO8RDC',
+262 silly reify   '/data/node_modules/glob': '/data/node_modules/.glob-noheLqQM',
+262 silly reify   '/data/node_modules/get-stream': '/data/node_modules/.get-stream-C1AndzjS',
+262 silly reify   '/data/node_modules/fs-extra': '/data/node_modules/.fs-extra-tBOSboDO',
+262 silly reify   '/data/node_modules/got': '/data/node_modules/.got-GqJSN80y',
+262 silly reify   '/data/node_modules/get-caller-file': '/data/node_modules/.get-caller-file-twepYwfK',
+262 silly reify   '/data/node_modules/has-unicode': '/data/node_modules/.has-unicode-UrSlttIr',
+262 silly reify   '/data/node_modules/graceful-fs': '/data/node_modules/.graceful-fs-k0znLUlP',
+262 silly reify   '/data/node_modules/hash-sum': '/data/node_modules/.hash-sum-4QTyMEDg',
+262 silly reify   '/data/node_modules/help-me': '/data/node_modules/.help-me-KhY5asRU',
+262 silly reify   '/data/node_modules/http-cache-semantics': '/data/node_modules/.http-cache-semantics-sEu4cdoT',
+262 silly reify   '/data/node_modules/htmlparser2': '/data/node_modules/.htmlparser2-Dsd1fOZ8',
+262 silly reify   '/data/node_modules/hpagent': '/data/node_modules/.hpagent-1eDtRTcg',
+262 silly reify   '/data/node_modules/http2-wrapper': '/data/node_modules/.http2-wrapper-CTNvmbAQ',
+262 silly reify   '/data/node_modules/ieee754': '/data/node_modules/.ieee754-LaYQfJUx',
+262 silly reify   '/data/node_modules/iconv-lite': '/data/node_modules/.iconv-lite-MMpGM8zk',
+262 silly reify   '/data/node_modules/https-proxy-agent': '/data/node_modules/.https-proxy-agent-BrVHzWxz',
+262 silly reify   '/data/node_modules/i18next': '/data/node_modules/.i18next-orNW4HQm',
+262 silly reify   '/data/node_modules/inflight': '/data/node_modules/.inflight-e6IlchaA',
+262 silly reify   '/data/node_modules/is-stream': '/data/node_modules/.is-stream-HhpnG6qa',
+262 silly reify   '/data/node_modules/is-utf8': '/data/node_modules/.is-utf8-8zIG6v0B',
+262 silly reify   '/data/node_modules/ipaddr.js': '/data/node_modules/.ipaddr.js-J2gGYEs7',
+262 silly reify   '/data/node_modules/is-arrayish': '/data/node_modules/.is-arrayish-5SlLFUYB',
+262 silly reify   '/data/node_modules/is-fullwidth-code-point': '/data/node_modules/.is-fullwidth-code-point-msBfcTjH',
+262 silly reify   '/data/node_modules/json-buffer': '/data/node_modules/.json-buffer-S24dWI9H',
+262 silly reify   '/data/node_modules/js-yaml': '/data/node_modules/.js-yaml-GFYzaPjW',
+262 silly reify   '/data/node_modules/.bin/js-yaml': '/data/node_modules/.bin/.js-yaml-eKf6QVkS',
+262 silly reify   '/data/node_modules/js-sdsl': '/data/node_modules/.js-sdsl-kQ6sc7e2',
+262 silly reify   '/data/node_modules/json-schema-traverse': '/data/node_modules/.json-schema-traverse-zMJEzWC6',
+262 silly reify   '/data/node_modules/jsonfile': '/data/node_modules/.jsonfile-P1qbuIOJ',
+262 silly reify   '/data/node_modules/keyv': '/data/node_modules/.keyv-qNUT7VS1',
+262 silly reify   '/data/node_modules/json-stringify-safe': '/data/node_modules/.json-stringify-safe-JGxUyLWG',
+262 silly reify   '/data/node_modules/leven': '/data/node_modules/.leven-xTkUjbxm',
+262 silly reify   '/data/node_modules/logform': '/data/node_modules/.logform-x5dpCylo',
+262 silly reify   '/data/node_modules/kuler': '/data/node_modules/.kuler-PwEnP6be',
+262 silly reify   '/data/node_modules/jsonata': '/data/node_modules/.jsonata-9XaNxVEk',
+262 silly reify   '/data/node_modules/lodash.clonedeep': '/data/node_modules/.lodash.clonedeep-M8HJNMAU',
+262 silly reify   '/data/node_modules/make-dir': '/data/node_modules/.make-dir-7jFENd6m',
+262 silly reify   '/data/node_modules/lru-cache': '/data/node_modules/.lru-cache-WRlPNktf',
+262 silly reify   '/data/node_modules/media-typer': '/data/node_modules/.media-typer-6hsDClwy',
+262 silly reify   '/data/node_modules/memorystore': '/data/node_modules/.memorystore-yCfGFr9R',
+262 silly reify   '/data/node_modules/methods': '/data/node_modules/.methods-wJV5EsXa',
+262 silly reify   '/data/node_modules/merge-descriptors': '/data/node_modules/.merge-descriptors-NoMuszI0',
+262 silly reify   '/data/node_modules/minimatch': '/data/node_modules/.minimatch-wsiH5s8b',
+262 silly reify   '/data/node_modules/minipass': '/data/node_modules/.minipass-FwuRyaDr',
+262 silly reify   '/data/node_modules/mimic-response': '/data/node_modules/.mimic-response-XbIS6igx',
+262 silly reify   '/data/node_modules/mkdirp': '/data/node_modules/.mkdirp-kfx2waep',
+262 silly reify   '/data/node_modules/.bin/mkdirp': '/data/node_modules/.bin/.mkdirp-VJGUnSum',
+262 silly reify   '/data/node_modules/minizlib': '/data/node_modules/.minizlib-TP11BXom',
+262 silly reify   '/data/node_modules/moment-timezone': '/data/node_modules/.moment-timezone-l5Xmn3kI',
+262 silly reify   '/data/node_modules/lowercase-keys': '/data/node_modules/.lowercase-keys-JBRtgrux',
+262 silly reify   '/data/node_modules/mqtt': '/data/node_modules/.mqtt-Fvk6pBRL',
+262 silly reify   '/data/node_modules/.bin/mqtt_pub': '/data/node_modules/.bin/.mqtt_pub-dY0oo1ub',
+262 silly reify   '/data/node_modules/.bin/mqtt_sub': '/data/node_modules/.bin/.mqtt_sub-RELOPLmq',
+262 silly reify   '/data/node_modules/.bin/mqtt': '/data/node_modules/.bin/.mqtt-956V6Mdl',
+262 silly reify   '/data/node_modules/multer': '/data/node_modules/.multer-iQeXrk10',
+262 silly reify   '/data/node_modules/moment': '/data/node_modules/.moment-HMXFnPrn',
+262 silly reify   '/data/node_modules/mqtt-packet': '/data/node_modules/.mqtt-packet-pZrSytCi',
+262 silly reify   '/data/node_modules/mustache': '/data/node_modules/.mustache-ROQ2oY93',
+262 silly reify   '/data/node_modules/.bin/mustache': '/data/node_modules/.bin/.mustache-TTkgdA98',
+262 silly reify   '/data/node_modules/node-fetch': '/data/node_modules/.node-fetch-nWcK4DvS',
+262 silly reify   '/data/node_modules/node-addon-api': '/data/node_modules/.node-addon-api-20WGxncL',
+262 silly reify   '/data/node_modules/node-red': '/data/node_modules/.node-red-tBRFU8vV',
+262 silly reify   '/data/node_modules/.bin/node-red': '/data/node_modules/.bin/.node-red-TR0Lraho',
+262 silly reify   '/data/node_modules/.bin/node-red-pi': '/data/node_modules/.bin/.node-red-pi-YG8zQc3k',
+262 silly reify   '/data/node_modules/mute-stream': '/data/node_modules/.mute-stream-rNCevO1V',
+262 silly reify   '/data/node_modules/node-red-admin': '/data/node_modules/.node-red-admin-j6G69eQd',
+262 silly reify   '/data/node_modules/.bin/node-red-admin': '/data/node_modules/.bin/.node-red-admin-OVWdezAY',
+262 silly reify   '/data/node_modules/normalize-url': '/data/node_modules/.normalize-url-ILPnPYBN',
+262 silly reify   '/data/node_modules/nopt': '/data/node_modules/.nopt-qTKdRUTV',
+262 silly reify   '/data/node_modules/.bin/nopt': '/data/node_modules/.bin/.nopt-2Ykus5X1',
+262 silly reify   '/data/node_modules/noms': '/data/node_modules/.noms-VY9KMrXR',
+262 silly reify   '/data/node_modules/npmlog': '/data/node_modules/.npmlog-QQlacbbd',
+262 silly reify   '/data/node_modules/oauth2orize': '/data/node_modules/.oauth2orize-sV2x8QBa',
+262 silly reify   '/data/node_modules/number-allocator': '/data/node_modules/.number-allocator-qgLYIMGT',
+262 silly reify   '/data/node_modules/nth-check': '/data/node_modules/.nth-check-8AyZ3iod',
+262 silly reify   '/data/node_modules/once': '/data/node_modules/.once-g0JU53BL',
+262 silly reify   '/data/node_modules/one-time': '/data/node_modules/.one-time-3ciIUcMp',
+262 silly reify   '/data/node_modules/p-cancelable': '/data/node_modules/.p-cancelable-GNDSWRc6',
+262 silly reify   '/data/node_modules/parse5': '/data/node_modules/.parse5-NCVczR81',
+262 silly reify   '/data/node_modules/parse5-htmlparser2-tree-adapter': '/data/node_modules/.parse5-htmlparser2-tree-adapter-xlufE5fN',
+262 silly reify   '/data/node_modules/passport-http-bearer': '/data/node_modules/.passport-http-bearer-XrgLyIJP',
+262 silly reify   '/data/node_modules/passport-oauth2-client-password': '/data/node_modules/.passport-oauth2-client-password-v3D1cYlJ',
+262 silly reify   '/data/node_modules/passport-strategy': '/data/node_modules/.passport-strategy-U5kGlv1j',
+262 silly reify   '/data/node_modules/path-is-absolute': '/data/node_modules/.path-is-absolute-cyyoeMcn',
+262 silly reify   '/data/node_modules/path-to-regexp': '/data/node_modules/.path-to-regexp-EnAnEo98',
+262 silly reify   '/data/node_modules/passport': '/data/node_modules/.passport-ky2VxOaI',
+262 silly reify   '/data/node_modules/proxy-addr': '/data/node_modules/.proxy-addr-afPAeVfK',
+262 silly reify   '/data/node_modules/pause': '/data/node_modules/.pause-KhaXa6kK',
+262 silly reify   '/data/node_modules/pseudomap': '/data/node_modules/.pseudomap-xUNLY9Bk',
+262 silly reify   '/data/node_modules/punycode': '/data/node_modules/.punycode-gyQTLwWT',
+262 silly reify   '/data/node_modules/psl': '/data/node_modules/.psl-l2CdK3gQ',
+262 silly reify   '/data/node_modules/qs': '/data/node_modules/.qs-t2ewpGYR',
+262 silly reify   '/data/node_modules/pump': '/data/node_modules/.pump-DsFDRkp1',
+262 silly reify   '/data/node_modules/quick-lru': '/data/node_modules/.quick-lru-k6k6ibd1',
+262 silly reify   '/data/node_modules/random-bytes': '/data/node_modules/.random-bytes-ga8t7kRo',
+262 silly reify   '/data/node_modules/raw-body': '/data/node_modules/.raw-body-jcg4Dah6',
+262 silly reify   '/data/node_modules/read': '/data/node_modules/.read-RUMPAKIL',
+262 silly reify   '/data/node_modules/regenerator-runtime': '/data/node_modules/.regenerator-runtime-CS9yvAbW',
+262 silly reify   '/data/node_modules/require-directory': '/data/node_modules/.require-directory-gvzRtPaS',
+262 silly reify   '/data/node_modules/reinterval': '/data/node_modules/.reinterval-7qMmPxox',
+262 silly reify   '/data/node_modules/resolve-alpn': '/data/node_modules/.resolve-alpn-Nzc82mcq',
+262 silly reify   '/data/node_modules/responselike': '/data/node_modules/.responselike-gWr5vdYi',
+262 silly reify   '/data/node_modules/require-from-string': '/data/node_modules/.require-from-string-zPskbU6J',
+262 silly reify   '/data/node_modules/rimraf': '/data/node_modules/.rimraf-PPixYEus',
+262 silly reify   '/data/node_modules/.bin/rimraf': '/data/node_modules/.bin/.rimraf-ibgV2mde',
+262 silly reify   '/data/node_modules/rfdc': '/data/node_modules/.rfdc-fX7Y2ztM',
+262 silly reify   '/data/node_modules/retry': '/data/node_modules/.retry-KnV1EhyG',
+262 silly reify   '/data/node_modules/safe-stable-stringify': '/data/node_modules/.safe-stable-stringify-JNx76RE3',
+262 silly reify   '/data/node_modules/safer-buffer': '/data/node_modules/.safer-buffer-aAdgwKtH',
+262 silly reify   '/data/node_modules/sax': '/data/node_modules/.sax-qwBQxMBs',
+262 silly reify   '/data/node_modules/semver': '/data/node_modules/.semver-yb9qAHPh',
+262 silly reify   '/data/node_modules/.bin/semver': '/data/node_modules/.bin/.semver-A9Nz3QEQ',
+262 silly reify   '/data/node_modules/set-blocking': '/data/node_modules/.set-blocking-3DQ83A8A',
+262 silly reify   '/data/node_modules/signal-exit': '/data/node_modules/.signal-exit-q00PViss',
+262 silly reify   '/data/node_modules/simple-swizzle': '/data/node_modules/.simple-swizzle-Wp4D3tvH',
+262 silly reify   '/data/node_modules/split2': '/data/node_modules/.split2-YyIajAst',
+262 silly reify   '/data/node_modules/sprintf-js': '/data/node_modules/.sprintf-js-ksAK5DwP',
+262 silly reify   '/data/node_modules/stack-trace': '/data/node_modules/.stack-trace-pTYW0rFM',
+262 silly reify   '/data/node_modules/stream-shift': '/data/node_modules/.stream-shift-NKcrOKTe',
+262 silly reify   '/data/node_modules/streamsearch': '/data/node_modules/.streamsearch-2NxRcSE4',
+262 silly reify   '/data/node_modules/strip-ansi': '/data/node_modules/.strip-ansi-zyOGG1f9',
+262 silly reify   '/data/node_modules/string-width': '/data/node_modules/.string-width-0WgxdXS3',
+262 silly reify   '/data/node_modules/tar': '/data/node_modules/.tar-JvtJ6GT7',
+262 silly reify   '/data/node_modules/text-hex': '/data/node_modules/.text-hex-tj0pyydL',
+262 silly reify   '/data/node_modules/tr46': '/data/node_modules/.tr46-nC0Q94ES',
+262 silly reify   '/data/node_modules/tough-cookie': '/data/node_modules/.tough-cookie-vIsWCDtx',
+262 silly reify   '/data/node_modules/through2': '/data/node_modules/.through2-9N2QCvGp',
+262 silly reify   '/data/node_modules/triple-beam': '/data/node_modules/.triple-beam-L6g4SVuS',
+262 silly reify   '/data/node_modules/type-is': '/data/node_modules/.type-is-WfCmT1xx',
+262 silly reify   '/data/node_modules/uid-safe': '/data/node_modules/.uid-safe-nW7Kc6zu',
+262 silly reify   '/data/node_modules/tslib': '/data/node_modules/.tslib-6LOZ5WH5',
+262 silly reify   '/data/node_modules/typedarray': '/data/node_modules/.typedarray-ca8cbBYY',
+262 silly reify   '/data/node_modules/uid2': '/data/node_modules/.uid2-6k8fZ13X',
+262 silly reify   '/data/node_modules/unpipe': '/data/node_modules/.unpipe-hEYDEWxS',
+262 silly reify   '/data/node_modules/untildify': '/data/node_modules/.untildify-YpT3hndQ',
+262 silly reify   '/data/node_modules/universalify': '/data/node_modules/.universalify-oE2Nbdzx',
+262 silly reify   '/data/node_modules/utils-merge': '/data/node_modules/.utils-merge-m5n5po0m',
+262 silly reify   '/data/node_modules/webidl-conversions': '/data/node_modules/.webidl-conversions-NxZHehm0',
+262 silly reify   '/data/node_modules/uri-js': '/data/node_modules/.uri-js-yojBRoJj',
+262 silly reify   '/data/node_modules/winston': '/data/node_modules/.winston-q1tDXB7N',
+262 silly reify   '/data/node_modules/whatwg-url': '/data/node_modules/.whatwg-url-rpY9wHDS',
+262 silly reify   '/data/node_modules/wide-align': '/data/node_modules/.wide-align-mvWYzJRH',
+262 silly reify   '/data/node_modules/uuid': '/data/node_modules/.uuid-4ltFvtl7',
+262 silly reify   '/data/node_modules/.bin/uuid': '/data/node_modules/.bin/.uuid-AirT9FyH',
+262 silly reify   '/data/node_modules/winston-transport': '/data/node_modules/.winston-transport-ihtVHw3I',
+262 silly reify   '/data/node_modules/wrappy': '/data/node_modules/.wrappy-aIryM6Ly',
+262 silly reify   '/data/node_modules/wrap-ansi': '/data/node_modules/.wrap-ansi-f88q5fUg',
+262 silly reify   '/data/node_modules/xml2js': '/data/node_modules/.xml2js-MYxGHhwO',
+262 silly reify   '/data/node_modules/y18n': '/data/node_modules/.y18n-eIcXh3qx',
+262 silly reify   '/data/node_modules/yallist': '/data/node_modules/.yallist-nRCT2Oqy',
+262 silly reify   '/data/node_modules/xmlbuilder': '/data/node_modules/.xmlbuilder-GSKaQskN',
+262 silly reify   '/data/node_modules/xtend': '/data/node_modules/.xtend-RyJXfljO',
+262 silly reify   '/data/node_modules/yargs': '/data/node_modules/.yargs-0QWI5jwv',
+262 silly reify   '/data/node_modules/@dabh/diagnostics': '/data/node_modules/@dabh/.diagnostics-BVxga9LV',
+262 silly reify   '/data/node_modules/yargs-parser': '/data/node_modules/.yargs-parser-Nx4XVQCj',
+262 silly reify   '/data/node_modules/@babel/runtime': '/data/node_modules/@babel/.runtime-OtcWIx9I',
+262 silly reify   '/data/node_modules/@colors/colors': '/data/node_modules/@colors/.colors-wdspZlZ6',
+262 silly reify   '/data/node_modules/@node-red/editor-api': '/data/node_modules/@node-red/.editor-api-u341Iv2W',
+262 silly reify   '/data/node_modules/@mapbox/node-pre-gyp': '/data/node_modules/@mapbox/.node-pre-gyp-ofmK3bPH',
+262 silly reify   '/data/node_modules/.bin/node-pre-gyp': '/data/node_modules/.bin/.node-pre-gyp-VEYx3dHT',
+262 silly reify   '/data/node_modules/@node-red/editor-client': '/data/node_modules/@node-red/.editor-client-PBboMqjn',
+262 silly reify   '/data/node_modules/@node-red/nodes': '/data/node_modules/@node-red/.nodes-nCxxfntG',
+262 silly reify   '/data/node_modules/@node-red/runtime': '/data/node_modules/@node-red/.runtime-r6xVYitN',
+262 silly reify   '/data/node_modules/@node-red/util': '/data/node_modules/@node-red/.util-vA8CeN7R',
+262 silly reify   '/data/node_modules/@node-red/registry': '/data/node_modules/@node-red/.registry-24DL9FTj',
+262 silly reify   '/data/node_modules/@sindresorhus/is': '/data/node_modules/@sindresorhus/.is-8vB1fcFH',
+262 silly reify   '/data/node_modules/@softwaredevelopment/node-red-contrib-bodhi-device-water-sensor': '/data/node_modules/@softwaredevelopment/.node-red-contrib-bodhi-device-water-sensor-pUdu9rHN',
+262 silly reify   '/data/node_modules/@szmarczak/http-timer': '/data/node_modules/@szmarczak/.http-timer-SWGoZNd5',
+262 silly reify   '/data/node_modules/@types/keyv': '/data/node_modules/@types/.keyv-Cdp5od22',
+262 silly reify   '/data/node_modules/@types/cacheable-request': '/data/node_modules/@types/.cacheable-request-87KKChky',
+262 silly reify   '/data/node_modules/@types/http-cache-semantics': '/data/node_modules/@types/.http-cache-semantics-04qy3fUN',
+262 silly reify   '/data/node_modules/@types/triple-beam': '/data/node_modules/@types/.triple-beam-dEToFQD7',
+262 silly reify   '/data/node_modules/@types/responselike': '/data/node_modules/@types/.responselike-i0MkjxXj',
+262 silly reify   '/data/node_modules/decompress-response': '/data/node_modules/.decompress-response-DOEkGFmN'
+262 silly reify }
+263 silly REMOVE node_modules/decompress-response
+264 silly REMOVE node_modules/decompress-response/node_modules/mimic-response
+265 silly REMOVE node_modules/@types/responselike
+266 silly REMOVE node_modules/@types/triple-beam
+267 silly REMOVE node_modules/@types/http-cache-semantics
+268 silly REMOVE node_modules/@types/cacheable-request
+269 silly REMOVE node_modules/@types/keyv
+270 silly REMOVE node_modules/@szmarczak/http-timer
+271 silly REMOVE node_modules/@softwaredevelopment/node-red-contrib-bodhi-device-water-sensor
+272 silly REMOVE node_modules/@sindresorhus/is
+273 silly REMOVE node_modules/@node-red/registry
+274 silly REMOVE node_modules/@node-red/registry/node_modules/uglify-js
+275 silly REMOVE node_modules/@node-red/util
+276 silly REMOVE node_modules/@node-red/runtime
+277 silly REMOVE node_modules/@node-red/nodes
+278 silly REMOVE node_modules/@node-red/nodes/node_modules/ws
+279 silly REMOVE node_modules/@node-red/nodes/node_modules/denque
+280 silly REMOVE node_modules/@node-red/nodes/node_modules/cookie
+281 silly REMOVE node_modules/@node-red/editor-client
+282 silly REMOVE node_modules/@mapbox/node-pre-gyp
+283 silly REMOVE node_modules/@node-red/editor-api
+284 silly REMOVE node_modules/@node-red/editor-api/node_modules/mime
+285 silly REMOVE node_modules/@node-red/editor-api/node_modules/ws
+286 silly REMOVE node_modules/@colors/colors
+287 silly REMOVE node_modules/@babel/runtime
+288 silly REMOVE node_modules/yargs-parser
+289 silly REMOVE node_modules/@dabh/diagnostics
+290 silly REMOVE node_modules/yargs
+291 silly REMOVE node_modules/xtend
+292 silly REMOVE node_modules/xmlbuilder
+293 silly REMOVE node_modules/yallist
+294 silly REMOVE node_modules/y18n
+295 silly REMOVE node_modules/xml2js
+296 silly REMOVE node_modules/wrap-ansi
+297 silly REMOVE node_modules/wrappy
+298 silly REMOVE node_modules/winston-transport
+299 silly REMOVE node_modules/winston-transport/node_modules/readable-stream
+300 silly REMOVE node_modules/uuid
+301 silly REMOVE node_modules/wide-align
+302 silly REMOVE node_modules/whatwg-url
+303 silly REMOVE node_modules/winston
+304 silly REMOVE node_modules/winston/node_modules/readable-stream
+305 silly REMOVE node_modules/winston/node_modules/async
+306 silly REMOVE node_modules/uri-js
+307 silly REMOVE node_modules/webidl-conversions
+308 silly REMOVE node_modules/utils-merge
+309 silly REMOVE node_modules/universalify
+310 silly REMOVE node_modules/untildify
+311 silly REMOVE node_modules/unpipe
+312 silly REMOVE node_modules/uid2
+313 silly REMOVE node_modules/typedarray
+314 silly REMOVE node_modules/tslib
+315 silly REMOVE node_modules/uid-safe
+316 silly REMOVE node_modules/type-is
+317 silly REMOVE node_modules/type-is/node_modules/media-typer
+318 silly REMOVE node_modules/triple-beam
+319 silly REMOVE node_modules/through2
+320 silly REMOVE node_modules/tough-cookie
+321 silly REMOVE node_modules/tough-cookie/node_modules/universalify
+322 silly REMOVE node_modules/tr46
+323 silly REMOVE node_modules/text-hex
+324 silly REMOVE node_modules/tar
+325 silly REMOVE node_modules/tar/node_modules/yallist
+326 silly REMOVE node_modules/string-width
+327 silly REMOVE node_modules/strip-ansi
+328 silly REMOVE node_modules/streamsearch
+329 silly REMOVE node_modules/stream-shift
+330 silly REMOVE node_modules/stack-trace
+331 silly REMOVE node_modules/sprintf-js
+332 silly REMOVE node_modules/split2
+333 silly REMOVE node_modules/split2/node_modules/readable-stream
+334 silly REMOVE node_modules/simple-swizzle
+335 silly REMOVE node_modules/signal-exit
+336 silly REMOVE node_modules/set-blocking
+337 silly REMOVE node_modules/semver
+338 silly REMOVE node_modules/semver/node_modules/yallist
+339 silly REMOVE node_modules/semver/node_modules/lru-cache
+340 silly REMOVE node_modules/sax
+341 silly REMOVE node_modules/safer-buffer
+342 silly REMOVE node_modules/safe-stable-stringify
+343 silly REMOVE node_modules/retry
+344 silly REMOVE node_modules/rfdc
+345 silly REMOVE node_modules/rimraf
+346 silly REMOVE node_modules/require-from-string
+347 silly REMOVE node_modules/responselike
+348 silly REMOVE node_modules/resolve-alpn
+349 silly REMOVE node_modules/reinterval
+350 silly REMOVE node_modules/require-directory
+351 silly REMOVE node_modules/regenerator-runtime
+352 silly REMOVE node_modules/read
+353 silly REMOVE node_modules/raw-body
+354 silly REMOVE node_modules/raw-body/node_modules/statuses
+355 silly REMOVE node_modules/raw-body/node_modules/iconv-lite
+356 silly REMOVE node_modules/raw-body/node_modules/http-errors
+357 silly REMOVE node_modules/raw-body/node_modules/depd
+358 silly REMOVE node_modules/random-bytes
+359 silly REMOVE node_modules/quick-lru
+360 silly REMOVE node_modules/pump
+361 silly REMOVE node_modules/qs
+362 silly REMOVE node_modules/psl
+363 silly REMOVE node_modules/punycode
+364 silly REMOVE node_modules/pseudomap
+365 silly REMOVE node_modules/pause
+366 silly REMOVE node_modules/proxy-addr
+367 silly REMOVE node_modules/passport
+368 silly REMOVE node_modules/path-to-regexp
+369 silly REMOVE node_modules/path-is-absolute
+370 silly REMOVE node_modules/passport-strategy
+371 silly REMOVE node_modules/passport-oauth2-client-password
+372 silly REMOVE node_modules/passport-http-bearer
+373 silly REMOVE node_modules/parse5-htmlparser2-tree-adapter
+374 silly REMOVE node_modules/parse5
+375 silly REMOVE node_modules/p-cancelable
+376 silly REMOVE node_modules/one-time
+377 silly REMOVE node_modules/once
+378 silly REMOVE node_modules/nth-check
+379 silly REMOVE node_modules/number-allocator
+380 silly REMOVE node_modules/number-allocator/node_modules/ms
+381 silly REMOVE node_modules/number-allocator/node_modules/debug
+382 silly REMOVE node_modules/oauth2orize
+383 silly REMOVE node_modules/npmlog
+384 silly REMOVE node_modules/noms
+385 silly REMOVE node_modules/noms/node_modules/readable-stream
+386 silly REMOVE node_modules/noms/node_modules/string_decoder
+387 silly REMOVE node_modules/noms/node_modules/isarray
+388 silly REMOVE node_modules/nopt
+389 silly REMOVE node_modules/normalize-url
+390 silly REMOVE node_modules/node-red-admin
+391 silly REMOVE node_modules/mute-stream
+392 silly REMOVE node_modules/node-red
+393 silly REMOVE node_modules/node-addon-api
+394 silly REMOVE node_modules/node-fetch
+395 silly REMOVE node_modules/mustache
+396 silly REMOVE node_modules/mqtt-packet
+397 silly REMOVE node_modules/mqtt-packet/node_modules/debug
+398 silly REMOVE node_modules/mqtt-packet/node_modules/readable-stream
+399 silly REMOVE node_modules/mqtt-packet/node_modules/bl
+400 silly REMOVE node_modules/mqtt-packet/node_modules/ms
+401 silly REMOVE node_modules/moment
+402 silly REMOVE node_modules/multer
+403 silly REMOVE node_modules/multer/node_modules/mkdirp
+404 silly REMOVE node_modules/multer/node_modules/concat-stream
+405 silly REMOVE node_modules/mqtt
+406 silly REMOVE node_modules/mqtt/node_modules/yallist
+407 silly REMOVE node_modules/mqtt/node_modules/ws
+408 silly REMOVE node_modules/mqtt/node_modules/readable-stream
+409 silly REMOVE node_modules/mqtt/node_modules/ms
+410 silly REMOVE node_modules/mqtt/node_modules/lru-cache
+411 silly REMOVE node_modules/mqtt/node_modules/debug
+412 silly REMOVE node_modules/lowercase-keys
+413 silly REMOVE node_modules/moment-timezone
+414 silly REMOVE node_modules/minizlib
+415 silly REMOVE node_modules/minizlib/node_modules/yallist
+416 silly REMOVE node_modules/mkdirp
+417 silly REMOVE node_modules/mimic-response
+418 silly REMOVE node_modules/minipass
+419 silly REMOVE node_modules/minipass/node_modules/yallist
+420 silly REMOVE node_modules/minimatch
+421 silly REMOVE node_modules/merge-descriptors
+422 silly REMOVE node_modules/methods
+423 silly REMOVE node_modules/memorystore
+424 silly REMOVE node_modules/memorystore/node_modules/debug
+425 silly REMOVE node_modules/memorystore/node_modules/ms
+426 silly REMOVE node_modules/media-typer
+427 silly REMOVE node_modules/lru-cache
+428 silly REMOVE node_modules/make-dir
+429 silly REMOVE node_modules/make-dir/node_modules/semver
+430 silly REMOVE node_modules/lodash.clonedeep
+431 silly REMOVE node_modules/jsonata
+432 silly REMOVE node_modules/kuler
+433 silly REMOVE node_modules/logform
+434 silly REMOVE node_modules/logform/node_modules/ms
+435 silly REMOVE node_modules/logform/node_modules/fecha
+436 silly REMOVE node_modules/leven
+437 silly REMOVE node_modules/json-stringify-safe
+438 silly REMOVE node_modules/keyv
+439 silly REMOVE node_modules/jsonfile
+440 silly REMOVE node_modules/json-schema-traverse
+441 silly REMOVE node_modules/js-sdsl
+442 silly REMOVE node_modules/js-yaml
+443 silly REMOVE node_modules/json-buffer
+444 silly REMOVE node_modules/is-fullwidth-code-point
+445 silly REMOVE node_modules/is-arrayish
+446 silly REMOVE node_modules/ipaddr.js
+447 silly REMOVE node_modules/is-utf8
+448 silly REMOVE node_modules/is-stream
+449 silly REMOVE node_modules/inflight
+450 silly REMOVE node_modules/i18next
+451 silly REMOVE node_modules/https-proxy-agent
+452 silly REMOVE node_modules/https-proxy-agent/node_modules/ms
+453 silly REMOVE node_modules/https-proxy-agent/node_modules/debug
+454 silly REMOVE node_modules/iconv-lite
+455 silly REMOVE node_modules/ieee754
+456 silly REMOVE node_modules/http2-wrapper
+457 silly REMOVE node_modules/hpagent
+458 silly REMOVE node_modules/htmlparser2
+459 silly REMOVE node_modules/http-cache-semantics
+460 silly REMOVE node_modules/help-me
+461 silly REMOVE node_modules/help-me/node_modules/readable-stream
+462 silly REMOVE node_modules/hash-sum
+463 silly REMOVE node_modules/graceful-fs
+464 silly REMOVE node_modules/has-unicode
+465 silly REMOVE node_modules/get-caller-file
+466 silly REMOVE node_modules/got
+467 silly REMOVE node_modules/fs-extra
+468 silly REMOVE node_modules/get-stream
+469 silly REMOVE node_modules/glob
+470 silly REMOVE node_modules/fs.realpath
+471 silly REMOVE node_modules/gauge
+472 silly REMOVE node_modules/fs.notify
+473 silly REMOVE node_modules/forwarded
+474 silly REMOVE node_modules/fs-minipass
+475 silly REMOVE node_modules/follow-redirects
+476 silly REMOVE node_modules/form-data
+477 silly REMOVE node_modules/finalhandler
+478 silly REMOVE node_modules/finalhandler/node_modules/on-finished
+479 silly REMOVE node_modules/finalhandler/node_modules/statuses
+480 silly REMOVE node_modules/finalhandler/node_modules/encodeurl
+481 silly REMOVE node_modules/fn.name
+482 silly REMOVE node_modules/express-session
+483 silly REMOVE node_modules/express-session/node_modules/cookie
+484 silly REMOVE node_modules/enabled
+485 silly REMOVE node_modules/esprima
+486 silly REMOVE node_modules/fast-deep-equal
+487 silly REMOVE node_modules/express
+488 silly REMOVE node_modules/express/node_modules/serve-static
+489 silly REMOVE node_modules/express/node_modules/statuses
+490 silly REMOVE node_modules/express/node_modules/send
+491 silly REMOVE node_modules/express/node_modules/on-finished
+492 silly REMOVE node_modules/express/node_modules/ms
+493 silly REMOVE node_modules/express/node_modules/encodeurl
+494 silly REMOVE node_modules/express/node_modules/http-errors
+495 silly REMOVE node_modules/express/node_modules/destroy
+496 silly REMOVE node_modules/express/node_modules/cookie
+497 silly REMOVE node_modules/express/node_modules/depd
+498 silly REMOVE node_modules/escalade
+499 silly REMOVE node_modules/enquirer
+500 silly REMOVE node_modules/end-of-stream
+501 silly REMOVE node_modules/entities
+502 silly REMOVE node_modules/emoji-regex
+503 silly REMOVE node_modules/content-type
+504 silly REMOVE node_modules/domutils
+505 silly REMOVE node_modules/domhandler
+506 silly REMOVE node_modules/duplexify
+507 silly REMOVE node_modules/duplexify/node_modules/readable-stream
+508 silly REMOVE node_modules/domelementtype
+509 silly REMOVE node_modules/dicer
+510 silly REMOVE node_modules/dicer/node_modules/readable-stream
+511 silly REMOVE node_modules/dicer/node_modules/string_decoder
+512 silly REMOVE node_modules/dicer/node_modules/isarray
+513 silly REMOVE node_modules/detect-libc
+514 silly REMOVE node_modules/dom-serializer
+515 silly REMOVE node_modules/delayed-stream
+516 silly REMOVE node_modules/delegates
+517 silly REMOVE node_modules/defer-to-connect
+518 silly REMOVE node_modules/css-what
+519 silly REMOVE node_modules/cronosjs
+520 silly REMOVE node_modules/css-select
+521 silly REMOVE node_modules/copyfiles
+522 silly REMOVE node_modules/concat-stream
+523 silly REMOVE node_modules/concat-stream/node_modules/readable-stream
+524 silly REMOVE node_modules/buffer-from
+525 silly REMOVE node_modules/ansi-colors
+526 silly REMOVE node_modules/cookie-signature
+527 silly REMOVE node_modules/cookie-parser
+528 silly REMOVE node_modules/cookie-parser/node_modules/cookie
+529 silly REMOVE node_modules/concat-map
+530 silly REMOVE node_modules/content-disposition
+531 silly REMOVE node_modules/console-control-strings
+532 silly REMOVE node_modules/colors
+533 silly REMOVE node_modules/combined-stream
+534 silly REMOVE node_modules/commist
+535 silly REMOVE node_modules/colorspace
+536 silly REMOVE node_modules/color-name
+537 silly REMOVE node_modules/color-string
+538 silly REMOVE node_modules/color-support
+539 silly REMOVE node_modules/color-convert
+540 silly REMOVE node_modules/clone-response
+541 silly REMOVE node_modules/clone
+542 silly REMOVE node_modules/cli-table
+543 silly REMOVE node_modules/color
+544 silly REMOVE node_modules/cliui
+545 silly REMOVE node_modules/cheerio
+546 silly REMOVE node_modules/cheerio-select
+547 silly REMOVE node_modules/busboy
+548 silly REMOVE node_modules/busboy/node_modules/readable-stream
+549 silly REMOVE node_modules/busboy/node_modules/string_decoder
+550 silly REMOVE node_modules/busboy/node_modules/isarray
+551 silly REMOVE node_modules/cacheable-request
+552 silly REMOVE node_modules/chownr
+553 silly REMOVE node_modules/cacheable-lookup
+554 silly REMOVE node_modules/buffer
+555 silly REMOVE node_modules/brace-expansion
+556 silly REMOVE node_modules/boolbase
+557 silly REMOVE node_modules/body-parser
+558 silly REMOVE node_modules/body-parser/node_modules/raw-body
+559 silly REMOVE node_modules/body-parser/node_modules/statuses
+560 silly REMOVE node_modules/body-parser/node_modules/on-finished
+561 silly REMOVE node_modules/body-parser/node_modules/iconv-lite
+562 silly REMOVE node_modules/body-parser/node_modules/depd
+563 silly REMOVE node_modules/body-parser/node_modules/http-errors
+564 silly REMOVE node_modules/body-parser/node_modules/bytes
+565 silly REMOVE node_modules/bcryptjs
+566 silly REMOVE node_modules/bcrypt
+567 silly REMOVE node_modules/balanced-match
+568 silly REMOVE node_modules/axios
+569 silly REMOVE node_modules/basic-auth
+570 silly REMOVE node_modules/basic-auth/node_modules/safe-buffer
+571 silly REMOVE node_modules/asynckit
+572 silly REMOVE node_modules/base64-js
+573 silly REMOVE node_modules/async-mutex
+574 silly REMOVE node_modules/async
+575 silly REMOVE node_modules/are-we-there-yet
+576 silly REMOVE node_modules/are-we-there-yet/node_modules/readable-stream
+577 silly REMOVE node_modules/array-flatten
+578 silly REMOVE node_modules/argparse
+579 silly REMOVE node_modules/append-field
+580 silly REMOVE node_modules/ansi-styles
+581 silly REMOVE node_modules/ansi-styles/node_modules/color-name
+582 silly REMOVE node_modules/ansi-styles/node_modules/color-convert
+583 silly REMOVE node_modules/ajv
+584 silly REMOVE node_modules/aproba
+585 silly REMOVE node_modules/acorn-walk
+586 silly REMOVE node_modules/ansi-regex
+587 silly REMOVE node_modules/agent-base
+588 silly REMOVE node_modules/agent-base/node_modules/ms
+589 silly REMOVE node_modules/agent-base/node_modules/debug
+590 silly REMOVE node_modules/abbrev
+591 silly REMOVE node_modules/acorn
+592 silly REMOVE node_modules/node-red-contrib-bodhi-device-base
+593 verbose cwd /data
+594 verbose os Linux 6.10.14-linuxkit
+595 verbose node v20.18.1
+596 verbose npm  v10.8.2
+597 verbose exit 0
+598 info ok

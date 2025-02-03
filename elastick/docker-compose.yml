@@ -1,0 +1,96 @@
+version: "3.7"
+services:
+
+  mongo:
+    restart: always
+    networks:
+      - elk
+    container_name: mongo_27018
+    image: mongo:latest
+    hostname: mongo
+    ports:
+      - "27018:27017"
+    volumes:
+      - ./db/:/data/db
+
+  node-red:
+    container_name: nodeRED_1881
+    environment:
+      SERVER_NAME: localhost
+      ELASTICSEARCH_URL: http://elasticsearch:9200/
+    image: nodered/node-red:latest
+    user: "0:1000"
+    restart: unless-stopped
+    volumes:
+      - "./node-red:/data"
+    ports:
+      - "1881:1880"
+    networks:
+      - elk
+  
+  mqtt:
+    image: eclipse-mosquitto:1.6.13
+    container_name: mqtt
+    restart: unless-stopped
+    networks:
+      - elk
+    
+  elasticsearch:
+    restart: always
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.5.0
+    container_name: elasticsearch
+    environment:
+      - cluster.name=ieabastos
+      - discovery.type=single-node
+      - xpack.security.enabled=true
+      - ELASTIC_PASSWORD=abastos
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    healthcheck:
+      test: curl --cacert /usr/share/elasticsearch/config/certs/ca/ca.crt -s https://localhost:9200 >/dev/null; if [[ $$? == 52 ]]; then echo 0; else echo 1; fi
+      interval: 30s
+      timeout: 10s
+      retries: 5 
+    ports:
+      - '9200:9200'
+    networks:
+      - elk
+    user: "0:1000"
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '100m'
+        max-file: '10'
+      
+  kibana:
+    restart: always
+    image: docker.elastic.co/kibana/kibana:7.5.0
+    user: "1000:0"
+    container_name: kibana
+    depends_on:
+      - elasticsearch
+    environment:
+      - SERVER_NAME=kibana.localhost
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+      - ELASTICSEARCH_HOST=elasticsearch
+      - ELASTICSEARCH_PORT=9200
+      - xpack.security.enabled=true
+      - ELASTICSEARCH_USERNAME=elastic
+      - ELASTICSEARCH_PASSWORD=abastos
+      - SERVER_HOST=0.0.0.0
+      - NODE_OPTIONS="--max-old-space-size=3096"
+    healthcheck:
+      test: curl --cacert /usr/share/elasticsearch/config/certs/ca/ca.crt -s https://localhost:5601 >/dev/null; if [[ $$? == 52 ]]; then echo 0; else echo 1; fi
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    ports:
+      - "5601:5601"
+    networks:
+      - elk
+
+networks:
+  elk:
+    driver: bridge
